@@ -12,7 +12,7 @@
 | Deployment Target: iOS 12.4 이상 |
 | 최신 버전의 Xcode (Xcode 13.0 / Swift 5.3) |
 
-* MobMixerSDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobMixerSDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
+MobMixerSDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobMixerSDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
 
 
 ## 1. SDK 설치하기
@@ -24,8 +24,8 @@ pod 'MobMixerSDK'
 
 ### 2) 수동 설치
 
- - MobMixerSDKFramework.framework를 다운로드 받습니다.  
- - MobMixerSDKFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
+ - MobMixerFramework.framework를 다운로드 받습니다.  
+ - MobMixerFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
 
 ### 3) AdFitSDK 적용
 

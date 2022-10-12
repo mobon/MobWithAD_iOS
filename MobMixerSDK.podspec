@@ -20,15 +20,15 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-  s.homepage         = 'https://github.com/mobon/MobMixerSDK_IOS'
+  s.homepage         = 'https://github.com/mobon/MobMixerSDK_iOS'
   s.license          = { :type => 'MIT', :text => 'Copyright 2022 by Enliple'}
   s.summary          = 'MobMixer SDK IOS'
   s.author           = { 'mobon' => 'dhlee@enliple.com' }
-  s.source           = { :git => 'https://github.com/mobon/MobMixerSDK_IOS.git', :tag => s.version.to_s , :submodules => true}
+  s.source           = { :git => 'https://github.com/mobon/MobMixerSDK_iOS.git', :tag => s.version.to_s , :submodules => true}
   s.platform = :ios, "12.4"
   s.requires_arc = false
   
-  s.vendored_frameworks = 'MobMixerSDKFramework.xcframework'
+  s.vendored_frameworks = 'MobMixerFramework.xcframework'
   
   s.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   s.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
