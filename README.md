@@ -23,12 +23,8 @@ pod 'MobMixerSDK'
 ```
 
 ### 2) 수동 설치
-
  - MobMixerFramework.framework를 다운로드 받습니다.  
  - MobMixerFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
-
-### 3) AdFitSDK 적용
-
  - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
  - AdFitSDK 버전은 3.12.7에 최적화 되어 있습니다.
@@ -65,6 +61,8 @@ iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를
 ```
 
 ##### 2. ATTrackingManager 코드 적용
+MobMixerSDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
+다만 직접 권한을 얻도록 처리하고자 하는 경우 아래와 같이 제어를 하셔도 무방합니다.
 ```swift
 if #available(iOS 14, *) {
     ATTrackingManager.requestTrackingAuthorization { (status) in
@@ -138,7 +136,7 @@ class ViewController: UIViewController, MobMixerAdDelegate {
   .....
   let mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
                                        type: .BANNER_320x50,
-                                       bannerUnitId: "")
+                                       bannerUnitId: '발급받은 광고 UNIT ID')
   mobMixerView.adDelegate = self
   .....
 }

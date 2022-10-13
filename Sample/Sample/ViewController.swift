@@ -15,8 +15,9 @@ import AppTrackingTransparency
 
 class ViewController: UIViewController {
 
-    var mobMixerView:MobMixerAdView?
+    let UNIT_ID:String = ""
     
+    var mobMixerView:MobMixerAdView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         
         mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
                                            type: .BANNER_320x50,
-                                           bannerUnitId: "")
+                                           bannerUnitId: UNIT_ID)
         mobMixerView?.adDelegate = self
         
         self.view.addSubview(mobMixerView!)
@@ -50,14 +51,17 @@ class ViewController: UIViewController {
 extension ViewController: MobMixerAdDelegate {
 
     func mobMixerDidReceivedAd() {
-      // 광고 수신 성공
+        // 광고 수신 성공
+        print("광고 수신 성공")
     }
 
     func mobMixerDidFailToReceiveAd() {
-      // 광고 수신 실패
+        // 광고 수신 실패
+        print("광고 수신 실패")
     }
 
     func mobMixerClickedAd() {
-      // 광고 배너 클릭시 발생
+        // 광고 배너 클릭시 발생
+        print(" 광고 배너 클릭")
     }
 }
