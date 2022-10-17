@@ -2644,8 +2644,8 @@
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobMixerSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 227,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobMixerAdView.swift",
@@ -2849,6 +2849,13 @@
       "offset": 1917,
       "length": 6,
       "value": "\"list\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
+      "kind": "StringLiteral",
+      "offset": 2758,
+      "length": 7,
+      "value": "\"KAKAO\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Utils\/DHLogger.swift",
