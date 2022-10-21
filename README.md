@@ -35,7 +35,7 @@ pod 'MobWithAD'
 
 ### 1) iOS 9 ATS(App Transport Security) 처리
 iOS 9부터 ATS(App Transport Security) 기능이 기본적으로 활성화 되어 있으며, 암호화된 HTTPS 방식의 통신만 허용됩니다.  
-MobMixer SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 구현되어 있으나, 광고를 통해 노출되는 광고주 페이지는 HTTPS 방식을 지원하지 않을 수도 있습니다.  
+MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 구현되어 있으나, 광고를 통해 노출되는 광고주 페이지는 HTTPS 방식을 지원하지 않을 수도 있습니다.  
 따라서 아래의 사항을 앱 프로젝트의 Info.plist 파일에 적용하여 주시기 바랍니다.  
 
 ```swift
@@ -93,12 +93,12 @@ import AdFitSDK		    					// AdFitSDK 추가
 
 ```swift
 
-let mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
-                                       type: .BANNER_320x50,
-                                       bannerUnitId: "")
-self.view.addSubview(mobMixerView)
+let mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
+                                          type: .BANNER_320x50,
+                                          bannerUnitId: '발급받은 광고 UNIT ID')
+self.view.addSubview(mobWithAdView)
 
-mobMixerView.loadAd()
+mobWithAdView.loadAd()
 ```
 현재 지원하는 배너 타입은 아래와 같습니다.
 
@@ -127,12 +127,12 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: he
 
 
 
-### 4. MobMixerAdDelegate
+### 4. MobWithADViewDelegate
 
-광고 수신 성공 또는 실패, 광고 클릭등 상황 발생시 응답을 받고자 하는 경우, MobMixerAdDelegate 프로토콜을 아래와 같이 추가하여 적용하면 됩니다. 
+광고 수신 성공 또는 실패, 광고 클릭등 상황 발생시 응답을 받고자 하는 경우, MobWithADViewDelegate 프로토콜을 아래와 같이 추가하여 적용하면 됩니다. 
 
 ```swift
-class ViewController: UIViewController, MobMixerAdDelegate {
+class ViewController: UIViewController, MobWithADViewDelegate {
   .....
   let mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
                                           type: .BANNER_320x50,
