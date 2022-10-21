@@ -1,4 +1,4 @@
-# MobMixer iOS SDK
+# MobWithAD iOS SDK
 
 [![CI Status](https://img.shields.io/travis/mobon/MobWithAD.svg?style=flat)](https://travis-ci.org/mobon/MobWithAD)
 [![Version](https://img.shields.io/cocoapods/v/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
