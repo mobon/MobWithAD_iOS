@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MobMixerFramework
+import MobWithADSDKFramework
 import AdFitSDK
 
 import AdSupport
@@ -15,29 +15,33 @@ import AppTrackingTransparency
 
 class ViewController: UIViewController {
 
-    let UNIT_ID:String = ""
+    let mediaCode:String = ""
     
-    var mobMixerView:MobMixerAdView?
+    var mobWithAdView:MobWithAdView?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BizBoardTemplate.defaultEdgeInset = UIEdgeInsets.init(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
+        
         let width = UIScreen.main.bounds.width
-        let height = (view.frame.width - BizBoardTemplate.defaultEdgeInset.left + BizBoardTemplate.defaultEdgeInset.right) / (1029 / 222) + BizBoardTemplate.defaultEdgeInset.top + BizBoardTemplate.defaultEdgeInset.bottom
+        let height = (view.frame.width - (BizBoardTemplate.defaultEdgeInset.left + BizBoardTemplate.defaultEdgeInset.right)) / (1029 / 222) + BizBoardTemplate.defaultEdgeInset.top + BizBoardTemplate.defaultEdgeInset.bottom
+        print("\(BizBoardTemplate.defaultEdgeInset)")
 
         
-        mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
+        mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
                                            type: .BANNER_320x50,
-                                           bannerUnitId: UNIT_ID)
-        mobMixerView?.adDelegate = self
+                                           bannerUnitId: mediaCode)
+        mobWithAdView?.adDelegate = self
         
-        self.view.addSubview(mobMixerView!)
+        self.view.addSubview(mobWithAdView!)
         
         loadAd()
     }
     
     func loadAd() {
-        self.mobMixerView?.loadAd()
+        self.mobWithAdView?.loadAd()
     }
     
     
@@ -48,20 +52,17 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: MobMixerAdDelegate {
+extension ViewController: MobWithADViewDelegate {
 
-    func mobMixerDidReceivedAd() {
-        // 광고 수신 성공
-        print("광고 수신 성공")
+    func mobWithAdViewDidReceivedAd() {
+      // 광고 수신 성공
     }
 
-    func mobMixerDidFailToReceiveAd() {
-        // 광고 수신 실패
-        print("광고 수신 실패")
+    func mobWithAdViewDidFailToReceiveAd() {
+      // 광고 수신 실패
     }
 
-    func mobMixerClickedAd() {
-        // 광고 배너 클릭시 발생
-        print(" 광고 배너 클릭")
+    func mobWithAdViewClickedAd() {
+      // 광고 배너 클릭시 발생
     }
 }

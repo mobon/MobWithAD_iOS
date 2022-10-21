@@ -1,9 +1,9 @@
 # MobMixer iOS SDK
 
-[![CI Status](https://img.shields.io/travis/mobon/MobMixerSDK.svg?style=flat)](https://travis-ci.org/mobon/MobMixerSDK)
-[![Version](https://img.shields.io/cocoapods/v/MobMixerSDK.svg?style=flat)](https://cocoapods.org/pods/MobMixerSDK)
-[![License](https://img.shields.io/cocoapods/l/MobMixerSDK.svg?style=flat)](https://cocoapods.org/pods/MobMixerSDK)
-[![Platform](https://img.shields.io/cocoapods/p/MobMixerSDK.svg?style=flat)](https://cocoapods.org/pods/MobMixerSDK)
+[![CI Status](https://img.shields.io/travis/mobon/MobWithAD.svg?style=flat)](https://travis-ci.org/mobon/MobWithAD)
+[![Version](https://img.shields.io/cocoapods/v/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
+[![License](https://img.shields.io/cocoapods/l/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
+[![Platform](https://img.shields.io/cocoapods/p/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
 
 
 
@@ -12,19 +12,19 @@
 | Deployment Target: iOS 12.4 이상 |
 | 최신 버전의 Xcode (Xcode 13.0 / Swift 5.3) |
 
-MobMixerSDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobMixerSDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
+MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobWithAD SDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
 
 
 ## 1. SDK 설치하기
 ### 1) Cocoapods 사용하여 설치
-#### 프로젝트의 Podfile에 'MobMixerSDK' 를 추가합니다.
+#### 프로젝트의 Podfile에 'MobWithAD' 를 추가합니다.
 ```swift
-pod 'MobMixerSDK'
+pod 'MobWithAD'
 ```
 
 ### 2) 수동 설치
- - MobMixerFramework.framework를 다운로드 받습니다.  
- - MobMixerFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
+ - MobWithADSDKFramework.framework를 다운로드 받습니다.  
+ - MobWithADSDKFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
  - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
  - AdFitSDK 버전은 3.12.7에 최적화 되어 있습니다.
@@ -46,7 +46,7 @@ MobMixer SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
 </dict>
 ```
 ### 2) Objective-C 프로젝트
-Mobon SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 Mobon SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
+MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
 
 
@@ -61,18 +61,18 @@ iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를
 ```
 
 ##### 2. ATTrackingManager 코드 적용
-MobMixerSDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
+MobWithAD SDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
 다만 직접 권한을 얻도록 처리하고자 하는 경우 아래와 같이 제어를 하셔도 무방합니다.
 ```swift
 if #available(iOS 14, *) {
     ATTrackingManager.requestTrackingAuthorization { (status) in
         if status == .authorized {
-            bannerView.loadAd()
+            mobWithAdView.loadAd()
         }
     }
 }
 else {
-    bannerView.loadAd()
+    mobWithAdView.loadAd()
 }
 ```
 
@@ -83,8 +83,8 @@ else {
 ### 1. 프레임워크 import
 
 ```swift
-import MobMixerFramework		// 모비믹서 SDK 추가
-import AdFitSDK							// AdFitSDK 추가
+import MobWithADSDKFramework		// MobWithAD SDK 추가
+import AdFitSDK		    					// AdFitSDK 추가
 ```
 
 
@@ -118,9 +118,9 @@ enum MMBannerType: Int {
 let width = UIScreen.main.bounds.width
 let height = (view.frame.width - BizBoardTemplate.defaultEdgeInset.left + BizBoardTemplate.defaultEdgeInset.right) / (1029 / 222) + BizBoardTemplate.defaultEdgeInset.top + BizBoardTemplate.defaultEdgeInset.bottom
 
-mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
-                                   type: .BANNER_320x50,
-                                   bannerUnitId: "")
+mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
+                                          type: .BANNER_320x50,
+                                          bannerUnitId: '발급받은 광고 UNIT ID')
 ```
 
 광고뷰의 너비 및 높이 설정에 대해 더 자세한 사항은 [**AdFitSDK의 비즈보드 템플릿**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md) 의 [**광고뷰의 너비 및 높이 설정**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#-4-%EA%B4%91%EA%B3%A0%EB%B7%B0%EC%9D%98-%EB%84%88%EB%B9%84-%EB%B0%8F-%EB%86%92%EC%9D%B4-%EC%84%A4%EC%A0%95)과 해당 항목 아래 [**뷰 타입**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#2-%EB%B7%B0-%ED%83%80%EC%9E%85-uiview-2)을 참조하시면 됩니다.
@@ -134,10 +134,10 @@ mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: he
 ```swift
 class ViewController: UIViewController, MobMixerAdDelegate {
   .....
-  let mobMixerView = MobMixerAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
-                                       type: .BANNER_320x50,
-                                       bannerUnitId: '발급받은 광고 UNIT ID')
-  mobMixerView.adDelegate = self
+  let mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
+                                          type: .BANNER_320x50,
+                                          bannerUnitId: '발급받은 광고 UNIT ID')
+  mobWithAdView.adDelegate = self
   .....
 }
 ```
@@ -145,15 +145,15 @@ class ViewController: UIViewController, MobMixerAdDelegate {
 각 상황별 아래 Delegate메소드를 통해 필요한 조치를 취하시면 됩니다.
 
 ```swift
-func mobMixerDidReceivedAd() {
+func mobWithAdViewDidReceivedAd() {
   // 광고 수신 성공
 }
 
-func mobMixerDidFailToReceiveAd() {
+func mobWithAdViewDidFailToReceiveAd() {
   // 광고 수신 실패
 }
 
-func mobMixerClickedAd() {
+func mobWithAdViewClickedAd() {
   // 광고 배너 클릭시 발생
 }
 ```
