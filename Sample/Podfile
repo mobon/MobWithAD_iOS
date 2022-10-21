@@ -3,7 +3,7 @@ target 'Sample' do
 
   use_frameworks!
 
-  pod 'MobMixerSDK'
+  pod 'MobWithAD'
   
   
 end
