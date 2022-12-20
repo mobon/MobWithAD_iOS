@@ -205,34 +205,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Frameworks/AppLovinSDK.framework/AppLovinSDK</key>
-		<data>
-		BrJVohW0T2UneFSaDcf/ufVvTQU=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/Info.plist</key>
-		<data>
-		AE9y1bobzURwKFmnIaL+WeakCtM=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		PfdRX9OPmHRnLQ8+30gnVhJGLe0=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		ZtgRePSK8CVr4Zs+ZWmbTsrRRw8=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		JZK2DYVGFkqF/TcOz2lgHyCTrqs=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeResources</key>
-		<data>
-		vo6IhrviLAQi8kJ8X1jLeC59fEo=
-		</data>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		HjCTU8yOCJGebzpd99GQ46Nl/Ac=
-		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
 		37j2LIgq63ei9FJ/uAf7kWfK270=
@@ -562,55 +534,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/AppLovinSDK</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			J1YVw9SlFIZYARG3v1vh70yRseMB/OIg3+GEtxw8IoQ=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rXIaGJ5wyqAC02b3nCHJAOV3O2DT8N7Ig0IHmS9xQ4A=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HPM5u++402qRy/7L2KAuENp24E5cL1nR9+ktyXVjNwA=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rTWM8OfjkEn14iyujJBDEyjt6qbTh7s/K8nrXUeAD14=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ast53eUJA2Sacm5VGpwPJPJxuI4AXsZfEBZpe5uvaxM=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			p2eSWWni22Wdp1l16aZiHgML85m4pnEfq6dMMJ1nV5Y=
-			</data>
-		</dict>
-		<key>Frameworks/AppLovinSDK.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eCoMgQ0Abv/5mlSRyWWtSklXmEatbAgpHJ3W0erTXWA=
-			</data>
 		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<dict>

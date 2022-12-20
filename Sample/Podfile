@@ -5,5 +5,4 @@ target 'Sample' do
 
   pod 'MobWithAD'
   
-  
 end
