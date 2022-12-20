@@ -30,8 +30,9 @@ pod 'MobWithAD'
  - AdFitSDK 버전은 3.12.7에 최적화 되어 있습니다.
 
 ### 3) AppLovin 설정
-- 본 프레임워크는 AppLovin SDK(11.6.0)를 내부적으로 포함하고 있습니다.  따라서 별도로 AppLovin SDK를 추가할 필요는 없습니다. 
-- AppLovin을 사용하시는 경우 AppLovin의 [가이드 문서](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 참고하여 SDK Key값을 설정해 주셔야 합니다.  이외의 코드상에서 AppLovin의 초기 설정과 관련된 부분은 별도로 작업하실 필요는 없습니다.
+- 본 프레임워크는 AppLovin SDK(11.6.0)를 포함하고 있습니다.  따라서 별도로 AppLovin SDK를 추가할 필요는 없습니다. 
+- 따라서 AppLovin의 [가이드 문서](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 참고하여 SDK Key값을 설정해 주셔야 합니다.  
+  이외의 코드상에서 AppLovin의 초기 설정과 관련된 부분은 별도로 작업하실 필요는 없습니다.
 
 
 ## 2. 프로젝트 설정
