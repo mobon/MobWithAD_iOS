@@ -29,6 +29,9 @@ pod 'MobWithAD'
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
  - AdFitSDK 버전은 3.12.7에 최적화 되어 있습니다.
 
+### 3) AppLovin 설정
+- 본 프레임워크는 AppLovin SDK(11.6.0)를 내부적으로 포함하고 있습니다.  따라서 별도로 AppLovin SDK를 추가할 필요는 없습니다. 
+- AppLovin을 사용하시는 경우 AppLovin의 [가이드 문서](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 참고하여 SDK Key값을 설정해 주셔야 합니다.  이외의 코드상에서 AppLovin의 초기 설정과 관련된 부분은 별도로 작업하실 필요는 없습니다.
 
 
 ## 2. 프로젝트 설정
@@ -105,14 +108,24 @@ mobWithAdView.loadAd()
 ```swift
 enum MMBannerType: Int {
     case Banner320x50
+    case Banner300x250
 }
 ```
 
 
 
 ### 3. 광고뷰의 너비 및 높이 설정
+#### 1. 공통
+광고를 표시할 뷰의 사이즈는 아래와 같이 지정된 BannerType의 크기와 동일해야 합니다.
 
-본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 사용하도록 되어 있습니다. 따라서 아래와 같이 광고가 표시될 뷰의 크기를 지정해 줄 필요가 있습니다.
+``` swift
+mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: 320, height: 50),
+                                          type: .BANNER_320x50,
+                                          bannerUnitId: '발급받은 광고 UNIT ID')
+```
+
+#### 2. AdFit 비즈보드 이용시
+본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 사용하도록 되어 있습니다. 따라서 비즈보드를 사용하는 경우 아래와 같이 광고가 표시될 뷰의 크기를 지정해 줄 필요가 있습니다.
 
 ``` swift
 let width = UIScreen.main.bounds.width
