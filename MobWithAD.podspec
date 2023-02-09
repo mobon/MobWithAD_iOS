@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'A short description of MobWithAD_iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   
   
-  s.dependency 'AdFitSDK', '~> 3.12.7'
+  s.dependency 'AdFitSDK', '~> 3.12.22'
   s.dependency 'AppLovinSDK', '~> 11.6.0'
   
 end

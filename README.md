@@ -9,7 +9,7 @@
 
 |지원 환경|
 |---:|
-| Deployment Target: iOS 12.4 이상 |
+| Deployment Target: iOS 13.0 이상 |
 | 최신 버전의 Xcode (Xcode 13.0 / Swift 5.3) |
 
 MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobWithAD SDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
@@ -53,18 +53,23 @@ MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
 MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
 
+### 3) Other Linker Flag
+-all_load 
+-ObjC
+위 두가지를 추가해주셔야 합니다.
 
-### 3) ATT(App Tracking Transparency) framework 적용
+### 4) ATT(App Tracking Transparency) framework 적용
 iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를 반드시 적용해야 합니다.
 
-##### 1. 업데이이트 Info.plist
+
+####  (1) 업데이이트 Info.plist
 앱이 사용자 또는 장치를 추적하기 위해 데이터 권한을 요청하는 이유를 사용자에게 알리는 메세지를 추가해야 합니다.  
 ```swift
 <key> NSUserTrackingUsageDescription </key>
 <string> 맞춤형 광고 제공을 위해 사용자의 데이터가 사용됩니다. </string>
 ```
 
-##### 2. ATTrackingManager 코드 적용
+####  (2) ATTrackingManager 코드 적용
 MobWithAD SDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
 다만 직접 권한을 얻도록 처리하고자 하는 경우 아래와 같이 제어를 하셔도 무방합니다.
 ```swift
@@ -79,7 +84,6 @@ else {
     mobWithAdView.loadAd()
 }
 ```
-
 
 
 ## 3. 광고 요청
@@ -172,3 +176,24 @@ func mobWithAdViewClickedAd() {
 }
 ```
 
+## 4. MMNativeAdView
+MMNativeAdView 사용자가 직접 뷰를 설정하고, 설정된 뷰를 SDK에서 전달받아 각각의 view에 광고 데이터를 설정해주는 기능만 담당하는 AdView입니다.
+
+### 1) 광고 호출방법
+```swift
+
+var nativeAdView = MMNativeAdView(bannerUnitId: mediaCode,
+                                  adContainerView: adContainerView,
+                                  nativeAdRootView: nativeAdRootView,
+                                  adImageView: thumbnailImageView,
+                                  logoImageView: logoImageView,
+                                  titleLabel: titleLabel,
+                                  descriptionLabel: descLabel,
+                                  gotoSiteButton: goButton,
+                                  infoLogoImageView: infoLogoImageView)
+nativeAdView?.adDelegate = self
+nativeAdView?.loadAd()
+
+```
+
+설정된 View를 확인하지 못하는 경우 광고가 제대로 표시되지 않을 수 있으니 주의 바랍니다.

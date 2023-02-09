@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */; };
 		6AD5DF0828DD4EEE00CC6C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5DF0728DD4EEE00CC6C30 /* AppDelegate.swift */; };
 		6AD5DF0A28DD4EEE00CC6C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5DF0928DD4EEE00CC6C30 /* SceneDelegate.swift */; };
 		6AD5DF0C28DD4EEE00CC6C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5DF0B28DD4EEE00CC6C30 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		6568EAC9FA6E1CD321000D89 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdTestViewController.swift; sourceTree = "<group>"; };
 		6AD5DF0428DD4EEE00CC6C30 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD5DF0728DD4EEE00CC6C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AD5DF0928DD4EEE00CC6C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				6AD5DF0728DD4EEE00CC6C30 /* AppDelegate.swift */,
 				6AD5DF0928DD4EEE00CC6C30 /* SceneDelegate.swift */,
 				6AD5DF0B28DD4EEE00CC6C30 /* ViewController.swift */,
+				6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */,
 				6AD5DF0D28DD4EEE00CC6C30 /* Main.storyboard */,
 				6AD5DF1028DD4EF000CC6C30 /* Assets.xcassets */,
 				6AD5DF1228DD4EF000CC6C30 /* LaunchScreen.storyboard */,
@@ -117,7 +120,7 @@
 				6AD5DF0228DD4EEE00CC6C30 /* Resources */,
 				A73A69D36B94B5973406F95D /* [CP] Embed Pods Frameworks */,
 				6A402D4C2951A15A009441B6 /* Embed Frameworks */,
-				BFEAC7BE48613CBDABA5CAE4 /* [CP] Copy Pods Resources */,
+				13339F2471DD8D72A20957E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +178,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13339F2471DD8D72A20957E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		246313B65CA81CD44A9A7C40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,23 +234,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFEAC7BE48613CBDABA5CAE4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */,
 				6AD5DF0C28DD4EEE00CC6C30 /* ViewController.swift in Sources */,
 				6AD5DF0828DD4EEE00CC6C30 /* AppDelegate.swift in Sources */,
 				6AD5DF0A28DD4EEE00CC6C30 /* SceneDelegate.swift in Sources */,

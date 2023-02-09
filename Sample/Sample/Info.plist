@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AppLovinSdkKey</key>
+	<string>cyOmFZkTu_mdxFtH7wD1RVxBwy4Z_NEa6rF5czSgSulvk-DJfrF3-ymxsWhEgUQhDpC1dTwLKR3G8ntO-2uCaT</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
