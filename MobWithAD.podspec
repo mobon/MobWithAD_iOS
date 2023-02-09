@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   s.summary          = 'MobMixer SDK IOS'
   s.author           = { 'mobon' => 'dhlee@enliple.com' }
   s.source           = { :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => s.version.to_s , :submodules => true}
-  s.platform = :ios, "12.4"
+  s.platform = :ios, "13.0"
   s.requires_arc = false
   
   s.vendored_frameworks = 'MobWithADSDKFramework.xcframework'
