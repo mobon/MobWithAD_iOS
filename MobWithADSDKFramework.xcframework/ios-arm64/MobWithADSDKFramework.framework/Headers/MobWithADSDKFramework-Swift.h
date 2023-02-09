@@ -261,12 +261,69 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_300x250 = 1,
 };
 
+@protocol MobWithADViewDelegate;
+@class NSString;
+@class UIView;
+@class UIImageView;
+@class UILabel;
+@class UIButton;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
+@interface MMNativeAdView : NSObject
+@property (nonatomic, strong) id <MobWithADViewDelegate> _Nullable adDelegate;
+/// Native AD View
+/// Tag값의 설정이 필요한 View의 경우 Tag값을 설정하지 않았거나, 0인 경우 SDK 내부에서 임의의 Tag값을 설정한다. (미디에션기능을 지원하는 몇몇 SDK의 설정을 위함)
+/// \param bannerUnitId 발급받은 광고 지면 ID
+///
+/// \param adContainerView 광고 View를 표시할 View.  AppLovin을 미디에이션하기 위해서는 MANativeAdView를 만들어서 내려줘야 한다.
+///
+/// \param nativeAdRootView 커스텀된 메인 광고 View.  광고 Image, Title 라벨등 하위 뷰를 포함하는 상위 View
+///
+/// \param adImageView 광고 Image를 표시할 ImageView. Tag값 설정 필요
+///
+/// \param logoImageView 광고주  로고를 표시할 ImageView. Tag값 설정 필요
+///
+/// \param titleLabel 광고 Title을 표시할 Label. Tag값 설정 필요
+///
+/// \param descriptionLabel 광고에 대한 설명이 표시될 Label. Tag값 설정 필요
+///
+/// \param gotoSiteButton 광고 사이트 이동을 위한 Button. Tag값 설정 필요
+///
+/// \param infoLogoImageView 광고 Info Logo를 표시할 ImageView. Tag값 설정 필요
+///
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nonnull)adContainerView nativeAdRootView:(UIView * _Nonnull)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAd;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework))
+/// 제공하는 광고 클릭 영역이 아닌 다른 방법을 통해 광고 터치 동작을 수행하고자 하는 경우 광고 영역에 Touch 이벤트를 전달하기 위한 함수
+- (void)performAdClicked;
+@end
+
+@class MANativeAdView;
+@class MAAd;
+@class MAError;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <MANativeAdDelegate>
+- (void)didLoadNativeAd:(MANativeAdView * _Nullable)maxNativeAdView forAd:(MAAd * _Nonnull)ad;
+- (void)didFailToLoadNativeAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
+- (void)didClickNativeAd:(MAAd * _Nonnull)ad;
+- (void)didExpireNativeAd:(MAAd * _Nonnull)ad;
+@end
+
 
 /// MobMixerSDK 기본 관리 클래스
 SWIFT_CLASS("_TtC21MobWithADSDKFramework12MobWithADSDK")
 @interface MobWithADSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MobWithADSDK * _Nonnull standard;)
 + (MobWithADSDK * _Nonnull)standard SWIFT_WARN_UNUSED_RESULT;
+/// SDK 버전 정보를 반환한다
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
++ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -280,7 +337,6 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 @end
 
 @class NSCoder;
-@class NSString;
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
@@ -305,8 +361,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)nativeAdLoaderDidFailToReceiveAd:(AdFitNativeAdLoader * _Nonnull)nativeAdLoader error:(NSError * _Nonnull)error;
 @end
 
-@class MAAd;
-@class MAError;
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <MAAdViewAdDelegate>
 - (void)didLoadAd:(MAAd * _Nonnull)ad;
@@ -318,6 +372,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)didHideAd:(MAAd * _Nonnull)ad;
 - (void)didDisplayAd:(MAAd * _Nonnull)ad;
 @end
+
 
 
 

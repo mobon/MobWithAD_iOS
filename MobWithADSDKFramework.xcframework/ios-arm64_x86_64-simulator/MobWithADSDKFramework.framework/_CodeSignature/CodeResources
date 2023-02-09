@@ -205,73 +205,9 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Frameworks/libswiftAVFoundation.dylib</key>
-		<data>
-		DvBqsj2Agamv4g6DchlMwCJMJsM=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		K2JSgeh0Xag//YKIHwPVLtvlSG8=
-		</data>
-		<key>Frameworks/libswiftCoreAudio.dylib</key>
-		<data>
-		QyCHbrf/EGW/ztbqiBR99yYPK28=
-		</data>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<data>
-		JMVBYNwT3asmxOmwfAfCLEQtv7w=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		og4ECAL51U2jPJMz4wZfv30emDo=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		YFptn48umgSKrrnIsSfGJ61g8cA=
-		</data>
-		<key>Frameworks/libswiftCoreMedia.dylib</key>
-		<data>
-		gIWXKW3YhzytHJs/3LUSZ4Zh0UU=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		rfGL4akQxDceLviio/zCNr/DKuU=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		ZJJrG69QQRrdrlUPsTQK9K0QPOA=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		5QWk26azDY4tD0S+DXNTntc0hPw=
-		</data>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<data>
-		BR6GwLTf/pNVK8Pa84xC6a4flSg=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		sG2Dpu9c9pa2o2dntFgzGmm2ANo=
-		</data>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<data>
-		RFls//HXF/gbgt4/Kc8EgVj03ZY=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		1YDa0uQrd2lb5sdzBsjraux8+Wk=
-		</data>
-		<key>Frameworks/libswiftos.dylib</key>
-		<data>
-		sDoKWkQkRq8Fz6nDVCS1yAJLm0g=
-		</data>
-		<key>Frameworks/libswiftsimd.dylib</key>
-		<data>
-		bTquZkTRiZFmK8eK0bM18urEV60=
-		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		6IlwwbuGr0af+GSEGuCW2Jsofbc=
+		aHgQ9fpZ16OsJL7EpQEbpzh8jAs=
 		</data>
 		<key>Headers/MobWithADSDKFramework.h</key>
 		<data>
@@ -279,47 +215,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ccrpJ97wEhYf6vSY3Z7ZPsbiAqw=
+		jDmKoDgprn35xhRO7NT3ImOeYqU=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xwyhi/mJ2wlUCjPeNnr7DjMHyT0=
+		kbJAna6Tc2PAvdRnc0bakE5+1pg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+i13U3NS+cZmtlhhGY+aFQ+dc48=
+		W3dIBPHxJfU7BTKQMPXAfvFgvSQ=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		utqleOGVpAKAOt5sZu3L+pWhMtY=
+		MriA2JWUA4wWZJIJXiwQ1MVBFdc=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+i13U3NS+cZmtlhhGY+aFQ+dc48=
+		W3dIBPHxJfU7BTKQMPXAfvFgvSQ=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sg63KJJzJJBGU8LKWRPuRY8CXqw=
+		aK0pAS5oEIxBrTiIgus8wAyruII=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xwyhi/mJ2wlUCjPeNnr7DjMHyT0=
+		kbJAna6Tc2PAvdRnc0bakE5+1pg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BlY0Z7u6BMQKtcnOtSz1ho3CYqg=
+		MB6KfX3Cu0K/5x4x4umTMFplyTM=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GT5sMRZFyBU9a8k/g8ef+oB1SUA=
+		3b+edVRsFPPb9pMlV2w2z4V26RA=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BlY0Z7u6BMQKtcnOtSz1ho3CYqg=
+		MB6KfX3Cu0K/5x4x4umTMFplyTM=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ILl9WcsDx7y1uVtKufhaCAwvjto=
+		CWLKt69DzZByrFklag+xofh1YJ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -619,123 +555,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Frameworks/libswiftAVFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sA2cakcBR/Dl+hg+Y8wEcNjDDwAxjjGdTw2ns0VgAAU=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5dTCvNnqGG7Oj3KE5M3rjdcGgpJBEWMJf/kakV5Vs0M=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreAudio.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			i+NzKCiZn1xESXrbPCijxcLTtrssq0KMYSsKqX4eg/4=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			soZbs2fdlbxgX35FB36Vfbw2jzZ9+0A9hBtnRtjE26s=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WELaAiYYWiyGyDMlsXR+aCzuz2GVKxbqSWmJEJmxhF8=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/Cp9qjg50mC/PVJJa3Nu7Pl/q3zoYgd69cCWzO0AKbc=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreMedia.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wusaFSmwHzRSmvcOa6ea9g11vCLMflbBdwJ/cckgxgA=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2jm3nDwE4m6OIGk3zHHF909iWNwhEKmfQwLC5fja498=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PPxmUhjEtw9jwsF+9amezjcFla2NRuGYSSEJT/5/GDI=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sAIhEBc06KWAmlYkzF5zUFyyJPxU0sHlmJOKGDpaH8Y=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+3Jw7w/Lzob9axMp6vOHBVAjW4fyIp3FF8n+v0Apxtw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M960qRjdM/wZkF6x/pl99r0PxDyUCsiIS2Jybqom/kQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wXhhBhpy6Fy0UAAi0GjYAqQmf0zJQYm2G7bbQejS+do=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6IX5mvVVvXnxsAkJ+aR3SGCw5b/+fevntO3TcfAnLMs=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftos.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SQ8jFEHC8NFCdrL5j0Rmz+WKd3s3z+UYbxqEn0ETZu0=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftsimd.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CEWuqFsocmvBj+h94/GjLSw3uakaV+1fR35OqOqFugI=
-			</data>
-		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hzwl730RqoLbO9KyxTtx4Td7jNb9TMEOCPrqIz4+drc=
+			SvJTN5HtlcGzt1aKrM6ywwQDJEvEsdNBu81dPutRxU8=
 			</data>
 		</dict>
 		<key>Headers/MobWithADSDKFramework.h</key>
@@ -749,70 +573,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			USTrIh1lL0cXHIjl+0hUPBRWKMmXdosaDErMy6vZxAc=
+			Y9DHM9YmxG6bwU18N2paa4IbN3Lcf2+MojAeZSI9wpQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+6OxRb3mILbouZ8diQGDJCnDxGB36ZlZmz3hQllb6A=
+			qSHwh/PsgJrykaizoo/hMoVGmG/1w4O0RIG5KKYZNug=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zy1O6ADpzcF88gXA2CvGujmUQfEo7RCt5hRwHy7jKBU=
+			gfOU/two8MJGYpTLNta5Axxs9fhuhS4ISElA4YV/4pk=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+6OxRb3mILbouZ8diQGDJCnDxGB36ZlZmz3hQllb6A=
+			qSHwh/PsgJrykaizoo/hMoVGmG/1w4O0RIG5KKYZNug=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fGBwIGuLI01iIyjgsq8r+wKiK6K3AAhkv6eANWWYV6Y=
+			xY25LEraAIMU3Apng/Ao2A1BDlFSCUZ3qKcqUvg1YPw=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			USTrIh1lL0cXHIjl+0hUPBRWKMmXdosaDErMy6vZxAc=
+			Y9DHM9YmxG6bwU18N2paa4IbN3Lcf2+MojAeZSI9wpQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTnxV1lChoHnfvN+XRMNmuBUUEejPI/66+MtFuxs3Yw=
+			0d83QlNy/UgNcJEHpjwClCeKRKSuSJAqF2jmJLktjPs=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QqhMe14q4NKr/2Ip+O4F+D3AuVVuKELR6BSDUuT0Bbg=
+			9EGNAKwMS1JM0wd2DCb8o/6qHAMoR5gEnE5Tt85qwqU=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTnxV1lChoHnfvN+XRMNmuBUUEejPI/66+MtFuxs3Yw=
+			0d83QlNy/UgNcJEHpjwClCeKRKSuSJAqF2jmJLktjPs=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t7QehqsMl8GfI5dFREdje2W/rXiGyPRitUjr1U1eIyE=
+			X7zAZUzHDdvxjbML+chc7F0Y+F8ecjU6kZfdcgCGHow=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobWithADSDKFramework
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobWithADSDKFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdFitSDK
 import AdSupport
@@ -22,8 +22,8 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc public class MobWithADSDK : ObjectiveC.NSObject {
   @objc public static let standard: MobWithADSDKFramework.MobWithADSDK
-  public static var version: Swift.String {
-    get
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
   }
   @objc override dynamic public init()
   @objc deinit
@@ -61,6 +61,23 @@ extension MobWithADSDKFramework.MobWithAdView : AppLovinSDK.MAAdViewAdDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func didCollapse(_ ad: AppLovinSDK.MAAd)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func didHide(_ ad: AppLovinSDK.MAAd)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func didDisplay(_ ad: AppLovinSDK.MAAd)
+}
+@_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
+  public var bannerUnitID: Swift.String
+  @objc public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
+  @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView, nativeAdRootView: UIKit.UIView, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
+  @objc public func loadAd()
+  public func showNextAd()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MMNativeAdView {
+  @objc dynamic public func performAdClicked()
+}
+extension MobWithADSDKFramework.MMNativeAdView : AppLovinSDK.MANativeAdDelegate {
+  @objc dynamic public func didLoadNativeAd(_ maxNativeAdView: AppLovinSDK.MANativeAdView?, for ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didFailToLoadNativeAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
+  @objc dynamic public func didClickNativeAd(_ ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didExpireNativeAd(_ ad: AppLovinSDK.MAAd)
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String
