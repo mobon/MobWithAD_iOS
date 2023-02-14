@@ -27,7 +27,7 @@ pod 'MobWithAD'
  - MobWithADSDKFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
  - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
- - AdFitSDK 버전은 3.12.7에 최적화 되어 있습니다.
+ - AdFitSDK 버전은 3.12.22에 최적화 되어 있습니다.
 
 ### 3) AppLovin 설정
 - 본 프레임워크는 AppLovin SDK(11.6.0)를 포함하고 있습니다.  따라서 별도로 AppLovin SDK를 추가할 필요는 없습니다. 
@@ -134,7 +134,7 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: 320, height: 50),
 
 ``` swift
 let width = UIScreen.main.bounds.width
-let height = (view.frame.width - BizBoardTemplate.defaultEdgeInset.left + BizBoardTemplate.defaultEdgeInset.right) / (1029 / 222) + BizBoardTemplate.defaultEdgeInset.top + BizBoardTemplate.defaultEdgeInset.bottom
+let height = (view.frame.width - BizBoardTemplate.defaultEdgeInset.left + BizBoardTemplate.defaultEdgeInset.right) / (1029 / 258) + BizBoardTemplate.defaultEdgeInset.top + BizBoardTemplate.defaultEdgeInset.bottom
 
 mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: height),
                                           type: .BANNER_320x50,
