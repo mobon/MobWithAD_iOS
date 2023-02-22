@@ -291,7 +291,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 /// \param infoLogoImageView 광고 Info Logo를 표시할 ImageView. Tag값 설정 필요
 ///
-- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nonnull)adContainerView nativeAdRootView:(UIView * _Nonnull)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -372,6 +372,40 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)didHideAd:(MAAd * _Nonnull)ad;
 - (void)didDisplayAd:(MAAd * _Nonnull)ad;
 @end
+
+@protocol MobWithNativeAdLoaderDelegate;
+@class NSBundle;
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithNativeAdLoader")
+@interface MobWithNativeAdLoader : NSObject
+@property (nonatomic, strong) id <MobWithNativeAdLoaderDelegate> _Nullable nativeAdLoaderDelegate;
+- (nonnull instancetype)initWithUnitIds:(NSArray<NSString *> * _Nonnull)unitIds nibName:(NSString * _Nonnull)nibName bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isLoadedAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFailLoadAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)loadAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)retryLoadAdAt:(NSIndexPath * _Nonnull)indexPath;
+- (void)destoryAds;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
+@protocol MobWithNativeAdLoaderDelegate
+@optional
+- (void)mobWithNativeAdViewClickedAd;
+- (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+@end
+
+
+@interface MobWithNativeAdLoader (SWIFT_EXTENSION(MobWithADSDKFramework)) <MobWithNativeAdLoaderDelegate>
+- (void)mobWithNativeAdViewClickedAd;
+- (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+@end
+
 
 
 
@@ -677,7 +711,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 /// \param infoLogoImageView 광고 Info Logo를 표시할 ImageView. Tag값 설정 필요
 ///
-- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nonnull)adContainerView nativeAdRootView:(UIView * _Nonnull)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -758,6 +792,40 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)didHideAd:(MAAd * _Nonnull)ad;
 - (void)didDisplayAd:(MAAd * _Nonnull)ad;
 @end
+
+@protocol MobWithNativeAdLoaderDelegate;
+@class NSBundle;
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithNativeAdLoader")
+@interface MobWithNativeAdLoader : NSObject
+@property (nonatomic, strong) id <MobWithNativeAdLoaderDelegate> _Nullable nativeAdLoaderDelegate;
+- (nonnull instancetype)initWithUnitIds:(NSArray<NSString *> * _Nonnull)unitIds nibName:(NSString * _Nonnull)nibName bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isLoadedAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFailLoadAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)loadAdAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)retryLoadAdAt:(NSIndexPath * _Nonnull)indexPath;
+- (void)destoryAds;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
+@protocol MobWithNativeAdLoaderDelegate
+@optional
+- (void)mobWithNativeAdViewClickedAd;
+- (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+@end
+
+
+@interface MobWithNativeAdLoader (SWIFT_EXTENSION(MobWithADSDKFramework)) <MobWithNativeAdLoaderDelegate>
+- (void)mobWithNativeAdViewClickedAd;
+- (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
+- (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
+@end
+
 
 
 

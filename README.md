@@ -12,8 +12,10 @@
 | Deployment Target: iOS 13.0 이상 |
 | 최신 버전의 Xcode (Xcode 13.0 / Swift 5.3) |
 
-MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobWithAD SDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
+<br><br>
 
+MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobWithAD SDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
+<br><br>
 
 ## 1. SDK 설치하기
 ### 1) Cocoapods 사용하여 설치
@@ -34,8 +36,10 @@ pod 'MobWithAD'
 - 따라서 AppLovin의 [가이드 문서](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 참고하여 SDK Key값을 설정해 주셔야 합니다.  
   이외의 코드상에서 AppLovin의 초기 설정과 관련된 부분은 별도로 작업하실 필요는 없습니다.
 
-
+<br><br>
 ## 2. 프로젝트 설정
+
+<br>
 
 ### 1) iOS 9 ATS(App Transport Security) 처리
 iOS 9부터 ATS(App Transport Security) 기능이 기본적으로 활성화 되어 있으며, 암호화된 HTTPS 방식의 통신만 허용됩니다.  
@@ -49,18 +53,24 @@ MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
     <true/>
 </dict>
 ```
+<br>
+
 ### 2) Objective-C 프로젝트
 MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
+<br>
 
 ### 3) Other Linker Flag
--all_load 
--ObjC
+-all_load  
+-ObjC  
 위 두가지를 추가해주셔야 합니다.
+
+<br>
 
 ### 4) ATT(App Tracking Transparency) framework 적용
 iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를 반드시 적용해야 합니다.
 
+<br>
 
 ####  (1) 업데이이트 Info.plist
 앱이 사용자 또는 장치를 추적하기 위해 데이터 권한을 요청하는 이유를 사용자에게 알리는 메세지를 추가해야 합니다.  
@@ -68,6 +78,7 @@ iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를
 <key> NSUserTrackingUsageDescription </key>
 <string> 맞춤형 광고 제공을 위해 사용자의 데이터가 사용됩니다. </string>
 ```
+<br>
 
 ####  (2) ATTrackingManager 코드 적용
 MobWithAD SDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
@@ -84,7 +95,7 @@ else {
     mobWithAdView.loadAd()
 }
 ```
-
+<br><br>
 
 ## 3. 광고 요청
 
@@ -94,7 +105,7 @@ else {
 import MobWithADSDKFramework		// MobWithAD SDK 추가
 import AdFitSDK		    					// AdFitSDK 추가
 ```
-
+<br>
 
 
 ### 2. 광고 요청 및 적용
@@ -116,8 +127,7 @@ enum MMBannerType: Int {
     case Banner300x250
 }
 ```
-
-
+<br>
 
 ### 3. 광고뷰의 너비 및 높이 설정
 #### 1. 공통
@@ -143,7 +153,7 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: he
 
 광고뷰의 너비 및 높이 설정에 대해 더 자세한 사항은 [**AdFitSDK의 비즈보드 템플릿**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md) 의 [**광고뷰의 너비 및 높이 설정**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#-4-%EA%B4%91%EA%B3%A0%EB%B7%B0%EC%9D%98-%EB%84%88%EB%B9%84-%EB%B0%8F-%EB%86%92%EC%9D%B4-%EC%84%A4%EC%A0%95)과 해당 항목 아래 [**뷰 타입**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#2-%EB%B7%B0-%ED%83%80%EC%9E%85-uiview-2)을 참조하시면 됩니다.
 
-
+<br>
 
 ### 4. MobWithADViewDelegate
 
@@ -176,8 +186,10 @@ func mobWithAdViewClickedAd() {
 }
 ```
 
+<br><br>
+
 ## 4. MMNativeAdView
-MMNativeAdView 사용자가 직접 뷰를 설정하고, 설정된 뷰를 SDK에서 전달받아 각각의 view에 광고 데이터를 설정해주는 기능만 담당하는 AdView입니다.
+MMNativeAdView 사용자가 직접 뷰를 설정하고, 설정된 뷰를 SDK에서 전달받아 각각의 view에 광고 데이터를 설정해주는 기능만 담당하는 AdView입니다.  설정된 View를 확인하지 못하는 경우 광고가 제대로 표시되지 않을 수 있으니 주의 바랍니다.
 
 ### 1) 광고 호출방법
 ```swift
@@ -203,5 +215,126 @@ nativeAdView?.performAdClicked()
 ```
 위 메소드를 호출하여 광고를 클릭한 것과 동일한 효과를 줄 수 있습니다.
 
+<br><br>
 
-설정된 View를 확인하지 못하는 경우 광고가 제대로 표시되지 않을 수 있으니 주의 바랍니다.
+## 5. MobWithNativeAdLoader 광고 예제
+MobWithNativeAdLoader는 MMNativeAdView를 리스트 타입의 뷰에 노출 하고자 할 때 적용 가능한 기능 입니다.
+
+<br>
+
+### 1. 광고 로드 방법
+
+먼저 광고를 표시하기 위한 View를 생성합니다.  이때 해당 Views는 MobwithNativeAdViewRender를 extension하여 각 메소드들을 정의해 주어야 하며, AppLovin을 사용하시는 경우 MANativeAdView를 상속 받은 상태여야 합니다.
+
+```swift
+class NativeAdLoaderView: MANativeAdView {
+    static let needHeight:CGFloat = 347.0
+    
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var infoLogoImageView: UIImageView!
+    
+    @IBOutlet weak var adTitleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var goButton: UIButton!
+        
+}
+
+extension NativeAdLoaderView: MobwithNativeAdViewRender {
+    
+    func getAdImageView() -> UIImageView? {
+        return thumbnailImageView
+    }
+    
+    func getAdLogoImageView() -> UIImageView? {
+        return logoImageView
+    }
+    
+    func getAdTitleLabel() -> UILabel? {
+        return adTitleLabel
+    }
+    
+    func getAdDescriptionLabel() -> UILabel? {
+        return descLabel
+    }
+    
+    func getGoToSiteButton() -> UIButton? {
+        return goButton
+    }
+    
+    func getInfoLogoImageView() -> UIImageView? {
+        return infoLogoImageView
+    }
+    
+}
+```
+<br>
+
+다음으로 광고를 불러오기 위해 MobWithNativeAdLoader는를 생성 및 초기화를 진행해 줍니다.  여기에 위에서 생성해 두었던 광고를 표시할 View를 넘겨 주도록 합니다.
+```swift
+
+//MobwithNativeAdLoader 생성
+let mediaCodes:[String] = [ "광고 Unit ID" ] //1개 이상의 Unit를 설정해 주어야 합니다.
+var nativeAdLoader = MobWithNativeAdLoader(unitIds: mediaCodes, nibName: "NativeAdLoaderView", bundle: nil)
+nativeAdLoader.nativeAdLoaderDelegate = self
+//광고를 표시할 View 설정
+adLoader.setNativeADView(this,
+      R.layout.custom_native_ad_view,
+      R.id.mediaContainerView,
+      R.id.imageViewAD,
+      R.id.imageViewLogo,
+      R.id.textViewTitle,
+      R.id.textViewDesc,
+      R.id.buttonGo,
+      R.id.infoViewLayout,
+      R.id.imageViewInfo);
+
+
+.......
+
+```
+<br> 
+
+이후 UITableView등 리스트 타입 View에서 아래와 같이 광고View를 받아와서 화면에 노출되도록 합니다.
+
+```swift
+
+...
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  if (indexPath.row % 5 == 4) {
+    let cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "NativeADCellID", for: indexPath)
+    
+    // loadAD()를 호출하면 이미 로드된 광고가 있거나 이미 생성된 뷰가 있는 경우 해당 View를 전달해 줍니다.
+    // isLoadedAd()를 호출하면 광고를 받아온 경우 true를 반환합니다. 해당 값을 확인후 뷰에 추가하는것을 권장드립니다.
+    if let adView = nativeAdLoader.loadAd(At: indexPath), nativeAdLoader.isLoadedAd(At: indexPath) {
+      cell?.addSubview(adView)
+                
+      adView.translatesAutoresizingMaskIntoConstraints = false
+      cell?.widthAnchor.constraint(equalTo: adView.widthAnchor).isActive = true
+      cell?.heightAnchor.constraint(equalTo: adView.heightAnchor).isActive = true
+      cell?.centerXAnchor.constraint(equalTo: adView.centerXAnchor).isActive = true
+      cell?.centerYAnchor.constraint(equalTo: adView.centerYAnchor).isActive = true
+    }
+    else {
+      if nativeAdLoader.isFailLoadAd(At: indexPath) {
+        nativeAdLoader.retryLoadAd(At: indexPath)
+      }
+                
+      cell?.subviews.forEach({ view in
+        (view as? NativeAdLoaderView)?.removeFromSuperview()
+      })
+    }
+
+    return cell ?? UITableViewCell.init()
+  }
+  else {
+    ...
+  }
+
+...
+
+```
+* 더 자세한 사항은 Sample앱을 참고 하시기 바랍니다.
+<br>
+<br>

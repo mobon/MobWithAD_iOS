@@ -107,7 +107,11 @@ extension ViewController {
         self.present(vc, animated: true)
     }
     
-    
+    @IBAction func clickedTestNativeADLoaderButton(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NativeAdLoaderTestViewController")
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true)
+    }
     
     @objc func tappedIdfaLabel(gesture: UITapGestureRecognizer) {
         UIPasteboard.general.string = self.idfaLabel.text

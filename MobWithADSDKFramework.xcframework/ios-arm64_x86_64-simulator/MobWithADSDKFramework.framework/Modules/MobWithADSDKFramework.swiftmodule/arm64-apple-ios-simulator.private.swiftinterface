@@ -15,16 +15,37 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+@objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
+  @objc public var nativeAdLoaderDelegate: MobWithADSDKFramework.MobWithNativeAdLoaderDelegate?
+  @objc public init(unitIds: [Swift.String], nibName: Swift.String, bundle: Foundation.Bundle?)
+  @objc public func isLoadedAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc public func isFailLoadAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc public func loadAd(At indexPath: Foundation.IndexPath) -> UIKit.UIView?
+  @objc public func retryLoadAd(At indexPath: Foundation.IndexPath)
+  @objc public func destoryAds()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.MobWithNativeAdLoaderDelegate {
+  @objc dynamic public func mobWithNativeAdViewClickedAd()
+  @objc dynamic public func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
+  @objc dynamic public func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
+}
 @objc public protocol MobWithADViewDelegate {
   @objc optional func mobWithAdViewClickedAd()
   @objc optional func mobWithAdViewDidReceivedAd()
   @objc optional func mobWithAdViewDidFailToReceiveAd()
+}
+@objc public protocol MobWithNativeAdLoaderDelegate {
+  @objc optional func mobWithNativeAdViewClickedAd()
+  @objc optional func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
+  @objc optional func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
 }
 @_inheritsConvenienceInitializers @objc public class MobWithADSDK : ObjectiveC.NSObject {
   @objc public static let standard: MobWithADSDKFramework.MobWithADSDK
   @objc public static var sdkVersion: Swift.String {
     @objc get
   }
+  public func initSDK()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -65,7 +86,7 @@ extension MobWithADSDKFramework.MobWithAdView : AppLovinSDK.MAAdViewAdDelegate {
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
   @objc public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
-  @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView, nativeAdRootView: UIKit.UIView, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
+  @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
   @objc public func loadAd()
   public func showNextAd()
   @objc deinit
@@ -90,6 +111,17 @@ extension Swift.String {
   public func image(width: CoreFoundation.CGFloat = 40, height: CoreFoundation.CGFloat = 40) -> UIKit.UIImage?
   public func toFormattedCurrency() -> Swift.String
   public func isValidPCode() -> Swift.Bool
+}
+public protocol MobwithNativeAdViewRender {
+  func getAdImageView() -> UIKit.UIImageView?
+  func getAdLogoImageView() -> UIKit.UIImageView?
+  func getAdTitleLabel() -> UIKit.UILabel?
+  func getAdDescriptionLabel() -> UIKit.UILabel?
+  func getGoToSiteButton() -> UIKit.UIButton?
+  func getInfoLogoImageView() -> UIKit.UIImageView?
+}
+@_hasMissingDesignatedInitializers public class MobwithNativeAdView {
+  @objc deinit
 }
 extension Swift.Dictionary {
   public static func from(jsonString: Swift.String) -> Swift.Dictionary<Key, Value>
