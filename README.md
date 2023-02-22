@@ -107,8 +107,14 @@ import AdFitSDK		    					// AdFitSDK 추가
 ```
 <br>
 
+### 2. SDK 초기화
+```swift
+MobWithADSDK.standard.initSDK()
+```
 
-### 2. 광고 요청 및 적용
+<br>
+
+### 3. 광고 요청 및 적용
 
 ```swift
 
@@ -129,7 +135,7 @@ enum MMBannerType: Int {
 ```
 <br>
 
-### 3. 광고뷰의 너비 및 높이 설정
+### 4. 광고뷰의 너비 및 높이 설정
 #### 1. 공통
 광고를 표시할 뷰의 사이즈는 아래와 같이 지정된 BannerType의 크기와 동일해야 합니다.
 
@@ -155,7 +161,7 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: he
 
 <br>
 
-### 4. MobWithADViewDelegate
+### 5. MobWithADViewDelegate
 
 광고 수신 성공 또는 실패, 광고 클릭등 상황 발생시 응답을 받고자 하는 경우, MobWithADViewDelegate 프로토콜을 아래와 같이 추가하여 적용하면 됩니다. 
 
