@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdFitSDK
 import AdSupport
-import AppLovinSDK
 import AppTrackingTransparency
 import CoreTelephony
 import Foundation
@@ -73,16 +72,6 @@ extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDele
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: Swift.Error)
 }
-extension MobWithADSDKFramework.MobWithAdView : AppLovinSDK.MAAdViewAdDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didLoad(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didClick(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didExpand(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didCollapse(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didHide(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didDisplay(_ ad: AppLovinSDK.MAAd)
-}
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
   @objc public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
@@ -93,12 +82,6 @@ extension MobWithADSDKFramework.MobWithAdView : AppLovinSDK.MAAdViewAdDelegate {
 }
 extension MobWithADSDKFramework.MMNativeAdView {
   @objc dynamic public func performAdClicked()
-}
-extension MobWithADSDKFramework.MMNativeAdView : AppLovinSDK.MANativeAdDelegate {
-  @objc dynamic public func didLoadNativeAd(_ maxNativeAdView: AppLovinSDK.MANativeAdView?, for ad: AppLovinSDK.MAAd)
-  @objc dynamic public func didFailToLoadNativeAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @objc dynamic public func didClickNativeAd(_ ad: AppLovinSDK.MAAd)
-  @objc dynamic public func didExpireNativeAd(_ ad: AppLovinSDK.MAAd)
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String

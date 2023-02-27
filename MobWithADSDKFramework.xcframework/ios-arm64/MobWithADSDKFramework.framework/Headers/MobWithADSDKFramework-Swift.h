@@ -231,7 +231,6 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AdFitSDK;
-@import AppLovinSDK;
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
@@ -304,17 +303,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (void)performAdClicked;
 @end
 
-@class MANativeAdView;
-@class MAAd;
-@class MAError;
-
-@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <MANativeAdDelegate>
-- (void)didLoadNativeAd:(MANativeAdView * _Nullable)maxNativeAdView forAd:(MAAd * _Nonnull)ad;
-- (void)didFailToLoadNativeAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
-- (void)didClickNativeAd:(MAAd * _Nonnull)ad;
-- (void)didExpireNativeAd:(MAAd * _Nonnull)ad;
-@end
-
 
 /// MobMixerSDK 기본 관리 클래스
 SWIFT_CLASS("_TtC21MobWithADSDKFramework12MobWithADSDK")
@@ -359,18 +347,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)nativeAdLoaderDidReceiveAd:(AdFitNativeAd * _Nonnull)nativeAd;
 - (void)nativeAdLoaderDidReceiveAds:(NSArray<AdFitNativeAd *> * _Nonnull)nativeAds;
 - (void)nativeAdLoaderDidFailToReceiveAd:(AdFitNativeAdLoader * _Nonnull)nativeAdLoader error:(NSError * _Nonnull)error;
-@end
-
-
-@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <MAAdViewAdDelegate>
-- (void)didLoadAd:(MAAd * _Nonnull)ad;
-- (void)didClickAd:(MAAd * _Nonnull)ad;
-- (void)didFailToLoadAdForAdUnitIdentifier:(NSString * _Nonnull)adUnitIdentifier withError:(MAError * _Nonnull)error;
-- (void)didFailToDisplayAd:(MAAd * _Nonnull)ad withError:(MAError * _Nonnull)error;
-- (void)didExpandAd:(MAAd * _Nonnull)ad;
-- (void)didCollapseAd:(MAAd * _Nonnull)ad;
-- (void)didHideAd:(MAAd * _Nonnull)ad;
-- (void)didDisplayAd:(MAAd * _Nonnull)ad;
 @end
 
 @protocol MobWithNativeAdLoaderDelegate;

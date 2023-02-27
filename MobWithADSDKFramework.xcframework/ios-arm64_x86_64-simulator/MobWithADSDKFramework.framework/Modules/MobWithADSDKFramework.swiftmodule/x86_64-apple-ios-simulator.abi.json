@@ -62,13 +62,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MobWithNativeAdLoader",
         "printedName": "MobWithNativeAdLoader",
@@ -591,6 +584,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -624,16 +627,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
@@ -946,13 +939,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MobWithADSDK",
         "printedName": "MobWithADSDK",
@@ -1217,13 +1203,6 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MMBannerType",
         "printedName": "MMBannerType",
@@ -1389,7 +1368,8 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -1856,267 +1836,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didLoad",
-            "printedName": "didLoad(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didLoadAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC7didLoadyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didLoadAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClick",
-            "printedName": "didClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didClickAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC8didClickyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didClickAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFailToLoadAd",
-            "printedName": "didFailToLoadAd(forAdUnitIdentifier:withError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAError",
-                "printedName": "AppLovinSDK.MAError",
-                "usr": "c:objc(cs)MAError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didFailToLoadAdForAdUnitIdentifier:withError:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC013didFailToLoadD003forD14UnitIdentifier9withErrorySS_So7MAErrorCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToLoadAdForAdUnitIdentifier:withError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFail",
-            "printedName": "didFail(toDisplay:withError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAError",
-                "printedName": "AppLovinSDK.MAError",
-                "usr": "c:objc(cs)MAError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didFailToDisplayAd:withError:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC7didFail9toDisplay9withErrorySo4MAAdC_So7MAErrorCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToDisplayAd:withError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didExpand",
-            "printedName": "didExpand(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didExpandAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC9didExpandyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didExpandAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didCollapse",
-            "printedName": "didCollapse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didCollapseAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC11didCollapseyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didCollapseAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didHide",
-            "printedName": "didHide(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didHideAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC7didHideyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didHideAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didDisplay",
-            "printedName": "didDisplay(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didDisplayAd:",
-            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC10didDisplayyySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didDisplayAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2244,13 +1963,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MobWithADSDKFramework"
       },
       {
         "kind": "TypeDecl",
@@ -2692,146 +2404,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didLoadNativeAd",
-            "printedName": "didLoadNativeAd(_:for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AppLovinSDK.MANativeAdView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MANativeAdView",
-                    "printedName": "AppLovinSDK.MANativeAdView",
-                    "usr": "c:objc(cs)MANativeAdView"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didLoadNativeAd:forAd:",
-            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC013didLoadNativeE0_3forySo08MANativeeF0CSg_So4MAAdCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didLoadNativeAd:forAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFailToLoadNativeAd",
-            "printedName": "didFailToLoadNativeAd(forAdUnitIdentifier:withError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAError",
-                "printedName": "AppLovinSDK.MAError",
-                "usr": "c:objc(cs)MAError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didFailToLoadNativeAdForAdUnitIdentifier:withError:",
-            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC019didFailToLoadNativeE003forE14UnitIdentifier9withErrorySS_So7MAErrorCtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToLoadNativeAdForAdUnitIdentifier:withError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClickNativeAd",
-            "printedName": "didClickNativeAd(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didClickNativeAd:",
-            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC014didClickNativeE0yySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didClickNativeAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didExpireNativeAd",
-            "printedName": "didExpireNativeAd(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didExpireNativeAd:",
-            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC015didExpireNativeE0yySo4MAAdCF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didExpireNativeAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2840,7 +2412,8 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -5808,21 +5381,21 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/ADLoader\/MobWithNativeAdLoader.swift",
       "kind": "Array",
-      "offset": 401,
+      "offset": 403,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/ADLoader\/MobWithNativeAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 446,
+      "offset": 448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/ADLoader\/MobWithNativeAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 267,
       "length": 21,
       "value": "\"MobWithADSDKFramework.MobWithNativeAdLoader\""
     },
@@ -6102,21 +5675,21 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 252,
+      "offset": 254,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 289,
+      "offset": 291,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 422,
+      "offset": 424,
       "length": 5,
       "value": "false"
     },
@@ -6165,98 +5738,98 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 225,
+      "offset": 227,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 225,
+      "offset": 227,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 587,
+      "offset": 589,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 720,
+      "offset": 722,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 787,
+      "offset": 789,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
+      "offset": 943,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1047,
+      "offset": 1049,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 890,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1309,
+      "offset": 1311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1337,
+      "offset": 1339,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1505,
+      "offset": 1507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1557,
+      "offset": 1559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 463,
+      "offset": 465,
       "length": 13,
       "value": "\"MobWithADSDKFramework.MobWithAdView\""
     },
@@ -6277,84 +5850,84 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 253,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 386,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 451,
+      "offset": 453,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 605,
+      "offset": 607,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
+      "offset": 713,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 552,
+      "offset": 554,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 1022,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1048,
+      "offset": 1050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1255,
+      "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1304,
+      "offset": 1306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1356,
+      "offset": 1358,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 151,
+      "offset": 153,
       "length": 14,
       "value": "\"MobWithADSDKFramework.MMNativeAdView\""
     },
@@ -6403,140 +5976,140 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 389,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 421,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1051,
+      "offset": 456,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 486,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 389,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 421,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1051,
+      "offset": 456,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 486,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1198,
       "length": 16,
       "value": "\"advrtsPrdtCode\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1833,
+      "offset": 1238,
       "length": 9,
       "value": "\"siteurl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1277,
       "length": 15,
       "value": "\"mediaScriptNo\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1319,
       "length": 12,
       "value": "\"trgtTpCode\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 1359,
       "length": 13,
       "value": "\"mediaSiteNo\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 1393,
       "length": 6,
       "value": "\"list\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1198,
       "length": 16,
       "value": "\"advrtsPrdtCode\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1833,
+      "offset": 1238,
       "length": 9,
       "value": "\"siteurl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1277,
       "length": 15,
       "value": "\"mediaScriptNo\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1319,
       "length": 12,
       "value": "\"trgtTpCode\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 1359,
       "length": 13,
       "value": "\"mediaSiteNo\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/MobMixSortListModel.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 1393,
       "length": 6,
       "value": "\"list\""
     },
