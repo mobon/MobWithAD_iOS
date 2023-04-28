@@ -6,10 +6,9 @@
 //
 
 import UIKit
-import AppLovinSDK
 import MobWithADSDKFramework
 
-class NativeAdLoaderView: MANativeAdView {
+class NativeAdLoaderView: UIView {
     static let needHeight:CGFloat = 347.0
     
     @IBOutlet weak var thumbnailImageView: UIImageView!

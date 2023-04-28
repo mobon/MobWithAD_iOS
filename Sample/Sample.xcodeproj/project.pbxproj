@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8EE61329D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */; };
+		6A8EE61429D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A8EE61729D53C8100FCE0ED /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */; };
 		6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */; };
 		6AACD01E29A5BFDC00C1A6DA /* NativeAdListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AACD01929A5BFDC00C1A6DA /* NativeAdListCell.xib */; };
 		6AACD01F29A5BFDC00C1A6DA /* NativeAdListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD01A29A5BFDC00C1A6DA /* NativeAdListCell.swift */; };
@@ -19,7 +22,6 @@
 		6AD5DF0F28DD4EEE00CC6C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF0D28DD4EEE00CC6C30 /* Main.storyboard */; };
 		6AD5DF1128DD4EF000CC6C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF1028DD4EF000CC6C30 /* Assets.xcassets */; };
 		6AD5DF1428DD4EF000CC6C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF1228DD4EF000CC6C30 /* LaunchScreen.storyboard */; };
-		FB7D2D046FDB08EF6AD35CBB /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6A8EE61429D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		6568EAC9FA6E1CD321000D89 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithADSDKFramework.xcframework; path = ../MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
 		6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdTestViewController.swift; sourceTree = "<group>"; };
 		6AACD01929A5BFDC00C1A6DA /* NativeAdListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdListCell.xib; sourceTree = "<group>"; };
 		6AACD01A29A5BFDC00C1A6DA /* NativeAdListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdListCell.swift; sourceTree = "<group>"; };
@@ -60,7 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7D2D046FDB08EF6AD35CBB /* Pods_Sample.framework in Frameworks */,
+				6A8EE61729D53C8100FCE0ED /* Pods_Sample.framework in Frameworks */,
+				6A8EE61329D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,7 @@
 		6AD5DEFB28DD4EEE00CC6C30 = {
 			isa = PBXGroup;
 			children = (
+				6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */,
 				6AD5DF0628DD4EEE00CC6C30 /* Sample */,
 				6AD5DF0528DD4EEE00CC6C30 /* Products */,
 				6AD1C93228E14CA40032C869 /* Frameworks */,
@@ -143,7 +149,6 @@
 				6AD5DF0228DD4EEE00CC6C30 /* Resources */,
 				A73A69D36B94B5973406F95D /* [CP] Embed Pods Frameworks */,
 				6A402D4C2951A15A009441B6 /* Embed Frameworks */,
-				13339F2471DD8D72A20957E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,23 +208,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13339F2471DD8D72A20957E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		246313B65CA81CD44A9A7C40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,7 +339,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -405,6 +397,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

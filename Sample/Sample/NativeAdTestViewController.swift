@@ -8,13 +8,12 @@
 
 import UIKit
 import MobWithADSDKFramework
-import AppLovinSDK
 
 class NativeAdTestViewController: UIViewController {
     
     @IBOutlet weak var adContainerView: UIView!
     
-    @IBOutlet weak var nativeAdRootView: MANativeAdView!
+    @IBOutlet weak var nativeAdRootView: UIView!
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var logoImageView: UIImageView!

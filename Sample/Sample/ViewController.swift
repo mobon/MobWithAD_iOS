@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         
         
         segmentAdType.selectedSegmentIndex = 0
+        
     }
     
     func loadAd() {

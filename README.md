@@ -31,10 +31,6 @@ pod 'MobWithAD'
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
  - AdFitSDK 버전은 3.12.22에 최적화 되어 있습니다.
 
-### 3) AppLovin 설정
-- 본 프레임워크는 AppLovin SDK(11.6.0)를 포함하고 있습니다.  따라서 별도로 AppLovin SDK를 추가할 필요는 없습니다. 
-- 따라서 AppLovin의 [가이드 문서](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 참고하여 SDK Key값을 설정해 주셔야 합니다.  
-  이외의 코드상에서 AppLovin의 초기 설정과 관련된 부분은 별도로 작업하실 필요는 없습니다.
 
 <br><br>
 ## 2. 프로젝트 설정
@@ -58,13 +54,6 @@ MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
 ### 2) Objective-C 프로젝트
 MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
-<br>
-
-### 3) Other Linker Flag
--all_load  
--ObjC  
-위 두가지를 추가해주셔야 합니다.
-
 <br>
 
 ### 4) ATT(App Tracking Transparency) framework 적용
@@ -103,7 +92,7 @@ else {
 
 ```swift
 import MobWithADSDKFramework		// MobWithAD SDK 추가
-import AdFitSDK		    					// AdFitSDK 추가
+import AdFitSDK		    			// AdFitSDK 추가
 ```
 <br>
 
