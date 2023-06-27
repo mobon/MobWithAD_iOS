@@ -23,15 +23,32 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 ```swift
 pod 'MobWithAD'
 ```
+또는
+```swift
+pod 'MobWithAD/Basic'
+```
+
+#### 필요한 Framework만 추가하고자 하는 경우 아래를 참고 하셔서 추가하시면 됩니다.
+| Frameworks | 설명 |
+|:---|:---|
+| MobWithAD/Core | Mobwith SDK의 기본이 되는 Framework 입니다. 반드시 추가해 주셔야 합니다. |
+| MobWithAD/MobWithAdFitAdapter | 카카오 비즈보드 광고를 사용하시는 경우 추가해 주셔야 합니다.<br>해당 framework를 포함하지 않는 경우 광고가 표시되지 않습니다. |
+|||
+* AppLovin광고를 위한 MobWithAppLovinAdapter의 경우 현재 Cocoapod을 지원하지 않고 있습니다.  
+  해당 광고를 사용하시는 경우 수동 설치 항목을 참고 바랍니다.
+<br><br>
+
 
 ### 2) 수동 설치
- - MobWithADSDKFramework.framework를 다운로드 받습니다.  
- - MobWithADSDKFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
+ - Sources아래의 각 frameworks를 다운로드 받습니다.
+   1) MobWithADSDKFramework : 필수
+   2) MobWithADSDKFramework : 카카오 비즈보드 광고를 사용하는 경우
+   3) MobWithAppLovinAdapter : AppLovin 광고를 사용하는 경우
+ - 다운받은 .frameworks들을 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
+   1) MobWithADSDKFramework를 사용하는 경우 [AdFitSDK](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 추가해 주셔야 합니다.  현재는 3.12.22 버전에 최적화 되어 있습니다.
+   2) MobWithAppLovinAdapter를 사용하는 경우 [AppLovinSDK](https://dash.applovin.com/documentation/mediation/ios/getting-started/integration)를 추가해 주셔야 합니다.  현재는 11.6.0 버전에 최적화 되어 있습니다.
  - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
-   자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
- - AdFitSDK 버전은 3.12.22에 최적화 되어 있습니다.
-
-
+   
 <br><br>
 ## 2. 프로젝트 설정
 
@@ -92,7 +109,7 @@ else {
 
 ```swift
 import MobWithADSDKFramework		// MobWithAD SDK 추가
-import AdFitSDK		    			// AdFitSDK 추가
+import AdFitSDK   // AdFitSDK 추가 (비즈보드를 사용하는 경우, 여백 설정을 위해 필요합니다)
 ```
 <br>
 
@@ -135,7 +152,15 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: 320, height: 50),
 ```
 
 #### 2. AdFit 비즈보드 이용시
-본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 사용하도록 되어 있습니다. 따라서 비즈보드를 사용하는 경우 아래와 같이 광고가 표시될 뷰의 크기를 지정해 줄 필요가 있습니다.
+비즈보드 광고의 경우 기본으로 여백이 할당 되도록 구현되어 있습니다.  따라서 광고 뷰 생성 및 로드를 하기전 아래의 코드를 참고하여 필요에 따라 여백을 설정해줄 필요가 있습니다.
+``` swift
+...
+BizBoardTemplate.defaultEdgeInset = UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+...
+```
+
+또한, 비즈보드에서 광고 표시를 위해 요구하는 광고 뷰의 사이즈 비율이 있습니다. 아래는 해당 비율로 광고를 적용하기 위한 방법입니다.
+* 1.2.0 버전 부터는 사용자가 지정한 화면 사이즈에 대응 하여 광고가 표시될 수 있도록 개선되었으니 아래는 참고만 하셔도 됩니다.
 
 ``` swift
 let width = UIScreen.main.bounds.width

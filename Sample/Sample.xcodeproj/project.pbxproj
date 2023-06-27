@@ -20,6 +20,9 @@
 		6AD5DF0F28DD4EEE00CC6C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF0D28DD4EEE00CC6C30 /* Main.storyboard */; };
 		6AD5DF1128DD4EF000CC6C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF1028DD4EF000CC6C30 /* Assets.xcassets */; };
 		6AD5DF1428DD4EF000CC6C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF1228DD4EF000CC6C30 /* LaunchScreen.storyboard */; };
+		6AF5505F2A4AB4BC004907CC /* MobWithADSDKFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF5505C2A4AB4BB004907CC /* MobWithADSDKFramework.xcframework */; };
+		6AF550602A4AB4BD004907CC /* MobWithAppLovinAdapter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF5505D2A4AB4BB004907CC /* MobWithAppLovinAdapter.xcframework */; };
+		6AF550612A4AB4BD004907CC /* MobWithAdFitAdapter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF5505E2A4AB4BC004907CC /* MobWithAdFitAdapter.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +41,9 @@
 		6AD5DF1028DD4EF000CC6C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD5DF1328DD4EF000CC6C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AD5DF1528DD4EF000CC6C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AF550522A4A84F7004907CC /* MobWithAppLovinAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAppLovinAdapter.xcframework; path = ../MobWithAppLovinAdapter.xcframework; sourceTree = "<group>"; };
-		6AF550532A4A84F7004907CC /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithADSDKFramework.xcframework; path = ../MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
-		6AF550542A4A84F7004907CC /* MobWithAdFitAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAdFitAdapter.xcframework; path = ../MobWithAdFitAdapter.xcframework; sourceTree = "<group>"; };
+		6AF5505C2A4AB4BB004907CC /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithADSDKFramework.xcframework; path = ../Sources/MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
+		6AF5505D2A4AB4BB004907CC /* MobWithAppLovinAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAppLovinAdapter.xcframework; path = ../Sources/MobWithAppLovinAdapter.xcframework; sourceTree = "<group>"; };
+		6AF5505E2A4AB4BC004907CC /* MobWithAdFitAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAdFitAdapter.xcframework; path = ../Sources/MobWithAdFitAdapter.xcframework; sourceTree = "<group>"; };
 		8753D25081182976C2177AE2 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +54,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8EE61729D53C8100FCE0ED /* Pods_Sample.framework in Frameworks */,
+				6AF550612A4AB4BD004907CC /* MobWithAdFitAdapter.xcframework in Frameworks */,
+				6AF5505F2A4AB4BC004907CC /* MobWithADSDKFramework.xcframework in Frameworks */,
+				6AF550602A4AB4BD004907CC /* MobWithAppLovinAdapter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +85,9 @@
 		6AD5DEFB28DD4EEE00CC6C30 = {
 			isa = PBXGroup;
 			children = (
-				6AF550542A4A84F7004907CC /* MobWithAdFitAdapter.xcframework */,
-				6AF550532A4A84F7004907CC /* MobWithADSDKFramework.xcframework */,
-				6AF550522A4A84F7004907CC /* MobWithAppLovinAdapter.xcframework */,
+				6AF5505E2A4AB4BC004907CC /* MobWithAdFitAdapter.xcframework */,
+				6AF5505C2A4AB4BB004907CC /* MobWithADSDKFramework.xcframework */,
+				6AF5505D2A4AB4BB004907CC /* MobWithAppLovinAdapter.xcframework */,
 				6AD5DF0628DD4EEE00CC6C30 /* Sample */,
 				6AD5DF0528DD4EEE00CC6C30 /* Products */,
 				6AD1C93228E14CA40032C869 /* Frameworks */,
