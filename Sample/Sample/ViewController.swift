@@ -15,8 +15,8 @@ import AppTrackingTransparency
 
 class ViewController: UIViewController {
     
-    let mediaCode320x50:String = "10881755"
-    let mediaCode300x250:String = "10881755"
+    let mediaCode320x50:String = "YOUR_ADUNIT_ID"
+    let mediaCode300x250:String = "YOUR_ADUNIT_ID"
     
     
     var mobWithAdView:MobWithAdView?
