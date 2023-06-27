@@ -1,0 +1,143 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobWithADSDKFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdFitSDK
+import AdSupport
+import AppTrackingTransparency
+import CoreTelephony
+import Foundation
+@_exported import MobWithADSDKFramework
+import OSLog
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
+  @objc public var nativeAdLoaderDelegate: MobWithADSDKFramework.MobWithNativeAdLoaderDelegate?
+  @objc public init(unitIds: [Swift.String], nibName: Swift.String, bundle: Foundation.Bundle?)
+  @objc public func isLoadedAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc public func isFailLoadAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc public func loadAd(At indexPath: Foundation.IndexPath) -> UIKit.UIView?
+  @objc public func retryLoadAd(At indexPath: Foundation.IndexPath)
+  @objc public func destoryAds()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.MobWithNativeAdLoaderDelegate {
+  @objc dynamic public func mobWithNativeAdViewClickedAd()
+  @objc dynamic public func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
+  @objc dynamic public func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
+}
+@objc public protocol MobWithADViewDelegate {
+  @objc optional func mobWithAdViewClickedAd()
+  @objc optional func mobWithAdViewDidReceivedAd()
+  @objc optional func mobWithAdViewDidFailToReceiveAd()
+}
+@objc public protocol MobWithNativeAdLoaderDelegate {
+  @objc optional func mobWithNativeAdViewClickedAd()
+  @objc optional func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
+  @objc optional func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
+}
+@_inheritsConvenienceInitializers @objc public class MobWithADSDK : ObjectiveC.NSObject {
+  @objc public static let standard: MobWithADSDKFramework.MobWithADSDK
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  public func initSDK()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MMBannerType : ObjectiveC.NSInteger {
+  case BANNER_320x50
+  case BANNER_300x250
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MobWithAdView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func loadAd()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+  @_Concurrency.MainActor(unsafe) public func showNextAd()
+  @objc @_Concurrency.MainActor(unsafe) public func clearAdLoader()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDelegate, AdFitSDK.AdFitNativeAdDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidClickAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: Swift.Error)
+}
+@_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
+  public var bannerUnitID: Swift.String
+  @objc public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
+  @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
+  @objc public func loadAd()
+  public func showNextAd()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MMNativeAdView {
+  @objc dynamic public func performAdClicked()
+}
+extension Swift.String {
+  public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String
+  public var dictionary: Swift.Dictionary<Swift.String, Any> {
+    get
+    set
+  }
+  public func height(withConstrainedWidth width: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func width(withConstrainedHeight height: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func image(width: CoreFoundation.CGFloat = 40, height: CoreFoundation.CGFloat = 40) -> UIKit.UIImage?
+  public func toFormattedCurrency() -> Swift.String
+  public func isValidPCode() -> Swift.Bool
+}
+public protocol MobwithNativeAdViewRender {
+  func getAdImageView() -> UIKit.UIImageView?
+  func getAdLogoImageView() -> UIKit.UIImageView?
+  func getAdTitleLabel() -> UIKit.UILabel?
+  func getAdDescriptionLabel() -> UIKit.UILabel?
+  func getGoToSiteButton() -> UIKit.UIButton?
+  func getInfoLogoImageView() -> UIKit.UIImageView?
+}
+@_hasMissingDesignatedInitializers public class MobwithNativeAdView {
+  @objc deinit
+}
+extension Swift.Dictionary {
+  public static func from(jsonString: Swift.String) -> Swift.Dictionary<Key, Value>
+  public var jsonString: Swift.String {
+    get
+    set
+  }
+}
+public struct MOImageColors {
+  public var background: UIKit.UIColor!
+  public var primary: UIKit.UIColor!
+  public var secondary: UIKit.UIColor!
+  public var detail: UIKit.UIColor!
+  public init(background: UIKit.UIColor, primary: UIKit.UIColor, secondary: UIKit.UIColor, detail: UIKit.UIColor)
+}
+public enum MOImageColorsQuality : CoreFoundation.CGFloat {
+  case lowest
+  case low
+  case high
+  case highest
+  public init?(rawValue: CoreFoundation.CGFloat)
+  public typealias RawValue = CoreFoundation.CGFloat
+  public var rawValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension UIKit.UIImage {
+  public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high, _ completion: @escaping (MobWithADSDKFramework.MOImageColors?) -> Swift.Void)
+  public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high) -> MobWithADSDKFramework.MOImageColors?
+}
+extension MobWithADSDKFramework.MMBannerType : Swift.Equatable {}
+extension MobWithADSDKFramework.MMBannerType : Swift.Hashable {}
+extension MobWithADSDKFramework.MMBannerType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.MOImageColorsQuality : Swift.Equatable {}
+extension MobWithADSDKFramework.MOImageColorsQuality : Swift.Hashable {}
+extension MobWithADSDKFramework.MOImageColorsQuality : Swift.RawRepresentable {}

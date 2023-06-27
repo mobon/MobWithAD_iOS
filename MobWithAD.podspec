@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -19,40 +19,13 @@ Pod::Spec.new do |s|
   s.platform = :ios, "13.0"
   s.requires_arc = false
   
-
-  s.subspec 'Core' do |ss|
-    ss.vendored_frameworks = "Sources/MobWithADSDKFramework.xcframework"
-    
-    ss.pod_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-    ss.user_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-
-  end
-
-  s.subspec 'MobWithAdFitAdapter' do |ss|
-    ss.vendored_frameworks = "Sources/MobWithAdFitAdapter.xcframework"
-    
-    ss.pod_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-    ss.user_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-
-    ss.dependency 'AdFitSDK', '~> 3.12.22'
-  end
-
-  # s.subspec 'MobWithAppLovinAdapter' do |ss|
-  #   ss.vendored_frameworks = "Sources/MobWithAppLovinAdapter.xcframework"
-    
-  #   ss.pod_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-  #   ss.user_target_xcconfig = { 'EXCLUDED_ARCHS[ sdk=iphonesimulator* ]' => 'arm64'}
-
-  #   ss.dependency 'AppLovinSDK', '~> 11.6.0'
-  # end
-
-
-  s.subspec 'Basic' do |ss|
-    ss.dependency 'MobWithAD/Core'
-    ss.dependency 'MobWithAD/MobWithAdFitAdapter'
-  end
-
-
+  
+  s.vendored_frameworks = 'MobWithADSDKFramework.xcframework'
+  
+  s.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  
+  
+  s.dependency 'AdFitSDK', '~> 3.12.22'
   
 end
-
