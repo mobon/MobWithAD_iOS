@@ -1,0 +1,21 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobWithAdFitAdapter
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdFitSDK
+import Foundation
+import MobWithADSDKFramework
+@_exported import MobWithAdFitAdapter
+import Swift
+import _Concurrency
+import _StringProcessing
+extension MobWithADSDKFramework.MobWithAdView : MobWithADSDKFramework.AdFitAdapter {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func getAdView(unitID: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func clearAdLoader()
+}
+extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDelegate, AdFitSDK.AdFitNativeAdDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidClickAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: Swift.Error)
+}

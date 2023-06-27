@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A8EE61329D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */; };
-		6A8EE61429D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6A8EE61729D53C8100FCE0ED /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */; };
 		6A92A65C2993318F0006B3D8 /* NativeAdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */; };
 		6AACD01E29A5BFDC00C1A6DA /* NativeAdListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AACD01929A5BFDC00C1A6DA /* NativeAdListCell.xib */; };
@@ -24,23 +22,8 @@
 		6AD5DF1428DD4EF000CC6C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5DF1228DD4EF000CC6C30 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		6A402D4C2951A15A009441B6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6A8EE61429D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		6568EAC9FA6E1CD321000D89 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
-		6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithADSDKFramework.xcframework; path = ../MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
 		6A92A65B2993318F0006B3D8 /* NativeAdTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdTestViewController.swift; sourceTree = "<group>"; };
 		6AACD01929A5BFDC00C1A6DA /* NativeAdListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdListCell.xib; sourceTree = "<group>"; };
 		6AACD01A29A5BFDC00C1A6DA /* NativeAdListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdListCell.swift; sourceTree = "<group>"; };
@@ -55,6 +38,9 @@
 		6AD5DF1028DD4EF000CC6C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD5DF1328DD4EF000CC6C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AD5DF1528DD4EF000CC6C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF550522A4A84F7004907CC /* MobWithAppLovinAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAppLovinAdapter.xcframework; path = ../MobWithAppLovinAdapter.xcframework; sourceTree = "<group>"; };
+		6AF550532A4A84F7004907CC /* MobWithADSDKFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithADSDKFramework.xcframework; path = ../MobWithADSDKFramework.xcframework; sourceTree = "<group>"; };
+		6AF550542A4A84F7004907CC /* MobWithAdFitAdapter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobWithAdFitAdapter.xcframework; path = ../MobWithAdFitAdapter.xcframework; sourceTree = "<group>"; };
 		8753D25081182976C2177AE2 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		EFC6E2AEBF33404F57297659 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,7 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8EE61729D53C8100FCE0ED /* Pods_Sample.framework in Frameworks */,
-				6A8EE61329D53A3B00FCE0ED /* MobWithADSDKFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +79,9 @@
 		6AD5DEFB28DD4EEE00CC6C30 = {
 			isa = PBXGroup;
 			children = (
-				6A8EE61129D53A2E00FCE0ED /* MobWithADSDKFramework.xcframework */,
+				6AF550542A4A84F7004907CC /* MobWithAdFitAdapter.xcframework */,
+				6AF550532A4A84F7004907CC /* MobWithADSDKFramework.xcframework */,
+				6AF550522A4A84F7004907CC /* MobWithAppLovinAdapter.xcframework */,
 				6AD5DF0628DD4EEE00CC6C30 /* Sample */,
 				6AD5DF0528DD4EEE00CC6C30 /* Products */,
 				6AD1C93228E14CA40032C869 /* Frameworks */,
@@ -147,8 +134,7 @@
 				6AD5DF0028DD4EEE00CC6C30 /* Sources */,
 				6AD5DF0128DD4EEE00CC6C30 /* Frameworks */,
 				6AD5DF0228DD4EEE00CC6C30 /* Resources */,
-				A73A69D36B94B5973406F95D /* [CP] Embed Pods Frameworks */,
-				6A402D4C2951A15A009441B6 /* Embed Frameworks */,
+				ACDB77665E44BBC9CF29C91B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,7 +216,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A73A69D36B94B5973406F95D /* [CP] Embed Pods Frameworks */ = {
+		ACDB77665E44BBC9CF29C91B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

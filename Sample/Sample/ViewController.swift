@@ -74,6 +74,9 @@ class ViewController: UIViewController {
                                                bannerUnitId: mediaCode300x250)
             
         default:
+            //비즈보드 사용시 광고 여백 설정
+            BizBoardTemplate.defaultEdgeInset = UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+            
             let width = UIScreen.main.bounds.width
             mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: 50),
                                                type: .BANNER_320x50,

@@ -1,0 +1,962 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobWithADSDKFramework",
+        "printedName": "MobWithADSDKFramework",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobWithADSDKFramework",
+        "printedName": "MobWithADSDKFramework",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobWithADSDKFramework",
+        "printedName": "MobWithADSDKFramework",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithAppLovinAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MMNativeAdView",
+        "printedName": "MMNativeAdView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadNativeAdView",
+            "printedName": "loadNativeAdView(unitID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)loadNativeAdViewWithUnitID:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE010loadNativeeF06unitIDSbSS_tF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "loadNativeAdViewWithUnitID:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanUpIfNeed",
+            "printedName": "cleanUpIfNeed(initialized:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)cleanUpIfNeedWithInitialized:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE13cleanUpIfNeed11initializedySb_tF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "cleanUpIfNeedWithInitialized:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perfomAdClick",
+            "printedName": "perfomAdClick()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)perfomAdClick",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE06perfomE5ClickyyF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "perfomAdClick",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didLoadNativeAd",
+            "printedName": "didLoadNativeAd(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AppLovinSDK.MANativeAdView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MANativeAdView",
+                    "printedName": "AppLovinSDK.MANativeAdView",
+                    "usr": "c:objc(cs)MANativeAdView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didLoadNativeAd:forAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE013didLoadNativeE0_3forySo08MANativeeF0CSg_So4MAAdCtF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didLoadNativeAd:forAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToLoadNativeAd",
+            "printedName": "didFailToLoadNativeAd(forAdUnitIdentifier:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAError",
+                "printedName": "AppLovinSDK.MAError",
+                "usr": "c:objc(cs)MAError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didFailToLoadNativeAdForAdUnitIdentifier:withError:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE019didFailToLoadNativeE003forE14UnitIdentifier9withErrorySS_So7MAErrorCtF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didFailToLoadNativeAdForAdUnitIdentifier:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didClickNativeAd",
+            "printedName": "didClickNativeAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didClickNativeAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE014didClickNativeE0yySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didClickNativeAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didExpireNativeAd",
+            "printedName": "didExpireNativeAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)didExpireNativeAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC0aB15AppLovinAdapterE015didExpireNativeE0yySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didExpireNativeAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView",
+        "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AppLovinAdapter",
+            "printedName": "AppLovinAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)AppLovinAdapter",
+            "mangledName": "$s21MobWithADSDKFramework15AppLovinAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapter",
+            "printedName": "MobWithMediationAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapter",
+            "mangledName": "$s21MobWithADSDKFramework0aB16MediationAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapterDelegate",
+            "printedName": "MobWithMediationAdapterDelegate",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapterDelegate",
+            "mangledName": "$s21MobWithADSDKFramework0aB24MediationAdapterDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MobWithADSDK",
+        "printedName": "MobWithADSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initAppLovinSDK",
+            "printedName": "initAppLovinSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)initAppLovinSDK",
+            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC0aB15AppLovinAdapterE04initeF3SDKyyF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "initAppLovinSDK",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK",
+        "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AppLovinAdapter",
+            "printedName": "AppLovinAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)AppLovinAdapter",
+            "mangledName": "$s21MobWithADSDKFramework15AppLovinAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapter",
+            "printedName": "MobWithMediationAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapter",
+            "mangledName": "$s21MobWithADSDKFramework0aB16MediationAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapterDelegate",
+            "printedName": "MobWithMediationAdapterDelegate",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapterDelegate",
+            "mangledName": "$s21MobWithADSDKFramework0aB24MediationAdapterDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MobWithAdView",
+        "printedName": "MobWithAdView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getAdView",
+            "printedName": "getAdView(_:unitID:initialized:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MMBannerType",
+                "printedName": "MobWithADSDKFramework.MMBannerType",
+                "usr": "c:@M@MobWithADSDKFramework@E@MMBannerType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)getAdView:unitID:initialized:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE03getdE0_6unitID11initializedSo6UIViewCSgAA12MMBannerTypeO_SSSbtF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "getAdView:unitID:initialized:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didLoad",
+            "printedName": "didLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didLoadAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE7didLoadyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didLoadAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didClick",
+            "printedName": "didClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didClickAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE8didClickyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didClickAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToLoadAd",
+            "printedName": "didFailToLoadAd(forAdUnitIdentifier:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAError",
+                "printedName": "AppLovinSDK.MAError",
+                "usr": "c:objc(cs)MAError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didFailToLoadAdForAdUnitIdentifier:withError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE013didFailToLoadD003forD14UnitIdentifier9withErrorySS_So7MAErrorCtF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didFailToLoadAdForAdUnitIdentifier:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFail",
+            "printedName": "didFail(toDisplay:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAError",
+                "printedName": "AppLovinSDK.MAError",
+                "usr": "c:objc(cs)MAError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didFailToDisplayAd:withError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE7didFail9toDisplay9withErrorySo4MAAdC_So7MAErrorCtF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didFailToDisplayAd:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didExpand",
+            "printedName": "didExpand(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didExpandAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE9didExpandyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didExpandAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didCollapse",
+            "printedName": "didCollapse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didCollapseAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE11didCollapseyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didCollapseAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didHide",
+            "printedName": "didHide(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didHideAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE7didHideyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didHideAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didDisplay",
+            "printedName": "didDisplay(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithAppLovinAdapter@MobWithADSDKFramework@objc(cs)MobWithAdView(im)didDisplayAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC0aB15AppLovinAdapterE10didDisplayyySo4MAAdCF",
+            "moduleName": "MobWithAppLovinAdapter",
+            "objc_name": "didDisplayAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithAdView",
+        "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "Custom",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AppLovinAdapter",
+            "printedName": "AppLovinAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)AppLovinAdapter",
+            "mangledName": "$s21MobWithADSDKFramework15AppLovinAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapter",
+            "printedName": "MobWithMediationAdapter",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapter",
+            "mangledName": "$s21MobWithADSDKFramework0aB16MediationAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MobWithMediationAdapterDelegate",
+            "printedName": "MobWithMediationAdapterDelegate",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithMediationAdapterDelegate",
+            "mangledName": "$s21MobWithADSDKFramework0aB24MediationAdapterDelegateP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
