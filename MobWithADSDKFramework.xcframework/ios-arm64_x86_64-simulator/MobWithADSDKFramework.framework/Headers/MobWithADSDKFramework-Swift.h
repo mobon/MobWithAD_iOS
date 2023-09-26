@@ -325,6 +325,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 @end
 
 @class NSCoder;
+@class UIWindow;
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
@@ -333,9 +334,11 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 - (void)removeFromSuperview;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)clearAdLoader;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 
@@ -721,6 +724,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 @end
 
 @class NSCoder;
+@class UIWindow;
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
@@ -729,9 +733,11 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 - (void)removeFromSuperview;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)clearAdLoader;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 

@@ -58,10 +58,12 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   }
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MobWithAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var interval: Swift.Int
   @objc @_Concurrency.MainActor(unsafe) public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
   @objc @_Concurrency.MainActor(unsafe) public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func loadAd()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) public func showNextAd()
   @objc @_Concurrency.MainActor(unsafe) public func clearAdLoader()
   @objc deinit
@@ -71,6 +73,10 @@ extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDele
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: Swift.Error)
+}
+extension MobWithADSDKFramework.MobWithAdView {
+  @_Concurrency.MainActor(unsafe) public func restart()
+  @_Concurrency.MainActor(unsafe) public func stop()
 }
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
