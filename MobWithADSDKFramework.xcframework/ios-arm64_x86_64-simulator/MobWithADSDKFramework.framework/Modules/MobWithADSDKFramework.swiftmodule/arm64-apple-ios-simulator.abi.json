@@ -808,6 +808,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1260,6 +1270,47 @@
           },
           {
             "kind": "Var",
+            "name": "BANNER_320x100",
+            "printedName": "BANNER_320x100",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobWithADSDKFramework.MMBannerType.Type) -> MobWithADSDKFramework.MMBannerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MMBannerType",
+                    "printedName": "MobWithADSDKFramework.MMBannerType",
+                    "usr": "c:@M@MobWithADSDKFramework@E@MMBannerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobWithADSDKFramework.MMBannerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MMBannerType",
+                        "printedName": "MobWithADSDKFramework.MMBannerType",
+                        "usr": "c:@M@MobWithADSDKFramework@E@MMBannerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MobWithADSDKFramework@E@MMBannerType@MMBannerTypeBANNER_320x100",
+            "mangledName": "$s21MobWithADSDKFramework12MMBannerTypeO14BANNER_320x100yA2CmF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
             "name": "BANNER_300x250",
             "printedName": "BANNER_300x250",
             "children": [
@@ -1297,7 +1348,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Constructor",
@@ -2718,6 +2769,16 @@
         "printedName": "AppTrackingTransparency",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5396,149 +5457,16 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 503,
+      "offset": 618,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "Array",
-      "offset": 616,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 656,
+      "offset": 1174,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 909,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 974,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1177,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1244,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1403,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1485,
-      "length": 4,
-      "value": "12.0"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1566,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1721,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1801,
-      "length": 4,
-      "value": "12.0"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1882,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 2050,
-      "length": 14,
-      "value": "\"바로가기\""
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2112,
-      "length": 4,
-      "value": "13.0"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2268,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2300,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2362,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2579,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2646,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2697,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Extensions\/UserDefaults+MobMixer.swift",
@@ -5830,128 +5758,289 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 479,
       "length": 6,
       "value": "\"zone\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 508,
       "length": 8,
       "value": "\"adType\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 538,
       "length": 7,
       "value": "\"adCnt\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 549,
+      "offset": 573,
       "length": 13,
       "value": "\"logoDefault\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 610,
       "length": 9,
       "value": "\"logoSub\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 619,
+      "offset": 643,
       "length": 9,
       "value": "\"logoUrl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 676,
       "length": 9,
       "value": "\"siteUrl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 706,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 735,
+      "length": 8,
+      "value": "\"impUrl\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
       "length": 6,
       "value": "\"zone\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 508,
       "length": 8,
       "value": "\"adType\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 538,
       "length": 7,
       "value": "\"adCnt\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 549,
+      "offset": 573,
       "length": 13,
       "value": "\"logoDefault\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 610,
       "length": 9,
       "value": "\"logoSub\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 619,
+      "offset": 643,
       "length": 9,
       "value": "\"logoUrl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 676,
       "length": 9,
       "value": "\"siteUrl\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 706,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView+300x250.swift",
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixDspDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 735,
+      "length": 8,
+      "value": "\"impUrl\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault+300x250.swift",
       "kind": "BooleanLiteral",
-      "offset": 257,
+      "offset": 271,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView+300x250.swift",
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault+300x250.swift",
       "kind": "BooleanLiteral",
-      "offset": 476,
+      "offset": 490,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 258,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "Array",
+      "offset": 364,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 657,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 722,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 925,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 992,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1151,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 1233,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1314,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 1549,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1630,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "StringLiteral",
+      "offset": 1798,
+      "length": 14,
+      "value": "\"바로가기\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 1860,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 2016,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 2048,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2110,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2327,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2394,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2445,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
@@ -5964,13 +6053,13 @@
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 291,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 424,
+      "offset": 423,
       "length": 5,
       "value": "false"
     },
@@ -6026,133 +6115,147 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
+      "kind": "IntegerLiteral",
       "offset": 227,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 679,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 722,
+      "offset": 812,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
+      "offset": 879,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 943,
+      "offset": 1033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1049,
+      "offset": 1139,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 890,
+      "offset": 980,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1313,
+      "offset": 1403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1357,
+      "offset": 1447,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1978,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1932,
+      "offset": 2022,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
+      "offset": 2050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2079,
+      "offset": 2169,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2128,
+      "offset": 2218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2180,
+      "offset": 2270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2940,
+      "offset": 3030,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 555,
       "length": 13,
       "value": "\"MobWithADSDKFramework.MobWithAdView\""
     },
     {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView+320x50.swift",
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault+320x50.swift",
       "kind": "BooleanLiteral",
-      "offset": 246,
+      "offset": 260,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView+320x50.swift",
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdViewDefault+320x50.swift",
       "kind": "BooleanLiteral",
-      "offset": 465,
+      "offset": 479,
       "length": 5,
       "value": "false"
     },
@@ -6869,6 +6972,160 @@
       "offset": 5878,
       "length": 4,
       "value": "\"01\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "Array",
+      "offset": 426,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "BooleanLiteral",
+      "offset": 820,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1057,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1239,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1307,
+      "length": 4,
+      "value": "85.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1312,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1326,
+      "length": 4,
+      "value": "85.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1331,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1344,
+      "length": 4,
+      "value": "85.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1349,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1363,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1436,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1610,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1675,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1679,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1693,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1697,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1710,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1714,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "FloatLiteral",
+      "offset": 1728,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Adapters\/Mobon\/MobonBannerAdView320x100.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1801,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataImagesModel.swift",

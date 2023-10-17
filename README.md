@@ -119,6 +119,7 @@ mobWithAdView.loadAd()
 ```swift
 enum MMBannerType: Int {
     case Banner320x50
+    case Banner320x100
     case Banner300x250
 }
 ```

@@ -257,7 +257,8 @@ using UInt = size_t;
 #if defined(__OBJC__)
 typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_320x50 = 0,
-  MMBannerTypeBANNER_300x250 = 1,
+  MMBannerTypeBANNER_320x100 = 1,
+  MMBannerTypeBANNER_300x250 = 2,
 };
 
 @protocol MobWithADViewDelegate;

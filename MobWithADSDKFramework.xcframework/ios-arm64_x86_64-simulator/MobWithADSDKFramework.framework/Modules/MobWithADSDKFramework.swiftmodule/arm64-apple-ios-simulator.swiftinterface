@@ -50,6 +50,7 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
 }
 @objc public enum MMBannerType : ObjectiveC.NSInteger {
   case BANNER_320x50
+  case BANNER_320x100
   case BANNER_300x250
   public init?(rawValue: ObjectiveC.NSInteger)
   public typealias RawValue = ObjectiveC.NSInteger
