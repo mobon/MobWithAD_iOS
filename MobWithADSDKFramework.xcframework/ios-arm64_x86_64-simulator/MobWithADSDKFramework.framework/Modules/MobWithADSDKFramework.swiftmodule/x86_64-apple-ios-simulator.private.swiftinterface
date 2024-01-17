@@ -59,6 +59,12 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   }
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MobWithAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var bannerType: MobWithADSDKFramework.MMBannerType
+  @_Concurrency.MainActor(unsafe) public var bannerUnitID: Swift.String
+  @_Concurrency.MainActor(unsafe) public var rootViewController: UIKit.UIViewController? {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) public var interval: Swift.Int
   @objc @_Concurrency.MainActor(unsafe) public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
   @objc @_Concurrency.MainActor(unsafe) public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)

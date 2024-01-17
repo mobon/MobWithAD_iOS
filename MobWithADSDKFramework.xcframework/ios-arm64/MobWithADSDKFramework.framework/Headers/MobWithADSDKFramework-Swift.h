@@ -320,8 +320,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 @protocol MobWithADViewDelegate
 @optional
+/// 광고를 클릭한 경우 전달됨
 - (void)mobWithAdViewClickedAd;
+/// 광고를 수신한 경우 전달됨
 - (void)mobWithAdViewDidReceivedAd;
+/// 광고 수신 실패시 전달
 - (void)mobWithAdViewDidFailToReceiveAd;
 @end
 
