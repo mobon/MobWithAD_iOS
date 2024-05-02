@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobWithADSDKFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdFitSDK
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
+import CouOffsiteAds
 import Foundation
 @_exported import MobWithADSDKFramework
 import OSLog
@@ -14,8 +15,9 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
-  @objc public var nativeAdLoaderDelegate: MobWithADSDKFramework.MobWithNativeAdLoaderDelegate?
+  @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
   @objc public init(unitIds: [Swift.String], nibName: Swift.String, bundle: Foundation.Bundle?)
   @objc public func isLoadedAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
   @objc public func isFailLoadAd(At indexPath: Foundation.IndexPath) -> Swift.Bool
@@ -44,7 +46,7 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   @objc public static var sdkVersion: Swift.String {
     @objc get
   }
-  public func initSDK()
+  public func initSDK(coupangSubId: Swift.String? = nil)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -66,7 +68,7 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
     set
   }
   @_Concurrency.MainActor(unsafe) public var interval: Swift.Int
-  @objc @_Concurrency.MainActor(unsafe) public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func loadAd()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
@@ -79,7 +81,13 @@ extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDele
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidClickAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: any Swift.Error)
+}
+extension MobWithADSDKFramework.MobWithAdView : CouOffsiteAds.CouAdBannerViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func bannerDidClick(_ bannerView: CouOffsiteAds.CouAdBannerView)
+  @_Concurrency.MainActor(unsafe) public func bannerViewFailToReceiveAdWithError(_ bannerView: CouOffsiteAds.CouAdBannerView, error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) public func bannerDidReceiveAd(_ bannerView: CouOffsiteAds.CouAdBannerView)
+  @_Concurrency.MainActor(unsafe) public func bannerDidUpdateData(_ bannerView: CouOffsiteAds.CouAdBannerView)
 }
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor(unsafe) public func restart()
@@ -87,7 +95,7 @@ extension MobWithADSDKFramework.MobWithAdView {
 }
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
-  @objc public var adDelegate: MobWithADSDKFramework.MobWithADViewDelegate?
+  @objc public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
   @objc public func loadAd()
   public func showNextAd()
@@ -95,6 +103,12 @@ extension MobWithADSDKFramework.MobWithAdView {
 }
 extension MobWithADSDKFramework.MMNativeAdView {
   @objc dynamic public func performAdClicked()
+}
+@objc public protocol MobWithIntersitialAdDelegate {
+  @objc optional func mobWithIntersitialAdClicked()
+  @objc optional func mobWithIntersitialAdDidReceived()
+  @objc optional func mobWithIntersitialAdDidFailToReceive()
+  @objc optional func mobWithIntersitialAdDidOpend()
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String

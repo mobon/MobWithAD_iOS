@@ -25,8 +25,8 @@ pod 'MobWithAD'
 ```
 
 ### 2) 수동 설치
- - MobWithADSDKFramework.framework를 다운로드 받습니다.  
- - MobWithADSDKFramework.framework를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.  
+ - MobWithADSDKFramework.xcframework와 CouOffsiteAds.xcframework를 다운로드 받습니다.  
+ - 다운로드 받은 두 Framwork를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.
  - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
  - AdFitSDK 버전은 3.12.22에 최적화 되어 있습니다.
@@ -99,7 +99,9 @@ import AdFitSDK   // AdFitSDK 추가 (비즈보드를 사용하는 경우, 여�
 ### 2. SDK 초기화
 ```swift
 MobWithADSDK.standard.initSDK()
+MobWithADSDK.standard.initSDK(coupangSubId: "{전달받은 쿠팡 Sub ID}")  // 쿠팡 SDK 광고 사용시에만 설정
 ```
+
 
 <br>
 
