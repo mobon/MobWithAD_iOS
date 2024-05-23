@@ -10553,210 +10553,210 @@
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "FloatLiteral",
-      "offset": 1157,
+      "offset": 1245,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 2138,
       "length": 9,
       "value": "\"No Fill\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2293,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 2184,
+      "offset": 2323,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 2741,
+      "offset": 2880,
       "length": 9,
       "value": "\"No Fill\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3365,
       "length": 39,
       "value": "\"Success Get DSP Ad Data : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3264,
+      "offset": 3403,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3449,
+      "offset": 3588,
       "length": 9,
       "value": "\"No Fill\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3642,
+      "offset": 3781,
       "length": 54,
       "value": "\"Fail Get DSP Ad Data : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3695,
+      "offset": 3834,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 3823,
+      "offset": 3962,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4091,
+      "offset": 4230,
       "length": 34,
       "value": "\"Success Impression : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4124,
+      "offset": 4263,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4233,
+      "offset": 4372,
       "length": 49,
       "value": "\"Fail Impression : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4281,
+      "offset": 4420,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4432,
+      "offset": 4571,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4755,
+      "offset": 4894,
       "length": 49,
       "value": "\"Success Ad Reqeuset Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4803,
+      "offset": 4942,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4912,
+      "offset": 5051,
       "length": 64,
       "value": "\"Fail Ad Reqeuset Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 4975,
+      "offset": 5114,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5142,
+      "offset": 5281,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5480,
+      "offset": 5619,
       "length": 53,
       "value": "\"Success DSP Ad Reqeuset Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5532,
+      "offset": 5671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5641,
+      "offset": 5780,
       "length": 68,
       "value": "\"Fail DSP Ad Reqeuset Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5708,
+      "offset": 5847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 5878,
+      "offset": 6017,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 6219,
+      "offset": 6358,
       "length": 46,
       "value": "\"Success Passback Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 6264,
+      "offset": 6403,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 6373,
+      "offset": 6512,
       "length": 61,
       "value": "\"Fail Passback Count Request : \""
     },
     {
       "filePath": "\/Users\/enliple\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
       "kind": "StringLiteral",
-      "offset": 6433,
+      "offset": 6572,
       "length": 2,
       "value": "\"\""
     },

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2VK6dQWpW8pcNPKyN6YGKqa6Xvw=
+		avMUkXRZQWszomDukrcT1EpVtLM=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vDjZrvm8uJzthwS+m3pt31OIrTA=
+		ENp+Emb0RfUt57RgwR8AJIzhOE4=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vDjZrvm8uJzthwS+m3pt31OIrTA=
+		ENp+Emb0RfUt57RgwR8AJIzhOE4=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzOjrAicWdjmdnksfJc/IvaUQVHPViFZB454CxvP8Oc=
+			RWLR18iT2saeNQUbgiQSeDzK6t3fOy+ljfSTemQ4gF0=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzOjrAicWdjmdnksfJc/IvaUQVHPViFZB454CxvP8Oc=
+			RWLR18iT2saeNQUbgiQSeDzK6t3fOy+ljfSTemQ4gF0=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
