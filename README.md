@@ -57,7 +57,9 @@ MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의
 <br>
 
 ### 4) ATT(App Tracking Transparency) framework 적용
+
 iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를 반드시 적용해야 합니다.
+ 
 
 <br>
 
@@ -70,8 +72,7 @@ iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를
 <br>
 
 ####  (2) ATTrackingManager 코드 적용
-MobWithAD SDK 사용시 광고 로딩을 위해 loadAD() 함수를 호출하는 경우 자체적으로 해당 부분을 검토 및 권한을 얻도록 구현되어 있습니다.
-다만 직접 권한을 얻도록 처리하고자 하는 경우 아래와 같이 제어를 하셔도 무방합니다.
+1.2.7버전 부터는 IDFA값의 사용을 위한 권한 요청을 직접 진행해 주셔야 합니다. 해당 부분은 아래 코드를 참조 하시면 됩니다. 
 ```swift
 if #available(iOS 14, *) {
     ATTrackingManager.requestTrackingAuthorization { (status) in
