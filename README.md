@@ -25,12 +25,20 @@ pod 'MobWithAD'
 ```
 
 ### 2) 수동 설치
- - MobWithADSDKFramework.xcframework와 CouOffsiteAds.xcframework를 다운로드 받습니다.  
- - 다운로드 받은 두 Framwork를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.
- - 본 프레임워크는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
-   자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
- - AdFitSDK 버전은 3.14.5에 최적화 되어 있습니다.
 
+  #### (1) 기본 프레임워크 추가
+  - MobWithADSDKFramework.xcframework와 CouOffsiteAds.xcframework를 다운로드 받습니다.  
+  - 다운로드 받은 두 Framwork를 앱 프로젝트의 General > Embeded Binaries 항목으로 끌어서 놓습니다.
+ 
+  #### (2) AdFitSDK 추가
+  - 본 SDK에서는 AdFitSDK의 비즈보드 템플릿을 활용하도록 되어 있습니다. 따라서 AdFitSDK의 추가가 필요합니다. 
+    자세한 사항은 [여기](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/Install%20SDK.md)를 눌러 AdFitSDK의 설치 가이드를 따르시면 됩니다.
+  - AdFitSDK 버전은 3.14.5에 최적화 되어 있습니다.
+    
+  #### (3) UnitySDK 추가
+  - 본 프레임워크는 UnitySDK를 활용하여 광고를 표시하기도 합니다. 
+    자세한 사항은 [여기](https://docs.unity.com/ads/ko-kr/manual/InstallingTheUnitySDK)를 눌러 UnitySDK의 설치 가이드를 따르시면 됩니다.
+  - UnitySDK 버전은 4.14.1에 최적화 되어 있습니다.
 
 <br><br>
 ## 2. 프로젝트 설정

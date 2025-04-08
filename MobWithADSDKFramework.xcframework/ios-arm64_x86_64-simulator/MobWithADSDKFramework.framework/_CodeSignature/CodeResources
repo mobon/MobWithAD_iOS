@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		SCpVscMNbrRAt1bek0mdSbnaJuQ=
+		FjyC5oZe/SPCPIj+GZWSN39s/Vs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4J8RTi1HZXh59UQEYhdtwXq56o0=
+		cOJfcGkya7bTYYAxjpcFIw2eZjU=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JFwXolZxt7jwliW39EouFwqGtW4=
+		5eqM3kIXX6wN06rjJK7AomOZOJo=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ypHM2bfXXpu+T9wGf6LUs3xam68=
+		eDEmgthy+KYUL6Th+tGpV+lFRn8=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9VWb6nm4zIGGNVNiTym65i8UNqU=
+		o3MUEMznN9y9ETp4/Bb/kHZ9tmI=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ypHM2bfXXpu+T9wGf6LUs3xam68=
+		eDEmgthy+KYUL6Th+tGpV+lFRn8=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F9efVjzE5VPPDPApLtdMd4s6z1I=
+		B+kxdy0RoRa+V2Q7LV4CDFfeCaY=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JFwXolZxt7jwliW39EouFwqGtW4=
+		5eqM3kIXX6wN06rjJK7AomOZOJo=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RNV3cOK+sR6F2Gjat0Zn7PURZgk=
+		KTqJ4SvT2qIUEC+0tyAAwNGs/nw=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GAosrCZ+A3HPa+2ZGjcEbGNJu0o=
+		oT+oq9geSAek+SORtRae6wC+xx0=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RNV3cOK+sR6F2Gjat0Zn7PURZgk=
+		KTqJ4SvT2qIUEC+0tyAAwNGs/nw=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KRqUfqmr1mwcXovFH7MSC5CoACs=
+		O+QyyHoyyN4VgNm0QAhF7V5Tb+c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -60,6 +60,22 @@
 		<data>
 		oVA10DWLIAKCaAwxXo4Oow1mkhE=
 		</data>
+		<key>UnityAdsResources.bundle/Info.plist</key>
+		<data>
+		DT8bv3P9UFU4f0KTf9mosm3vFj8=
+		</data>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
+		</data>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<data>
+		7sp3Ar5eWE8CR1N+eYJLzLQ6YcQ=
+		</data>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<data>
+		6+hfCdXnixKm+657WUiXeprAN1c=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -67,77 +83,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CULVa2j9vAY1jOWV4il2I5o5E6xpEWgu+GurFqbUt2s=
+			4JLBWuLMG6UVcwPTca/DZOrfUVt70QEGcQyiIPqdP/k=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xVPgC4tKUxKIFp/GJMCl/H1XDfh2ua3PsZoZbfv3dFE=
+			Y1ZIhMIy9wMuNI5y7dh8jH4FhjR2+qemC7OOuc+Okr4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lQE+kYWedGsCVb0xexUi0wKKo4FjhR0/qe0v3zNd5Ak=
+			Wl18GG63mw9iTzBB6qApRS+Zn5yGXZTvcAh7SWyWH/E=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cQX/X5ECaapjMoskOYJ7ivfkrhlWpd4ZZGmHgrwEzRI=
+			jdc8aVaLlv6ZFRc6+K8g9Ir1FTO4TCzte4iuW7hGokI=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lQE+kYWedGsCVb0xexUi0wKKo4FjhR0/qe0v3zNd5Ak=
+			Wl18GG63mw9iTzBB6qApRS+Zn5yGXZTvcAh7SWyWH/E=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAs+MqpwRQmAVwMnlQ3A2LYxHgOr4ug48ueMcPuO0I8=
+			EI3os+lDHpcDC5cMorkxCDAa1BmJPb6EYXGDBKAyhJc=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xVPgC4tKUxKIFp/GJMCl/H1XDfh2ua3PsZoZbfv3dFE=
+			Y1ZIhMIy9wMuNI5y7dh8jH4FhjR2+qemC7OOuc+Okr4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w5173313KXrXYysoOqUcQVxrDFYKOY3R7FpFPyleMbg=
+			0mC57dtw8Jty93oPMGOUJsQCzFEIMk/FarlDToqJxCo=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2u1K2VfqksqrVmeZgW9p+NgAvadnXQLuj3WJfSdf57c=
+			n7hUIe6rWy+1P/hzS88fjbk1vvcDasSCaKdyXk6eI+Q=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w5173313KXrXYysoOqUcQVxrDFYKOY3R7FpFPyleMbg=
+			0mC57dtw8Jty93oPMGOUJsQCzFEIMk/FarlDToqJxCo=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			viuxb9Pkw+EC3A1hUJjOk8oQ7SSSiivhgRXDKuAdbts=
+			caXwNIp8Nkike/CM+19EusPuFxb7fHCLuMmLHLUO6T0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +168,34 @@
 			<key>hash2</key>
 			<data>
 			KEHdbta1cKJP92p6LVI8Ngt3b49mEwphrsPzl7W8WkE=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cS7TvFssosr1vdA0lU1yGs7K2Z0MUJ3OOC8zBo6I3zc=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Te3Jr5e6bZwJTWB4sAfgAvADNUKj/J9l6nJyJYjRWdw=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
 			</data>
 		</dict>
 	</dict>

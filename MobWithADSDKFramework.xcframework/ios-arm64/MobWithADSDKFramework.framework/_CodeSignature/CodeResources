@@ -4,33 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/libswift_Concurrency.dylib</key>
+		<data>
+		ZR8g9Yluh99UUcjS8vXZIOxATqw=
+		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		JgJWtIp3b9rRecyTztTuojy3ajU=
+		AIcppIQFqoHUt/VbFd2sPM19k+M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gaORSPXuLsu8ns0NjCGtK6XCdY4=
+		js5sH5phzT1Na2JIKB9Fh5VRmKY=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JFwXolZxt7jwliW39EouFwqGtW4=
+		5eqM3kIXX6wN06rjJK7AomOZOJo=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qwR0DdFl3Et+1Oxg+RjlwPGf61M=
+		YSQwa9fn/lNY2FXhiqW+b5tEfQ0=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		1RS3nsaKrelwSiPhalPT2xo/pMM=
+		gcTgE08lJQ3CVOWIRPTx372SU78=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qwR0DdFl3Et+1Oxg+RjlwPGf61M=
+		YSQwa9fn/lNY2FXhiqW+b5tEfQ0=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kI7C5OPo1qyWss8BiIqZzDQC+c0=
+		eM/ulKRf1diRjg4AsgHMSjVw0KU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -40,49 +44,72 @@
 		<data>
 		oVA10DWLIAKCaAwxXo4Oow1mkhE=
 		</data>
+		<key>UnityAdsResources.bundle/Info.plist</key>
+		<data>
+		afO3LOlvngMCS+GrnL6DeCwNXK4=
+		</data>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
+		</data>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<data>
+		7sp3Ar5eWE8CR1N+eYJLzLQ6YcQ=
+		</data>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<data>
+		6+hfCdXnixKm+657WUiXeprAN1c=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libswift_Concurrency.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mpH0TKx1m381AoIU2iHK8w0oC84JOhN5JpEdkIFI6js=
+			</data>
+		</dict>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7XWBTnAuIl3YzAH0eA8QZ+pjEi45Qtww/CzGodVi5Zo=
+			z+by4VJFbXV1Eq3kmQg/c2JBmdjn79t7VDAREOODLdo=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xVPgC4tKUxKIFp/GJMCl/H1XDfh2ua3PsZoZbfv3dFE=
+			Y1ZIhMIy9wMuNI5y7dh8jH4FhjR2+qemC7OOuc+Okr4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			doOJnC6H/nbg7AWtPp+q1dRzhDCvJfj46Urwj0G2KEw=
+			Jiy8G0MnRJQ7CC159afHnVpuhVwptfWV+RGrcbfwCJ4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9WaeNu1vCX9TWwnWErmvEBZPZm2P3+mkV6Xu5zxQl6A=
+			aF1gOUmAcJm65mLFy0wTOw7z+uOHdGdeohqzD/Z/DEs=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			doOJnC6H/nbg7AWtPp+q1dRzhDCvJfj46Urwj0G2KEw=
+			Jiy8G0MnRJQ7CC159afHnVpuhVwptfWV+RGrcbfwCJ4=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GBtKeesvJI07K3bXtF2/dL1piIpce5gcwJybyNPob08=
+			X7wn+FDXzB/450Su4/6NU1Qc86E7+N3a28Mx4ECEY2Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +124,34 @@
 			<key>hash2</key>
 			<data>
 			KEHdbta1cKJP92p6LVI8Ngt3b49mEwphrsPzl7W8WkE=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zprCR4jTgQqXOmAPddSU42qg4wgl4rUlr546xYFH1pM=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Te3Jr5e6bZwJTWB4sAfgAvADNUKj/J9l6nJyJYjRWdw=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
 			</data>
 		</dict>
 	</dict>
