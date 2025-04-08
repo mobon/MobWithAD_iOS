@@ -21,7 +21,7 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 ### 1) Cocoapods 사용하여 설치
 #### 프로젝트의 Podfile에 'MobWithAD' 를 추가합니다.
 ```swift
-pod 'MobWithAD'
+pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
 ```
 
 ### 2) 수동 설치
