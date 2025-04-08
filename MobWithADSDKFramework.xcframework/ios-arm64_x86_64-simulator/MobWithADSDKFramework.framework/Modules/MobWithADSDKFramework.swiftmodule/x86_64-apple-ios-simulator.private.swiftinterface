@@ -27,11 +27,11 @@ import _SwiftConcurrencyShims
   public func show()
   @objc deinit
 }
-extension MobWithADSDKFramework.MobWithInterstitailAd : UnityAds.UnityAdsLoadDelegate, UnityAds.UnityAdsShowDelegate {
+extension MobWithADSDKFramework.MobWithInterstitailAd : UnityAdsLoadDelegate, UnityAdsShowDelegate {
   @objc dynamic public func unityAdsAdLoaded(_ placementId: Swift.String)
-  @objc dynamic public func unityAdsAdFailed(toLoad placementId: Swift.String, withError error: UnityAds.UnityAdsLoadError, withMessage message: Swift.String)
-  @objc dynamic public func unityAdsShowComplete(_ placementId: Swift.String, withFinish state: UnityAds.UnityAdsShowCompletionState)
-  @objc dynamic public func unityAdsShowFailed(_ placementId: Swift.String, withError error: UnityAds.UnityAdsShowError, withMessage message: Swift.String)
+  @objc dynamic public func unityAdsAdFailed(toLoad placementId: Swift.String, withError error: UnityAdsLoadError, withMessage message: Swift.String)
+  @objc dynamic public func unityAdsShowComplete(_ placementId: Swift.String, withFinish state: UnityAdsShowCompletionState)
+  @objc dynamic public func unityAdsShowFailed(_ placementId: Swift.String, withError error: UnityAdsShowError, withMessage message: Swift.String)
   @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
   @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
 }
@@ -71,9 +71,9 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   @objc override dynamic public init()
   @objc deinit
 }
-extension MobWithADSDKFramework.MobWithADSDK : UnityAds.UnityAdsInitializationDelegate {
+extension MobWithADSDKFramework.MobWithADSDK : UnityAdsInitializationDelegate {
   @objc dynamic public func initializationComplete()
-  @objc dynamic public func initializationFailed(_ error: UnityAds.UnityAdsInitializationError, withMessage message: Swift.String)
+  @objc dynamic public func initializationFailed(_ error: UnityAdsInitializationError, withMessage message: Swift.String)
 }
 @objc public enum MMBannerType : ObjectiveC.NSInteger {
   case BANNER_320x50
@@ -114,10 +114,10 @@ extension MobWithADSDKFramework.MobWithAdView : CouOffsiteAds.CouAdBannerViewDel
   @_Concurrency.MainActor @preconcurrency public func bannerDidReceiveAd(_ bannerView: CouOffsiteAds.CouAdBannerView)
   @_Concurrency.MainActor @preconcurrency public func bannerDidUpdateData(_ bannerView: CouOffsiteAds.CouAdBannerView)
 }
-extension MobWithADSDKFramework.MobWithAdView : UnityAds.UADSBannerViewDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidLoad(_ bannerView: UnityAds.UADSBannerView!)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidClick(_ bannerView: UnityAds.UADSBannerView!)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidError(_ bannerView: UnityAds.UADSBannerView!, error: UnityAds.UADSBannerError!)
+extension MobWithADSDKFramework.MobWithAdView : UADSBannerViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidLoad(_ bannerView: UADSBannerView!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidClick(_ bannerView: UADSBannerView!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidError(_ bannerView: UADSBannerView!, error: UADSBannerError!)
 }
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
