@@ -283,7 +283,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AdFitSDK;
 @import CoreFoundation;
 @import Foundation;
+@import IronSource;
 @import ObjectiveC;
+@import PAGAdSDK;
 @import UIKit;
 @import UnityAds;
 #endif
@@ -307,6 +309,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+
 typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_320x50 = 0,
   MMBannerTypeBANNER_320x100 = 1,
@@ -412,6 +416,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
 
+@protocol PAGAdProtocol;
+
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
 
 
 @class AdFitNativeAd;
@@ -436,6 +448,8 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 - (void)mobWithIntersitialAdDidFailToReceive;
 /// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
 - (void)mobWithIntersitialAdDidOpend;
+/// 전면광고오픈 실패시 전달됨.
+- (void)mobWithIntersitialAdDidOpenFailed;
 @end
 
 
@@ -444,6 +458,22 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 @property (nonatomic, strong) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
+@end
+
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGLInterstitialAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
+@class LPMAdInfo;
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LPMInterstitialAdDelegate>
+- (void)didLoadAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didFailToLoadAdWithAdUnitId:(NSString * _Nonnull)adUnitId error:(NSError * _Nonnull)error;
+- (void)didDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didClickAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 @end
 
 
@@ -488,6 +518,70 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
 - (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
 @end
+
+
+@protocol MobWithRewardAdDelegate;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
+@interface MobWithRewardAd : NSObject
+@property (nonatomic, strong) id <MobWithRewardAdDelegate> _Nullable adDelegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAd;
+@end
+
+@class PAGRewardedAd;
+@class PAGRewardModel;
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGRewardedAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userDidEarnReward:(PAGRewardModel * _Nonnull)rewardModel;
+- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userEarnRewardFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <UnityAdsLoadDelegate, UnityAdsShowDelegate>
+- (void)unityAdsAdLoaded:(NSString * _Nonnull)placementId;
+- (void)unityAdsAdFailedToLoad:(NSString * _Nonnull)placementId withError:(UnityAdsLoadError)error withMessage:(NSString * _Nonnull)message;
+- (void)unityAdsShowComplete:(NSString * _Nonnull)placementId withFinishState:(UnityAdsShowCompletionState)state;
+- (void)unityAdsShowFailed:(NSString * _Nonnull)placementId withError:(UnityAdsShowError)error withMessage:(NSString * _Nonnull)message;
+- (void)unityAdsShowStart:(NSString * _Nonnull)placementId;
+- (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
+@end
+
+@class ISAdInfo;
+@class ISPlacementInfo;
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
+- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
+- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+@end
+
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
+@protocol MobWithRewardAdDelegate
+@optional
+/// 광고를 클릭한 경우 전달됨
+- (void)mobWithRewardAdClicked;
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithRewardAdDidReceived;
+/// 광고 수신 실패시 전달
+- (void)mobWithRewardAdDidFailToReceive;
+/// 광고가 화면에 표시된 경우 전달됨.
+- (void)mobWithRewardAdDidOpend;
+/// 광고오픈 실패시 전달됨.
+- (void)mobWithRewardAdDidOpenFailed;
+/// 리워드 제공 조건을 만족한 경우 호출된다.
+- (void)mobWithRewardAdCanReward;
+@end
+
 
 
 
@@ -786,7 +880,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AdFitSDK;
 @import CoreFoundation;
 @import Foundation;
+@import IronSource;
 @import ObjectiveC;
+@import PAGAdSDK;
 @import UIKit;
 @import UnityAds;
 #endif
@@ -810,6 +906,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+
 typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_320x50 = 0,
   MMBannerTypeBANNER_320x100 = 1,
@@ -915,6 +1013,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
 
+@protocol PAGAdProtocol;
+
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
 
 
 @class AdFitNativeAd;
@@ -939,6 +1045,8 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 - (void)mobWithIntersitialAdDidFailToReceive;
 /// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
 - (void)mobWithIntersitialAdDidOpend;
+/// 전면광고오픈 실패시 전달됨.
+- (void)mobWithIntersitialAdDidOpenFailed;
 @end
 
 
@@ -947,6 +1055,22 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 @property (nonatomic, strong) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
+@end
+
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGLInterstitialAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
+@class LPMAdInfo;
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LPMInterstitialAdDelegate>
+- (void)didLoadAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didFailToLoadAdWithAdUnitId:(NSString * _Nonnull)adUnitId error:(NSError * _Nonnull)error;
+- (void)didDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didClickAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 @end
 
 
@@ -991,6 +1115,70 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 - (void)mobWithNativeAdViewDidReceivedAdAt:(NSIndexPath * _Nullable)index;
 - (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
 @end
+
+
+@protocol MobWithRewardAdDelegate;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
+@interface MobWithRewardAd : NSObject
+@property (nonatomic, strong) id <MobWithRewardAdDelegate> _Nullable adDelegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAd;
+@end
+
+@class PAGRewardedAd;
+@class PAGRewardModel;
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGRewardedAdDelegate>
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userDidEarnReward:(PAGRewardModel * _Nonnull)rewardModel;
+- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userEarnRewardFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <UnityAdsLoadDelegate, UnityAdsShowDelegate>
+- (void)unityAdsAdLoaded:(NSString * _Nonnull)placementId;
+- (void)unityAdsAdFailedToLoad:(NSString * _Nonnull)placementId withError:(UnityAdsLoadError)error withMessage:(NSString * _Nonnull)message;
+- (void)unityAdsShowComplete:(NSString * _Nonnull)placementId withFinishState:(UnityAdsShowCompletionState)state;
+- (void)unityAdsShowFailed:(NSString * _Nonnull)placementId withError:(UnityAdsShowError)error withMessage:(NSString * _Nonnull)message;
+- (void)unityAdsShowStart:(NSString * _Nonnull)placementId;
+- (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
+@end
+
+@class ISAdInfo;
+@class ISPlacementInfo;
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
+- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
+- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+@end
+
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
+@protocol MobWithRewardAdDelegate
+@optional
+/// 광고를 클릭한 경우 전달됨
+- (void)mobWithRewardAdClicked;
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithRewardAdDidReceived;
+/// 광고 수신 실패시 전달
+- (void)mobWithRewardAdDidFailToReceive;
+/// 광고가 화면에 표시된 경우 전달됨.
+- (void)mobWithRewardAdDidOpend;
+/// 광고오픈 실패시 전달됨.
+- (void)mobWithRewardAdDidOpenFailed;
+/// 리워드 제공 조건을 만족한 경우 호출된다.
+- (void)mobWithRewardAdCanReward;
+@end
+
 
 
 

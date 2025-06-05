@@ -2,15 +2,20 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MobWithADSDKFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
 import AdFitSDK
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
 import CouOffsiteAds
+import DeveloperToolsSupport
 import Foundation
+import IronSource
 @_exported import MobWithADSDKFramework
 import OSLog
+import PAGAdSDK
 import Swift
+import SwiftUI
 import UIKit
 import UnityAds
 import WebKit
@@ -35,6 +40,17 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : UnityAdsLoadDelegate, Un
   @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
   @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
 }
+extension MobWithADSDKFramework.MobWithInterstitailAd : IronSource.LPMInterstitialAdDelegate {
+  @objc dynamic public func didLoadAd(with adInfo: IronSource.LPMAdInfo)
+  @objc dynamic public func didFailToLoadAd(withAdUnitId adUnitId: Swift.String, error: any Swift.Error)
+  @objc dynamic public func didDisplayAd(with adInfo: IronSource.LPMAdInfo)
+  @objc dynamic public func didClickAd(with adInfo: IronSource.LPMAdInfo)
+}
+extension MobWithADSDKFramework.MobWithInterstitailAd : PAGAdSDK.PAGLInterstitialAdDelegate {
+  @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
+}
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
   @objc public init(unitIds: [Swift.String], nibName: Swift.String, bundle: Foundation.Bundle?)
@@ -49,6 +65,770 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   @objc dynamic public func mobWithNativeAdViewClickedAd()
   @objc dynamic public func mobWithNativeAdViewDidReceivedAd(At index: Foundation.IndexPath?)
   @objc dynamic public func mobWithNativeAdViewDidFailToReceiveAd(At index: Foundation.IndexPath?)
+}
+public enum ApiError : Swift.Error {
+  case invalidURL
+  public static func == (a: MobWithADSDKFramework.ApiError, b: MobWithADSDKFramework.ApiError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VastCreativeExtension : Swift.Codable {
+  public let mimeType: Swift.String?
+  public var content: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastCreativeExtension {
+  public init?(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastCreativeExtension : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastCreativeExtension, b: MobWithADSDKFramework.VastCreativeExtension) -> Swift.Bool
+}
+public struct VastImpression : Swift.Codable {
+  public let id: Swift.String?
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastImpression {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastImpression : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastImpression, b: MobWithADSDKFramework.VastImpression) -> Swift.Bool
+}
+public struct VastNonLinear : Swift.Codable {
+  public var height: Swift.String
+  public var id: Swift.String
+  public var width: Swift.String
+  public var staticResource: MobWithADSDKFramework.VastStaticResource?
+  public var nonLinearClickTracking: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastNonLinear {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastNonLinear : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastNonLinear, b: MobWithADSDKFramework.VastNonLinear) -> Swift.Bool
+}
+public struct VastExtension : Swift.Codable {
+  public let type: Swift.String
+  public var creativeParameters: [MobWithADSDKFramework.VastCreativeParameter]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastExtension {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastExtension : Swift.Equatable {
+  public static func == (lhs: MobWithADSDKFramework.VastExtension, rhs: MobWithADSDKFramework.VastExtension) -> Swift.Bool
+}
+public struct VastVerification : Swift.Codable {
+  public let vendor: Foundation.URL?
+  public var viewableImpression: MobWithADSDKFramework.VastViewableImpression?
+  public var javaScriptResource: [MobWithADSDKFramework.VastResource]
+  public var flashResources: [MobWithADSDKFramework.VastResource]
+  public var verificationParameters: MobWithADSDKFramework.VastAdVerificationParameters?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastVerification : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastVerification, b: MobWithADSDKFramework.VastVerification) -> Swift.Bool
+}
+public struct VastSurvey : Swift.Codable {
+  public let type: Swift.String?
+  public var survey: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastSurvey : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastSurvey, b: MobWithADSDKFramework.VastSurvey) -> Swift.Bool
+}
+public enum VastViewableImpressionType : Swift.String {
+  case viewable
+  case notViewable
+  case viewUndetermined
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastViewableImpression : Swift.Codable {
+  public let id: Swift.String
+  public var url: Foundation.URL?
+  public var viewable: [Foundation.URL]
+  public var notViewable: [Foundation.URL]
+  public var viewUndetermined: [Foundation.URL]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastViewableImpression : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastViewableImpression, b: MobWithADSDKFramework.VastViewableImpression) -> Swift.Bool
+}
+public enum TrackingError : Swift.Error {
+  case MissingAdBreak
+  case unableToUpdateProgressTrackingComplete
+  case unableToUpdateProgress(msg: Swift.String)
+  case unableToProvideCreativeClickThroughUrls
+  case internalError(msg: Swift.String)
+  case unableToSkipAdAtThisTime
+  case noAdFound(withId: Swift.String)
+}
+public struct VMAPExtension {
+}
+public enum VMAPErrorCodes : Swift.Int {
+  case undefined
+  case vmapSchemaError
+  case vmapResponesVersionNotSupported
+  case vmapParsingError
+  case adBreakTypeNotSupported
+  case generalAdResponseDocumentError
+  case adResponseTemplateTypeNotSupported
+  case adResponseDocumentExtractionOrParsingError
+  case adResponseDocumentRetrievalTimeout
+  case adResponseDocumentRetrievalError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VMAPModel : Swift.Codable {
+  public let version: Swift.String
+  public var adBreaks: [MobWithADSDKFramework.VMAPAdBreak]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VMAPModel {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+public enum VMAPAdBreakType : Swift.String, Swift.Codable {
+  case linear
+  case nonlinear
+  case display
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VMAPAdBreak : Swift.Codable {
+  public var breakId: Swift.String?
+  public var repeatAfter: Swift.String?
+  public let breakType: MobWithADSDKFramework.VMAPAdBreakType
+  public let timeOffset: Swift.String
+  public var adSource: MobWithADSDKFramework.VMAPAdSource?
+  public var trackingEvents: [MobWithADSDKFramework.VMAPTrackingEvent]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VMAPAdBreak {
+  public init(attrDict: [Swift.String : Swift.String])
+  public func trackEvent(withType type: MobWithADSDKFramework.VMAPTrackingEventType)
+  public func trackEvents(withUrls urls: [Foundation.URL])
+}
+public struct VastWrapper : Swift.Codable {
+  public let followAdditionalWrappers: Swift.Bool?
+  public let allowMultipleAds: Swift.Bool?
+  public let fallbackOnNoAd: Swift.Bool?
+  public var adTagUri: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastWrapper : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastWrapper, b: MobWithADSDKFramework.VastWrapper) -> Swift.Bool
+}
+public struct VastNonLinearAdsCreative : Swift.Codable {
+  public var trackingEvents: [MobWithADSDKFramework.VastTrackingEvent]
+  public var nonLinear: [MobWithADSDKFramework.VastNonLinear]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastNonLinearAdsCreative : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastNonLinearAdsCreative, b: MobWithADSDKFramework.VastNonLinearAdsCreative) -> Swift.Bool
+}
+public struct VastCreative : Swift.Codable {
+  public let id: Swift.String?
+  public let adId: Swift.String?
+  public let sequence: Swift.Int?
+  public let apiFramework: Swift.String?
+  public var universalAdId: MobWithADSDKFramework.VastUniversalAdId?
+  public var creativeExtensions: [MobWithADSDKFramework.VastCreativeExtension]
+  public var linear: MobWithADSDKFramework.VastLinearCreative?
+  public var nonLinearAds: MobWithADSDKFramework.VastNonLinearAdsCreative?
+  public var companionAds: MobWithADSDKFramework.VastCompanionAds?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastCreative {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastCreative : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastCreative, b: MobWithADSDKFramework.VastCreative) -> Swift.Bool
+}
+public struct VastStaticResource : Swift.Codable {
+  public let creativeType: Swift.String
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastStaticResource : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastStaticResource, b: MobWithADSDKFramework.VastStaticResource) -> Swift.Bool
+}
+public struct VastCreativeParameter : Swift.Codable {
+  public var creativeId: Swift.String
+  public var name: Swift.String
+  public var type: Swift.String
+  public var content: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastCreativeParameter {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastCreativeParameter : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastCreativeParameter, b: MobWithADSDKFramework.VastCreativeParameter) -> Swift.Bool
+}
+public struct VastCompanionClickTracking {
+  public let id: Swift.String?
+}
+public struct VastCompanionCreative : Swift.Codable {
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public let id: Swift.String?
+  public let assetWidth: Swift.Int?
+  public let assetHeight: Swift.Int?
+  public let expandedWidth: Swift.Int?
+  public let expandedHeight: Swift.Int?
+  public let apiFramework: Swift.String?
+  public let adSlotId: Swift.String?
+  public let pxRatio: Swift.Double?
+  public var staticResource: [MobWithADSDKFramework.VastStaticResource]
+  public var iFrameResource: [Foundation.URL]
+  public var htmlResource: [Foundation.URL]
+  public var altText: Swift.String?
+  public var companionClickThrough: Foundation.URL?
+  public var companionClickTracking: [Foundation.URL]
+  public var trackingEvents: [MobWithADSDKFramework.VastTrackingEvent]
+  public var adParameters: MobWithADSDKFramework.VastAdParameters?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastCompanionCreative {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastCompanionCreative : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastCompanionCreative, b: MobWithADSDKFramework.VastCompanionCreative) -> Swift.Bool
+}
+public struct VastIcon : Swift.Codable {
+  public let program: Swift.String
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public let xPosition: Swift.String
+  public let yPosition: Swift.String
+  public let duration: Swift.Double
+  public let offset: Swift.Double
+  public let apiFramework: Swift.String
+  public let pxratio: Swift.Double
+  public var iconViewTracking: [Foundation.URL]
+  public var iconClicks: MobWithADSDKFramework.IconClicks?
+  public var staticResource: [MobWithADSDKFramework.VastStaticResource]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastIcon {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastIcon : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastIcon, b: MobWithADSDKFramework.VastIcon) -> Swift.Bool
+}
+public struct VastAdCategory : Swift.Codable {
+  public let authority: Foundation.URL?
+  public var category: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastAdCategory : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastAdCategory, b: MobWithADSDKFramework.VastAdCategory) -> Swift.Bool
+}
+public struct VastLinearCreative : Swift.Codable {
+  public let skipOffset: Swift.String?
+  public var duration: Swift.Double?
+  public var adParameters: MobWithADSDKFramework.VastAdParameters?
+  public var videoClicks: [MobWithADSDKFramework.VastVideoClick]
+  public var trackingEvents: [MobWithADSDKFramework.VastTrackingEvent]
+  public var files: MobWithADSDKFramework.VastMediaFiles
+  public var icons: [MobWithADSDKFramework.VastIcon]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastLinearCreative {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastLinearCreative : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastLinearCreative, b: MobWithADSDKFramework.VastLinearCreative) -> Swift.Bool
+}
+public struct VastAdVerificationParameters : Swift.Codable {
+  public var data: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastAdVerificationParameters : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastAdVerificationParameters, b: MobWithADSDKFramework.VastAdVerificationParameters) -> Swift.Bool
+}
+public struct VastClientOptions {
+  public let wrapperLimit: Swift.Int
+  public let singleWrapperTimeLimit: Foundation.TimeInterval
+  public let timeLimit: Foundation.TimeInterval
+  public let cachedVMAPModel: MobWithADSDKFramework.VMAPModel?
+  public init(wrapperLimit: Swift.Int = 5, singleWrapperTimeLimit: Foundation.TimeInterval = 5, timeLimit: Foundation.TimeInterval = 10, cachedVMAPModel: MobWithADSDKFramework.VMAPModel? = nil)
+}
+public class VastClient {
+  public static var trackingLogOutput: ((Swift.String, [Foundation.URL]) -> ())?
+  public init(options: MobWithADSDKFramework.VastClientOptions = VastClientOptions())
+  public func parseVast(withContentsOf url: Foundation.URL, completion: @escaping (MobWithADSDKFramework.VastModel?, (any Swift.Error)?) -> ())
+  public func parseVast(withData data: Foundation.Data, completion: @escaping (MobWithADSDKFramework.VastModel?, (any Swift.Error)?) -> ())
+  public func parseVMAP(withContentsOf url: Foundation.URL) throws -> MobWithADSDKFramework.VMAPModel
+  @objc deinit
+}
+public struct VastResource : Swift.Codable {
+  public let apiFramework: Swift.String?
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastResource : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastResource, b: MobWithADSDKFramework.VastResource) -> Swift.Bool
+}
+public struct VastAdSystem : Swift.Codable {
+  public let version: Swift.String?
+  public var system: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastAdSystem : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastAdSystem, b: MobWithADSDKFramework.VastAdSystem) -> Swift.Bool
+}
+public enum VMAPTrackingEventType : Swift.String, Swift.Codable {
+  case breakStart
+  case breakEnd
+  case error
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VMAPTrackingEvent : Swift.Codable {
+  public let event: MobWithADSDKFramework.VMAPTrackingEventType
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VMAPTrackingEvent {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+public struct VastInteractiveCreativeFile : Swift.Codable {
+  public let type: Swift.String?
+  public let apiFramework: Swift.String?
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastInteractiveCreativeFile : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastInteractiveCreativeFile, b: MobWithADSDKFramework.VastInteractiveCreativeFile) -> Swift.Bool
+}
+public enum ClickType : Swift.String, Swift.Codable {
+  case clickThrough
+  case clickTracking
+  case customClick
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastVideoClick : Swift.Codable {
+  public let id: Swift.String?
+  public let type: MobWithADSDKFramework.ClickType
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastVideoClick {
+  public init(type: MobWithADSDKFramework.ClickType, attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastVideoClick : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastVideoClick, b: MobWithADSDKFramework.VastVideoClick) -> Swift.Bool
+}
+public enum TrackingEventType : Swift.String, Swift.Codable {
+  case firstQuartile
+  case midpoint
+  case thirdQuartile
+  case complete
+  case creativeView
+  case start
+  case mute
+  case unmute
+  case pause
+  case rewind
+  case resume
+  case fullscreen
+  case exitFullscreen
+  case playerExpand
+  case playerCollapse
+  case acceptInvitationLinear
+  case closeLinear
+  case skip
+  case progress
+  case collapse
+  case expand
+  case acceptInvitation
+  case close
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastTrackingEvent : Swift.Codable {
+  public let type: MobWithADSDKFramework.TrackingEventType
+  public let offset: Swift.Double?
+  public var url: Foundation.URL?
+  public var tracked: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastTrackingEvent {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastTrackingEvent : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastTrackingEvent, b: MobWithADSDKFramework.VastTrackingEvent) -> Swift.Bool
+}
+public protocol VastTrackerDelegate : AnyObject {
+  func adFirstQuartile(vastTracker: MobWithADSDKFramework.VastTracker, ad: MobWithADSDKFramework.VastAd)
+  func adMidpoint(vastTracker: MobWithADSDKFramework.VastTracker, ad: MobWithADSDKFramework.VastAd)
+  func adThirdQuartile(vastTracker: MobWithADSDKFramework.VastTracker, ad: MobWithADSDKFramework.VastAd)
+}
+public struct TrackerModel {
+}
+public class VastTracker {
+  weak public var delegate: (any MobWithADSDKFramework.VastTrackerDelegate)?
+  final public let vastModel: MobWithADSDKFramework.VastModel
+  final public let totalAds: Swift.Int
+  final public let startTime: Swift.Double
+  public init(vastModel: MobWithADSDKFramework.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any MobWithADSDKFramework.VastTrackerDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
+  @objc deinit
+}
+extension MobWithADSDKFramework.VastTracker {
+  public func updateProgress(time: Swift.Double) throws
+  public func trackAdBreakStart(for adBreak: MobWithADSDKFramework.VMAPAdBreak)
+  public func trackAdBreakEnd(for adBreak: MobWithADSDKFramework.VMAPAdBreak)
+  public func trackAdBreakEvents(for adBreak: MobWithADSDKFramework.VMAPAdBreak, withURLs urls: [Foundation.URL])
+  public func trackAdStart(withId id: Swift.String) throws
+  public func trackAdComplete() throws
+  public func trackAdSkip() throws
+  public func trackSkippedAds(with ids: [Swift.String])
+  public func played() throws
+  public func paused() throws
+  public func fullscreen(_ val: Swift.Bool) throws
+  public func rewind() throws
+  public func muted(_ val: Swift.Bool) throws
+  public func acceptedLinearInvitation() throws
+  public func closed() throws
+  public func clicked() throws -> Foundation.URL?
+  public func clickedWithCustomAction() throws -> [Foundation.URL]
+  public func error(withReason code: MobWithADSDKFramework.VastErrorCodes?) throws
+  public func trackViewability(type: MobWithADSDKFramework.VastViewableImpressionType) throws
+}
+public struct IconClicks : Swift.Codable {
+  public var iconClickThrough: Foundation.URL?
+  public var iconClickTracking: [MobWithADSDKFramework.VastIconClickTracking]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.IconClicks : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.IconClicks, b: MobWithADSDKFramework.IconClicks) -> Swift.Bool
+}
+public struct VastAdParameters : Swift.Codable {
+  public let xmlEncoded: Swift.String?
+  public var content: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastAdParameters : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastAdParameters, b: MobWithADSDKFramework.VastAdParameters) -> Swift.Bool
+}
+public struct VastUniversalAdId : Swift.Codable {
+  public let idRegistry: Swift.String
+  public let idValue: Swift.String
+  public var uniqueCreativeId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastUniversalAdId {
+  public init?(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastUniversalAdId : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastUniversalAdId, b: MobWithADSDKFramework.VastUniversalAdId) -> Swift.Bool
+}
+extension Swift.String {
+  public var toSeconds: Swift.Double? {
+    get
+  }
+}
+public enum VastErrorCodes : Swift.Int {
+  case xmlParsingError
+  case vastSchemaValidationError
+  case vastVersionOfResponseNotSupported
+  case traffickingError
+  case videoPlayerExpectingDifferentLinearity
+  case videoPlayerExpectingDifferentDuration
+  case videoPlayerExpectingDifferentSize
+  case adCategoryNotProvided
+  case generalWrapperError
+  case timeoutOfVastURI
+  case wrapperLimitReached
+  case noAdsVastResponse
+  case inlineResponseFailedToDisplayInTime
+  case generalLinearError
+  case fileNotFound
+  case timeoutOfMediaFile
+  case mediaFileNotSupported
+  case problemDisplayingMediaFile
+  case conditionalAdRejected
+  case interactiveUnitInNodeNotExecuted
+  case verificationUnitInNodeNotExecuted
+  case generalNonLinearAdsError
+  case creativeDimensionTooLarge
+  case unableToFetchResource
+  case nonLinearResourceNotSupported
+  case generalCompanionAdsError
+  case noAvailableSpace
+  case unableToDisplayCompanion
+  case unableToFetchCompanionResource
+  case companionResourceNotSupported
+  case undefinedError
+  case generalVPAIDError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum VMAPError : Swift.Error {
+  case invalidXMLDocument
+  case invalidVMAPDocument
+  case unableToParseDocument
+  case unableToCreateXMLParser
+  case internalError
+  public static func == (a: MobWithADSDKFramework.VMAPError, b: MobWithADSDKFramework.VMAPError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VastMediaFile : Swift.Codable {
+  public let delivery: Swift.String
+  public let type: Swift.String
+  public let width: Swift.String
+  public let height: Swift.String
+  public let codec: Swift.String?
+  public let id: Swift.String?
+  public let bitrate: Swift.Int?
+  public let minBitrate: Swift.Int?
+  public let maxBitrate: Swift.Int?
+  public let scalable: Swift.Bool?
+  public let maintainAspectRatio: Swift.Bool?
+  public let apiFramework: Swift.String?
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastMediaFile {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastMediaFile : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastMediaFile, b: MobWithADSDKFramework.VastMediaFile) -> Swift.Bool
+}
+public struct VastModel : Swift.Codable {
+  public let version: Swift.String
+  public var ads: [MobWithADSDKFramework.VastAd]
+  public var errors: [Foundation.URL]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastModel {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastModel : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastModel, b: MobWithADSDKFramework.VastModel) -> Swift.Bool
+}
+public enum VastError : Swift.Error {
+  case invalidXMLDocument
+  case invalidVASTDocument
+  case unableToParseDocument
+  case unableToCreateXMLParser
+  case wrapperLimitReached
+  case singleRequestTimeLimitReached
+  case wrapperTimeLimitReached
+  case internalError
+  public static func == (a: MobWithADSDKFramework.VastError, b: MobWithADSDKFramework.VastError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VastIconClickTracking : Swift.Codable {
+  public let id: Swift.String?
+  public var url: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastIconClickTracking : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastIconClickTracking, b: MobWithADSDKFramework.VastIconClickTracking) -> Swift.Bool
+}
+public enum PricingModel : Swift.String, Swift.Codable {
+  case cpc
+  case cpm
+  case cpe
+  case cpv
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastPricing : Swift.Codable {
+  public let model: MobWithADSDKFramework.PricingModel
+  public let currency: Swift.String
+  public var pricing: Swift.Double?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastPricing : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastPricing, b: MobWithADSDKFramework.VastPricing) -> Swift.Bool
+}
+public enum AdType : Swift.String, Swift.Codable {
+  case inline
+  case wrapper
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastAd : Swift.Codable {
+  public var type: MobWithADSDKFramework.AdType
+  public let id: Swift.String
+  public let sequence: Swift.Int?
+  public let conditionalAd: Swift.Bool?
+  public var adSystem: MobWithADSDKFramework.VastAdSystem?
+  public var impressions: [MobWithADSDKFramework.VastImpression]
+  public var adVerifications: [MobWithADSDKFramework.VastVerification]
+  public var viewableImpression: MobWithADSDKFramework.VastViewableImpression?
+  public var pricing: MobWithADSDKFramework.VastPricing?
+  public var errors: [Foundation.URL]
+  public var creatives: [MobWithADSDKFramework.VastCreative]
+  public var extensions: [MobWithADSDKFramework.VastExtension]
+  public var adTitle: Swift.String?
+  public var adCategories: [MobWithADSDKFramework.VastAdCategory]
+  public var description: Swift.String?
+  public var advertiser: Swift.String?
+  public var surveys: [MobWithADSDKFramework.VastSurvey]
+  public var wrapper: MobWithADSDKFramework.VastWrapper?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastAd {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastAd : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastAd, b: MobWithADSDKFramework.VastAd) -> Swift.Bool
+}
+public protocol VastTrackerNonLinearDelegate : AnyObject {
+  func adBreakStart(vastTracker: MobWithADSDKFramework.VastTrackerNonLinear)
+  func adBreakComplete(vastTracker: MobWithADSDKFramework.VastTrackerNonLinear)
+}
+public class VastTrackerNonLinear {
+  weak public var delegate: (any MobWithADSDKFramework.VastTrackerNonLinearDelegate)?
+  final public let id: Swift.String
+  final public let vastModel: MobWithADSDKFramework.VastModel
+  final public let totalAds: Swift.Int
+  final public let startTime: Swift.Double
+  @available(*, message: "do not use VastTracker for storing this model, it is not being used")
+  public var vmapModel: MobWithADSDKFramework.VMAPModel?
+  public init(id: Swift.String, vastModel: MobWithADSDKFramework.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any MobWithADSDKFramework.VastTrackerNonLinearDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
+  @available(*, message: "Use init(id:,vastModel:) instead")
+  convenience public init(id: Swift.String, vmapModel: MobWithADSDKFramework.VMAPModel, breakId: Swift.String, startTime: Swift.Double, supportAdBuffets: Swift.Bool = false, delegate: (any MobWithADSDKFramework.VastTrackerNonLinearDelegate)? = nil) throws
+  public func updateProgress(time: Swift.Double) throws
+  public func adBreakCompleted() throws
+  @objc deinit
+}
+public enum VMAPAdSourceTemplate : Swift.String, Swift.Codable {
+  case vast
+  case vast1
+  case vast2
+  case vast3
+  case vast4
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VMAPAdSource : Swift.Codable {
+  public let allowMultipleAds: Swift.Bool
+  public let followRedirects: Swift.Bool
+  public let id: Swift.String
+  public var vastAdData: MobWithADSDKFramework.VastModel?
+  public var adTagURI: Foundation.URL?
+  public var customAdData: Swift.String?
+  public var templateType: MobWithADSDKFramework.VMAPAdSourceTemplate?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VMAPAdSource {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+public enum CompanionsRequirement : Swift.String, Swift.Codable {
+  case all
+  case any
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VastCompanionAds : Swift.Codable {
+  public let required: MobWithADSDKFramework.CompanionsRequirement
+  public var companions: [MobWithADSDKFramework.VastCompanionCreative]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastCompanionAds {
+  public init(attrDict: [Swift.String : Swift.String])
+}
+extension MobWithADSDKFramework.VastCompanionAds : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastCompanionAds, b: MobWithADSDKFramework.VastCompanionAds) -> Swift.Bool
+}
+public struct VastMediaFiles : Swift.Codable {
+  public var mediaFiles: [MobWithADSDKFramework.VastMediaFile]
+  public var interactiveCreativeFiles: [MobWithADSDKFramework.VastInteractiveCreativeFile]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
+  public static func == (a: MobWithADSDKFramework.VastMediaFiles, b: MobWithADSDKFramework.VastMediaFiles) -> Swift.Bool
 }
 @objc public protocol MobWithADViewDelegate {
   @objc optional func mobWithAdViewClickedAd()
@@ -68,6 +848,8 @@ extension MobWithADSDKFramework.MobWithNativeAdLoader : MobWithADSDKFramework.Mo
   }
   public func initSDK(coupangSubId: Swift.String? = nil)
   public func setUnityGameId(gameId: Swift.String)
+  public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
+  public func setPangleAppId(appId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -119,9 +901,22 @@ extension MobWithADSDKFramework.MobWithAdView : UADSBannerViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidClick(_ bannerView: UADSBannerView!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidError(_ bannerView: UADSBannerView!, error: UADSBannerError!)
 }
+extension MobWithADSDKFramework.MobWithAdView : PAGAdSDK.PAGBannerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
+}
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
   @_Concurrency.MainActor @preconcurrency public func stop()
+}
+@objc public protocol MobWithRewardAdDelegate {
+  @objc optional func mobWithRewardAdClicked()
+  @objc optional func mobWithRewardAdDidReceived()
+  @objc optional func mobWithRewardAdDidFailToReceive()
+  @objc optional func mobWithRewardAdDidOpend()
+  @objc optional func mobWithRewardAdDidOpenFailed()
+  @objc optional func mobWithRewardAdCanReward()
 }
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
@@ -140,6 +935,7 @@ extension MobWithADSDKFramework.MMNativeAdView {
   @objc optional func mobWithIntersitialAdDidReceived()
   @objc optional func mobWithIntersitialAdDidFailToReceive()
   @objc optional func mobWithIntersitialAdDidOpend()
+  @objc optional func mobWithIntersitialAdDidOpenFailed()
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String
@@ -152,6 +948,40 @@ extension Swift.String {
   public func image(width: CoreFoundation.CGFloat = 40, height: CoreFoundation.CGFloat = 40) -> UIKit.UIImage?
   public func toFormattedCurrency() -> Swift.String
   public func isValidPCode() -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class MobWithRewardAd : ObjectiveC.NSObject {
+  @objc public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?
+  public var rootViewController: UIKit.UIViewController?
+  public var unitId: Swift.String
+  @objc override dynamic public init()
+  @objc public func loadAd()
+  public func isLoaded() -> Swift.Bool
+  public func show()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MobWithRewardAd : UnityAdsLoadDelegate, UnityAdsShowDelegate {
+  @objc dynamic public func unityAdsAdLoaded(_ placementId: Swift.String)
+  @objc dynamic public func unityAdsAdFailed(toLoad placementId: Swift.String, withError error: UnityAdsLoadError, withMessage message: Swift.String)
+  @objc dynamic public func unityAdsShowComplete(_ placementId: Swift.String, withFinish state: UnityAdsShowCompletionState)
+  @objc dynamic public func unityAdsShowFailed(_ placementId: Swift.String, withError error: UnityAdsShowError, withMessage message: Swift.String)
+  @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
+  @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
+}
+extension MobWithADSDKFramework.MobWithRewardAd : IronSource.LevelPlayRewardedVideoManualDelegate {
+  @objc dynamic public func didLoad(with adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didFailToLoadWithError(_ error: (any Swift.Error)!)
+  @objc dynamic public func didReceiveReward(forPlacement placementInfo: IronSource.ISPlacementInfo!, with adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didFailToShowWithError(_ error: (any Swift.Error)!, andAdInfo adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didOpen(with adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didClick(_ placementInfo: IronSource.ISPlacementInfo!, with adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didClose(with adInfo: IronSource.ISAdInfo!)
+}
+extension MobWithADSDKFramework.MobWithRewardAd : PAGAdSDK.PAGRewardedAdDelegate {
+  @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @objc dynamic public func rewardedAd(_ rewardedAd: PAGAdSDK.PAGRewardedAd, userDidEarnReward rewardModel: PAGAdSDK.PAGRewardModel)
+  @objc dynamic public func rewardedAd(_ rewardedAd: PAGAdSDK.PAGRewardedAd, userEarnRewardFailWithError error: any Swift.Error)
 }
 public protocol MobwithNativeAdViewRender {
   func getAdImageView() -> UIKit.UIImageView?
@@ -193,6 +1023,45 @@ extension UIKit.UIImage {
   public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high, _ completion: @escaping (MobWithADSDKFramework.MOImageColors?) -> Swift.Void)
   public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high) -> MobWithADSDKFramework.MOImageColors?
 }
+extension MobWithADSDKFramework.ApiError : Swift.Equatable {}
+extension MobWithADSDKFramework.ApiError : Swift.Hashable {}
+extension MobWithADSDKFramework.VastViewableImpressionType : Swift.Equatable {}
+extension MobWithADSDKFramework.VastViewableImpressionType : Swift.Hashable {}
+extension MobWithADSDKFramework.VastViewableImpressionType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VMAPErrorCodes : Swift.Equatable {}
+extension MobWithADSDKFramework.VMAPErrorCodes : Swift.Hashable {}
+extension MobWithADSDKFramework.VMAPErrorCodes : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VMAPAdBreakType : Swift.Equatable {}
+extension MobWithADSDKFramework.VMAPAdBreakType : Swift.Hashable {}
+extension MobWithADSDKFramework.VMAPAdBreakType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.Equatable {}
+extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.Hashable {}
+extension MobWithADSDKFramework.VMAPTrackingEventType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.ClickType : Swift.Equatable {}
+extension MobWithADSDKFramework.ClickType : Swift.Hashable {}
+extension MobWithADSDKFramework.ClickType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.TrackingEventType : Swift.Equatable {}
+extension MobWithADSDKFramework.TrackingEventType : Swift.Hashable {}
+extension MobWithADSDKFramework.TrackingEventType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VastErrorCodes : Swift.Equatable {}
+extension MobWithADSDKFramework.VastErrorCodes : Swift.Hashable {}
+extension MobWithADSDKFramework.VastErrorCodes : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VMAPError : Swift.Equatable {}
+extension MobWithADSDKFramework.VMAPError : Swift.Hashable {}
+extension MobWithADSDKFramework.VastError : Swift.Equatable {}
+extension MobWithADSDKFramework.VastError : Swift.Hashable {}
+extension MobWithADSDKFramework.PricingModel : Swift.Equatable {}
+extension MobWithADSDKFramework.PricingModel : Swift.Hashable {}
+extension MobWithADSDKFramework.PricingModel : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.AdType : Swift.Equatable {}
+extension MobWithADSDKFramework.AdType : Swift.Hashable {}
+extension MobWithADSDKFramework.AdType : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.VMAPAdSourceTemplate : Swift.Equatable {}
+extension MobWithADSDKFramework.VMAPAdSourceTemplate : Swift.Hashable {}
+extension MobWithADSDKFramework.VMAPAdSourceTemplate : Swift.RawRepresentable {}
+extension MobWithADSDKFramework.CompanionsRequirement : Swift.Equatable {}
+extension MobWithADSDKFramework.CompanionsRequirement : Swift.Hashable {}
+extension MobWithADSDKFramework.CompanionsRequirement : Swift.RawRepresentable {}
 extension MobWithADSDKFramework.MMBannerType : Swift.Equatable {}
 extension MobWithADSDKFramework.MMBannerType : Swift.Hashable {}
 extension MobWithADSDKFramework.MMBannerType : Swift.RawRepresentable {}

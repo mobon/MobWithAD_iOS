@@ -1,11 +1,5 @@
 # MobWithAD iOS SDK
 
-[![CI Status](https://img.shields.io/travis/com/mobon/MobWithAD.svg?style=flat)](https://travis-ci.org/mobon/MobWithAD)
-[![Version](https://img.shields.io/cocoapods/v/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
-[![License](https://img.shields.io/cocoapods/l/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
-[![Platform](https://img.shields.io/cocoapods/p/MobWithAD.svg?style=flat)](https://cocoapods.org/pods/MobWithAD)
-
-
 
 |지원 환경|
 |---:|
@@ -39,6 +33,11 @@ pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
   - 본 프레임워크는 UnitySDK를 활용하여 광고를 표시하기도 합니다. 
     자세한 사항은 [여기](https://docs.unity.com/ads/ko-kr/manual/InstallingTheUnitySDK)를 눌러 UnitySDK의 설치 가이드를 따르시면 됩니다.
   - UnitySDK 버전은 4.14.1에 최적화 되어 있습니다.
+  
+  #### (4) PangleSDK 추가
+  - 본 프레임워크는 PangleSDK를 활용하여 광고를 표시하기도 합니다. 
+    자세한 사항은 [여기](https://www.pangleglobal.com/kr/integration/integrate-pangle-sdk-for-ios)를 눌러 UnitySDK의 설치 가이드를 따르시면 됩니다.
+  - PangleSDK 버전은 7.1.1.1에 최적화 되어 있습니다.
 
 <br><br>
 ## 2. 프로젝트 설정
@@ -59,7 +58,11 @@ MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
 ```
 <br>
 
-### 2) Objective-C 프로젝트
+### 2) Always Embed Swift Standard Libraries 값을 Yes로 설정
+앱 Target의 Build Settings 항목에서 Always Embed Swift Standard Libraries값을 Yes로 설정해 줍니다.  
+
+
+### 3) Objective-C 프로젝트
 MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
 <br>
@@ -71,7 +74,7 @@ iOS14 타겟팅된 앱은 IDFA 식별자를 얻기 위해서는 ATT Framework를
 
 <br>
 
-####  (1) 업데이이트 Info.plist
+####  (1) Info.plist 업데이트
 앱이 사용자 또는 장치를 추적하기 위해 데이터 권한을 요청하는 이유를 사용자에게 알리는 메세지를 추가해야 합니다.  
 ```swift
 <key> NSUserTrackingUsageDescription </key>
@@ -109,6 +112,9 @@ import AdFitSDK   // AdFitSDK 추가 (비즈보드를 사용하는 경우, 여�
 ```swift
 MobWithADSDK.standard.initSDK()
 MobWithADSDK.standard.initSDK(coupangSubId: "{전달받은 쿠팡 Sub ID}")  // 쿠팡 SDK 광고 사용시에만 설정
+MobWithADSDK.standard.setUnityGameId(gameId: "{전달받은 Unity Game ID}") //유니티 SDK 광고 사용시에만 설정
+MobWithADSDK.standard.setLevelPlaySDKAppKey("{전달받은 LevelPlay AppKey}") //레벨플레이 SDK 광고 사용시에만 설정
+MobWithADSDK.standard.setPangleAppId(appId: "{전달받은 Pangle App ID}")  // Pangle SDK 광고 사용시에만 설정
 ```
 
 
@@ -368,6 +374,102 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 ...
 
 ```
+
+<br>
+<br>
+
+## 6. MobWithInterstitailAd (전면배너 광고)
+화면에 전면배너를 표시 합니다.  자세한 사용법은 아래를 참고 하시면 됩니다.
+
+```swift
+
+let interstitialAd = MobWithInterstitailAd.init()
+interstitialAd.rootViewController = self
+interstitialAd.adDelegate = self
+interstitialAd.unitId = "{전달 받은 지면번호}"
+
+//지면번호 설정후 광고 요청, 광고 요청에 성공한 이후 show() 함수를 이용하여 광고를 화면에 표시 할 수 있습니다.
+interstitialAd.loadAd()
+
+
+extension ViewController: MobWithIntersitialAdDelegate {
+
+    func mobWithIntersitialAdDidReceived() {
+      // 광고 수신 성공, 해당 메세지를 받은 이후 광고 오픈을 해야 합니다.
+    }
+
+    func mobWithIntersitialAdDidFailToReceive() {
+      // 광고 수신 실패
+    }
+
+    func mobWithIntersitialAdClicked() {
+      // 광고 클릭
+    }
+
+    func mobWithIntersitialAdDidOpend() {
+      // 광고 오픈 성공
+    }
+}
+
+```
+
+<br>
+<br>
+
+
+
+
+## 7. MobWithRewardAd (리워드 광고)
+리워드 광고는 광고를 본 사용자에게 리워드를 제공하기 위한 기능을 제공하는 광고 입니다.
+사용법은 아래를 참고 하시면 됩니다.
+
+```swift
+let rewardAd = MobWithRewardAd.init()
+rewardAd.rootViewController = self
+rewardAd.adDelegate = self
+rewardAd.unitId = "{전달 받은 지면번호}"
+
+//지면번호 설정후 광고 요청, 광고 요청에 성공한 이후 show() 함수를 이용하여 광고를 화면에 표시 할 수 있습니다.
+rewardAd.loadAd()
+
+
+//리워드 광고에 대한 콜백은 MobWithRewardAdDelegate를 통해 전달 받을 수 있습니다.
+extension ViewController: MobWithRewardAdDelegate {
+    
+    func mobWithRewardAdDidReceived() {
+      // 광고 수신 성공.  해당 메세지를 받은 이후 광고 오픈을 해야 합니다.
+    }
+    
+    func mobWithRewardAdDidFailToReceive() {
+      // 광고 수신 실패시
+    }
+    
+    func mobWithRewardAdDidOpend() {
+      // 광고 오픈 성공
+    }
+    
+    
+    func mobWithRewardAdDidOpenFailed() {
+      // 광고 오픈 실패
+    }
+    
+    func mobWithRewardAdClicked() {
+      // 광고 클릭
+    }
+    
+    
+    func mobWithRewardAdCanReward() {
+      // 광고를 통한 리워드 조건 충족
+    }
+    
+}
+
+```
+
+<br>
+<br>
+
+
 * 더 자세한 사항은 Sample앱을 참고 하시기 바랍니다.
 <br>
 <br>
