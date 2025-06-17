@@ -3,13 +3,22 @@
 
 |지원 환경|
 |---:|
-| Deployment Target: iOS 13.0 이상 |
-| 최신 버전의 Xcode (Xcode 13.0 / Swift 5.3) |
+| Deployment Target: iOS 14.0 이상 |
+| 최신 버전의 Xcode (Xcode 16.0 / Swift 5.3) |
 
 <br><br>
 
 MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에서 MobWithAD SDK를 사용하시려면 반드시 최신 버전의 Xcode를 사용해주세요.
 <br><br>
+
+## 최신 버전 및 변경사항
+- 최신버전 : 1.2.12
+- 변경사항
+  - 추가된 SDK 미디에이션 관련 오류 해결을 위해 Dynamic Framework에서 Static Framework로 변경  
+   (향후 관련 이슈 해결후 Dynamic Framework로 변경 예정)
+  - 종속성 누락 요소 수정
+  - 기타 오류 수정
+
 
 ## 1. SDK 설치하기
 ### 1) Cocoapods 사용하여 설치
@@ -65,6 +74,7 @@ MobWithAD SDK는 ATS 활성화 상태에서도 정상적으로 동작하도록 �
 ### 3) Objective-C 프로젝트
 MobWithAD SDK는 Swift 기반으로 개발되었습니다. Objective-C 기반의 프로젝트에서 MobWithAD SDK를 사용하기 위해서는 Swift Standard 라이브러리들을 Embed 시켜주어야 합니다.  
 앱 프로젝트의 빌드 세팅에서 Always Embed Swift Standard Libraries 항목을 Yes로 설정해주세요.  
+
 <br>
 
 ### 4) ATT(App Tracking Transparency) framework 적용
@@ -96,7 +106,25 @@ else {
     mobWithAdView.loadAd()
 }
 ```
+<br>
+
+### 5) Other Linker 설정
+간혹 정상적으로 설정을 하더라도 프레임워크에 대한 설정이 제대로 반영되지 않는 오류가 발생할 수 있습니다.<br>
+이러한 경우 BuildSetting -> Other Link에 플래그를 추가해 주어야 합니다.  
+대표적으로 추가해야 할 값은 아래와 같습니다.
+
+```swift
+  $(inherited)
+  -ObjC
+  -all_Load
+```
+
+
 <br><br>
+
+
+
+
 
 ## 3. 광고 요청
 

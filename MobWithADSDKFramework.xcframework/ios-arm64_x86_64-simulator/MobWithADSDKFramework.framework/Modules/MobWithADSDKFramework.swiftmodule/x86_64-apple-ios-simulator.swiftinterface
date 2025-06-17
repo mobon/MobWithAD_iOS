@@ -40,11 +40,11 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : UnityAdsLoadDelegate, Un
   @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
   @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
 }
-extension MobWithADSDKFramework.MobWithInterstitailAd : IronSource.LPMInterstitialAdDelegate {
-  @objc dynamic public func didLoadAd(with adInfo: IronSource.LPMAdInfo)
+extension MobWithADSDKFramework.MobWithInterstitailAd : LPMInterstitialAdDelegate {
+  @objc dynamic public func didLoadAd(with adInfo: LPMAdInfo)
   @objc dynamic public func didFailToLoadAd(withAdUnitId adUnitId: Swift.String, error: any Swift.Error)
-  @objc dynamic public func didDisplayAd(with adInfo: IronSource.LPMAdInfo)
-  @objc dynamic public func didClickAd(with adInfo: IronSource.LPMAdInfo)
+  @objc dynamic public func didDisplayAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didClickAd(with adInfo: LPMAdInfo)
 }
 extension MobWithADSDKFramework.MobWithInterstitailAd : PAGAdSDK.PAGLInterstitialAdDelegate {
   @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
@@ -967,14 +967,14 @@ extension MobWithADSDKFramework.MobWithRewardAd : UnityAdsLoadDelegate, UnityAds
   @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
   @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
 }
-extension MobWithADSDKFramework.MobWithRewardAd : IronSource.LevelPlayRewardedVideoManualDelegate {
-  @objc dynamic public func didLoad(with adInfo: IronSource.ISAdInfo!)
+extension MobWithADSDKFramework.MobWithRewardAd : LevelPlayRewardedVideoManualDelegate {
+  @objc dynamic public func didLoad(with adInfo: ISAdInfo!)
   @objc dynamic public func didFailToLoadWithError(_ error: (any Swift.Error)!)
-  @objc dynamic public func didReceiveReward(forPlacement placementInfo: IronSource.ISPlacementInfo!, with adInfo: IronSource.ISAdInfo!)
-  @objc dynamic public func didFailToShowWithError(_ error: (any Swift.Error)!, andAdInfo adInfo: IronSource.ISAdInfo!)
-  @objc dynamic public func didOpen(with adInfo: IronSource.ISAdInfo!)
-  @objc dynamic public func didClick(_ placementInfo: IronSource.ISPlacementInfo!, with adInfo: IronSource.ISAdInfo!)
-  @objc dynamic public func didClose(with adInfo: IronSource.ISAdInfo!)
+  @objc dynamic public func didReceiveReward(forPlacement placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
+  @objc dynamic public func didFailToShowWithError(_ error: (any Swift.Error)!, andAdInfo adInfo: ISAdInfo!)
+  @objc dynamic public func didOpen(with adInfo: ISAdInfo!)
+  @objc dynamic public func didClick(_ placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
+  @objc dynamic public func didClose(with adInfo: ISAdInfo!)
 }
 extension MobWithADSDKFramework.MobWithRewardAd : PAGAdSDK.PAGRewardedAdDelegate {
   @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
