@@ -406,7 +406,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
-
 @class UADSBannerView;
 @class UADSBannerError;
 
@@ -415,6 +414,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidClick:(UADSBannerView * _Null_unspecified)bannerView;
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
+
 
 @protocol PAGAdProtocol;
 
@@ -581,8 +581,6 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
 /// 리워드 제공 조건을 만족한 경우 호출된다.
 - (void)mobWithRewardAdCanReward;
 @end
-
-
 
 
 

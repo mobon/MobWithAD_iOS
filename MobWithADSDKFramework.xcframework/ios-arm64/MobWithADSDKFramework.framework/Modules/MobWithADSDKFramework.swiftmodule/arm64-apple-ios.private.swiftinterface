@@ -8,14 +8,12 @@ import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
 import CouOffsiteAds
-import DeveloperToolsSupport
 import Foundation
 import IronSource
 @_exported import MobWithADSDKFramework
 import OSLog
 import PAGAdSDK
 import Swift
-import SwiftUI
 import UIKit
 import UnityAds
 import WebKit
@@ -847,6 +845,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
     @objc get
   }
   public func initSDK(coupangSubId: Swift.String? = nil)
+  public func enableLog(_ enable: Swift.Bool)
   public func setUnityGameId(gameId: Swift.String)
   public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
   public func setPangleAppId(appId: Swift.String)
