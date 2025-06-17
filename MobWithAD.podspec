@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   
   
   s.vendored_frameworks = 'MobWithADSDKFramework.xcframework', 'CouOffsiteAds.xcframework'
-  s.resource_bundles = 'MobWithADSDKBundle.bundle'
+  s.resource_bundles = { 'MobWithADSDKBundle' => [ 'MobWithADSDKBundle.bundle' ] }
   
   s.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   
