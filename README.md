@@ -12,10 +12,11 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 <br><br>
 
 ## 최신 버전 및 변경사항
-- 최신버전 : 1.2.12
+- 최신버전 : 1.2.16
 - 변경사항
   - 추가된 SDK 미디에이션 관련 오류 해결을 위해 Dynamic Framework에서 Static Framework로 변경  
    (향후 관련 이슈 해결후 Dynamic Framework로 변경 예정)
+  - 전면 / 리워드 배너 Delegate의 콜백 함수 수정
   - 종속성 누락 요소 수정
   - 기타 오류 수정
 
@@ -422,20 +423,24 @@ interstitialAd.loadAd()
 
 extension ViewController: MobWithIntersitialAdDelegate {
 
-    func mobWithIntersitialAdDidReceived() {
+    func mobWithIntersitialAdDidReceived(_ interstitialAd: MobWithInterstitailAd?) {
       // 광고 수신 성공, 해당 메세지를 받은 이후 광고 오픈을 해야 합니다.
     }
 
-    func mobWithIntersitialAdDidFailToReceive() {
+    func mobWithIntersitialAdDidFailToReceive(_ interstitialAd: MobWithInterstitailAd?) {
       // 광고 수신 실패
     }
 
-    func mobWithIntersitialAdClicked() {
+    func mobWithIntersitialAdClicked(_ interstitialAd: MobWithInterstitailAd?) {
       // 광고 클릭
     }
 
-    func mobWithIntersitialAdDidOpend() {
+    func mobWithIntersitialAdDidOpend(_ interstitialAd: MobWithInterstitailAd?) {
       // 광고 오픈 성공
+    }
+
+    func mobWithIntersitialAdDidClosed(_ interstitialAd: MobWithInterstitailAd?) {
+      // 광고 창을 닫은 경우 호출됨
     }
 }
 
@@ -464,32 +469,35 @@ rewardAd.loadAd()
 //리워드 광고에 대한 콜백은 MobWithRewardAdDelegate를 통해 전달 받을 수 있습니다.
 extension ViewController: MobWithRewardAdDelegate {
     
-    func mobWithRewardAdDidReceived() {
+    func mobWithRewardAdDidReceived(_ rewardAd: MobWithRewardAd?) {
       // 광고 수신 성공.  해당 메세지를 받은 이후 광고 오픈을 해야 합니다.
     }
     
-    func mobWithRewardAdDidFailToReceive() {
+    func mobWithRewardAdDidFailToReceive(_ rewardAd: MobWithRewardAd?) {
       // 광고 수신 실패시
     }
     
-    func mobWithRewardAdDidOpend() {
+    func mobWithRewardAdDidOpend(_ rewardAd: MobWithRewardAd?) {
       // 광고 오픈 성공
     }
     
     
-    func mobWithRewardAdDidOpenFailed() {
+    func mobWithRewardAdDidOpenFailed(_ rewardAd: MobWithRewardAd?) {
       // 광고 오픈 실패
     }
     
-    func mobWithRewardAdClicked() {
+    func mobWithRewardAdClicked(_ rewardAd: MobWithRewardAd?) {
       // 광고 클릭
     }
     
     
-    func mobWithRewardAdCanReward() {
+    func mobWithRewardAdCanReward(_ rewardAd: MobWithRewardAd?) {
       // 광고를 통한 리워드 조건 충족
     }
     
+    func mobWithRewardAdClosed(_ rewardAd: MobWithRewardAd?) {
+      // 광고 창을 닫은 경우 호출됨
+    }
 }
 
 ```

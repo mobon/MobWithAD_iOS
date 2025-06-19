@@ -826,6 +826,36 @@
           },
           {
             "kind": "Function",
+            "name": "didCloseAd",
+            "printedName": "didCloseAd(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)didCloseAdWithAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC08didCloseE04withySo9LPMAdInfoC_tF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "didCloseAdWithAdInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "adDidShow",
             "printedName": "adDidShow(_:)",
             "children": [
@@ -33420,17 +33450,31 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdClicked",
-            "printedName": "mobWithRewardAdClicked()",
+            "printedName": "mobWithRewardAdClicked(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdClicked",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE7ClickedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdClicked:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE7ClickedyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -33446,17 +33490,31 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdDidReceived",
-            "printedName": "mobWithRewardAdDidReceived()",
+            "printedName": "mobWithRewardAdDidReceived(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidReceived",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE11DidReceivedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidReceived:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE11DidReceivedyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -33472,17 +33530,31 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdDidFailToReceive",
-            "printedName": "mobWithRewardAdDidFailToReceive()",
+            "printedName": "mobWithRewardAdDidFailToReceive(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidFailToReceive",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE16DidFailToReceiveyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidFailToReceive:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE16DidFailToReceiveyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -33498,17 +33570,31 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdDidOpend",
-            "printedName": "mobWithRewardAdDidOpend()",
+            "printedName": "mobWithRewardAdDidOpend(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidOpend",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE8DidOpendyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidOpend:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE8DidOpendyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -33524,17 +33610,31 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdDidOpenFailed",
-            "printedName": "mobWithRewardAdDidOpenFailed()",
+            "printedName": "mobWithRewardAdDidOpenFailed(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidOpenFailed",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE13DidOpenFailedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdDidOpenFailed:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE13DidOpenFailedyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -33550,17 +33650,71 @@
           {
             "kind": "Function",
             "name": "mobWithRewardAdCanReward",
-            "printedName": "mobWithRewardAdCanReward()",
+            "printedName": "mobWithRewardAdCanReward(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdCanReward",
-            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbde3CanD0yyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdCanReward:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbde3CanD0yyAA0abdE0CSgF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mobWithRewardAdClosed",
+            "printedName": "mobWithRewardAdClosed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithRewardAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithRewardAd",
+                    "printedName": "MobWithADSDKFramework.MobWithRewardAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithRewardAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate(im)mobWithRewardAdClosed:",
+            "mangledName": "$s21MobWithADSDKFramework0aB16RewardAdDelegateP03mobbdE6ClosedyyAA0abdE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithRewardAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithRewardAdDelegate>",
@@ -34278,17 +34432,31 @@
           {
             "kind": "Function",
             "name": "mobWithIntersitialAdClicked",
-            "printedName": "mobWithIntersitialAdClicked()",
+            "printedName": "mobWithIntersitialAdClicked(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdClicked",
-            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE7ClickedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdClicked:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE7ClickedyyAA0ab12InterstitailE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
@@ -34304,17 +34472,31 @@
           {
             "kind": "Function",
             "name": "mobWithIntersitialAdDidReceived",
-            "printedName": "mobWithIntersitialAdDidReceived()",
+            "printedName": "mobWithIntersitialAdDidReceived(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidReceived",
-            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE11DidReceivedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidReceived:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE11DidReceivedyyAA0ab12InterstitailE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
@@ -34330,17 +34512,31 @@
           {
             "kind": "Function",
             "name": "mobWithIntersitialAdDidFailToReceive",
-            "printedName": "mobWithIntersitialAdDidFailToReceive()",
+            "printedName": "mobWithIntersitialAdDidFailToReceive(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidFailToReceive",
-            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE16DidFailToReceiveyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidFailToReceive:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE16DidFailToReceiveyyAA0ab12InterstitailE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
@@ -34356,17 +34552,31 @@
           {
             "kind": "Function",
             "name": "mobWithIntersitialAdDidOpend",
-            "printedName": "mobWithIntersitialAdDidOpend()",
+            "printedName": "mobWithIntersitialAdDidOpend(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidOpend",
-            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE8DidOpendyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidOpend:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE8DidOpendyyAA0ab12InterstitailE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
@@ -34382,17 +34592,71 @@
           {
             "kind": "Function",
             "name": "mobWithIntersitialAdDidOpenFailed",
-            "printedName": "mobWithIntersitialAdDidOpenFailed()",
+            "printedName": "mobWithIntersitialAdDidOpenFailed(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidOpenFailed",
-            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE13DidOpenFailedyyF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidOpenFailed:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE13DidOpenFailedyyAA0ab12InterstitailE0CSgF",
+            "moduleName": "MobWithADSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
+            "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mobWithIntersitialAdDidClosed",
+            "printedName": "mobWithIntersitialAdDidClosed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MobWithADSDKFramework.MobWithInterstitailAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MobWithInterstitailAd",
+                    "printedName": "MobWithADSDKFramework.MobWithInterstitailAd",
+                    "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate(im)mobWithIntersitialAdDidClosed:",
+            "mangledName": "$s21MobWithADSDKFramework0aB21IntersitialAdDelegateP03mobbdE9DidClosedyyAA0ab12InterstitailE0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : MobWithADSDKFramework.MobWithIntersitialAdDelegate>",

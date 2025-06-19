@@ -436,20 +436,23 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)nativeAdLoaderDidFailToReceiveAd:(AdFitNativeAdLoader * _Nonnull)nativeAdLoader error:(NSError * _Nonnull)error;
 @end
 
+@class MobWithInterstitailAd;
 
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 @protocol MobWithIntersitialAdDelegate
 @optional
 /// 광고를 클릭한 경우 전달됨
-- (void)mobWithIntersitialAdClicked;
+- (void)mobWithIntersitialAdClicked:(MobWithInterstitailAd * _Nullable)interstitialAd;
 /// 광고를 수신한 경우 전달됨
-- (void)mobWithIntersitialAdDidReceived;
+- (void)mobWithIntersitialAdDidReceived:(MobWithInterstitailAd * _Nullable)interstitialAd;
 /// 광고 수신 실패시 전달
-- (void)mobWithIntersitialAdDidFailToReceive;
+- (void)mobWithIntersitialAdDidFailToReceive:(MobWithInterstitailAd * _Nullable)interstitialAd;
 /// 전면광고가 화면에 표시된 경우 전달됨.  전면 광고의 경우에만 전달 받을 수 있다.
-- (void)mobWithIntersitialAdDidOpend;
+- (void)mobWithIntersitialAdDidOpend:(MobWithInterstitailAd * _Nullable)interstitialAd;
 /// 전면광고오픈 실패시 전달됨.
-- (void)mobWithIntersitialAdDidOpenFailed;
+- (void)mobWithIntersitialAdDidOpenFailed:(MobWithInterstitailAd * _Nullable)interstitialAd;
+/// 전면광고 창이 닫힌 경우 호출된다.
+- (void)mobWithIntersitialAdDidClosed:(MobWithInterstitailAd * _Nullable)interstitialAd;
 @end
 
 
@@ -474,6 +477,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)didFailToLoadAdWithAdUnitId:(NSString * _Nonnull)adUnitId error:(NSError * _Nonnull)error;
 - (void)didDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 - (void)didClickAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didCloseAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 @end
 
 
@@ -569,17 +573,19 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework23MobWithRewardAdDelegate_")
 @protocol MobWithRewardAdDelegate
 @optional
 /// 광고를 클릭한 경우 전달됨
-- (void)mobWithRewardAdClicked;
+- (void)mobWithRewardAdClicked:(MobWithRewardAd * _Nullable)rewardAd;
 /// 광고를 수신한 경우 전달됨
-- (void)mobWithRewardAdDidReceived;
+- (void)mobWithRewardAdDidReceived:(MobWithRewardAd * _Nullable)rewardAd;
 /// 광고 수신 실패시 전달
-- (void)mobWithRewardAdDidFailToReceive;
+- (void)mobWithRewardAdDidFailToReceive:(MobWithRewardAd * _Nullable)rewardAd;
 /// 광고가 화면에 표시된 경우 전달됨.
-- (void)mobWithRewardAdDidOpend;
+- (void)mobWithRewardAdDidOpend:(MobWithRewardAd * _Nullable)rewardAd;
 /// 광고오픈 실패시 전달됨.
-- (void)mobWithRewardAdDidOpenFailed;
+- (void)mobWithRewardAdDidOpenFailed:(MobWithRewardAd * _Nullable)rewardAd;
 /// 리워드 제공 조건을 만족한 경우 호출된다.
-- (void)mobWithRewardAdCanReward;
+- (void)mobWithRewardAdCanReward:(MobWithRewardAd * _Nullable)rewardAd;
+/// 광고창을 닫은 경우 호출된다
+- (void)mobWithRewardAdClosed:(MobWithRewardAd * _Nullable)rewardAd;
 @end
 
 

@@ -43,6 +43,7 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : LPMInterstitialAdDelegat
   @objc dynamic public func didFailToLoadAd(withAdUnitId adUnitId: Swift.String, error: any Swift.Error)
   @objc dynamic public func didDisplayAd(with adInfo: LPMAdInfo)
   @objc dynamic public func didClickAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didCloseAd(with adInfo: LPMAdInfo)
 }
 extension MobWithADSDKFramework.MobWithInterstitailAd : PAGAdSDK.PAGLInterstitialAdDelegate {
   @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
@@ -910,12 +911,13 @@ extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func stop()
 }
 @objc public protocol MobWithRewardAdDelegate {
-  @objc optional func mobWithRewardAdClicked()
-  @objc optional func mobWithRewardAdDidReceived()
-  @objc optional func mobWithRewardAdDidFailToReceive()
-  @objc optional func mobWithRewardAdDidOpend()
-  @objc optional func mobWithRewardAdDidOpenFailed()
-  @objc optional func mobWithRewardAdCanReward()
+  @objc optional func mobWithRewardAdClicked(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdDidReceived(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdDidFailToReceive(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdDidOpend(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdDidOpenFailed(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdCanReward(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
+  @objc optional func mobWithRewardAdClosed(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
 }
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
@@ -930,11 +932,12 @@ extension MobWithADSDKFramework.MMNativeAdView {
   @objc dynamic public func performAdClicked()
 }
 @objc public protocol MobWithIntersitialAdDelegate {
-  @objc optional func mobWithIntersitialAdClicked()
-  @objc optional func mobWithIntersitialAdDidReceived()
-  @objc optional func mobWithIntersitialAdDidFailToReceive()
-  @objc optional func mobWithIntersitialAdDidOpend()
-  @objc optional func mobWithIntersitialAdDidOpenFailed()
+  @objc optional func mobWithIntersitialAdClicked(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithIntersitialAdDidReceived(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithIntersitialAdDidFailToReceive(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithIntersitialAdDidOpend(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithIntersitialAdDidOpenFailed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
+  @objc optional func mobWithIntersitialAdDidClosed(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
 }
 extension Swift.String {
   public static func from(dict: Swift.Dictionary<Swift.String, Any>) -> Swift.String
