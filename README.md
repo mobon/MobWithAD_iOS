@@ -12,7 +12,7 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 <br><br>
 
 ## 최신 버전 및 변경사항
-- 최신버전 : 1.2.19
+- 최신버전 : 1.2.20
 - 변경사항
   - 띠배너에 fillMode 추가 
   - 기타 오류 수정
@@ -26,7 +26,7 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
 
 // 특정 버전 지정시
-pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.19'
+pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.20'
 ```
 
 ### 2) 수동 설치
@@ -45,7 +45,12 @@ pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '
     자세한 사항은 [여기](https://docs.unity.com/ads/ko-kr/manual/InstallingTheUnitySDK)를 눌러 UnitySDK의 설치 가이드를 따르시면 됩니다.
   - UnitySDK 버전은 4.14.1에 최적화 되어 있습니다.
   
-  #### (4) PangleSDK 추가
+  #### (4) LevelPlaySDK 추가
+  - 본 프레임워크는 LevelPlaySDK를 활용하여 광고를 표시하기도 합니다. 
+    자세한 사항은 [여기](https://developers.is.com/ironsource-mobile/ios/ios-sdk/#step-1)를 눌러 LevelPlaySDK의 설치 가이드를 따르시면 됩니다.
+  - LevelPlaySDK 버전은 8.7.0.0에 최적화 되어 있습니다.
+  
+  #### (5) PangleSDK 추가
   - 본 프레임워크는 PangleSDK를 활용하여 광고를 표시하기도 합니다. 
     자세한 사항은 [여기](https://www.pangleglobal.com/kr/integration/integrate-pangle-sdk-for-ios)를 눌러 UnitySDK의 설치 가이드를 따르시면 됩니다.
   - PangleSDK 버전은 7.1.1.1에 최적화 되어 있습니다.
