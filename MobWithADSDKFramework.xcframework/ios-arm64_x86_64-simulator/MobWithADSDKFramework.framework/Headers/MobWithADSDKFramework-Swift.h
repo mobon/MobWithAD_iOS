@@ -360,6 +360,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (void)performAdClicked;
 @end
 
+@protocol PAGAdProtocol;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGLNativeAdDelegate>
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
 
 /// MobMixerSDK 기본 관리 클래스
 SWIFT_CLASS("_TtC21MobWithADSDKFramework12MobWithADSDK")
@@ -376,6 +384,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @interface MobWithADSDK (SWIFT_EXTENSION(MobWithADSDKFramework)) <UnityAdsInitializationDelegate>
 - (void)initializationComplete;
 - (void)initializationFailed:(UnityAdsInitializationError)error withMessage:(NSString * _Nonnull)message;
+@end
+
+@class ISAdInfo;
+@class ISPlacementInfo;
+
+@interface MobWithADSDK (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
+- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
+- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
 @end
 
 
@@ -416,7 +437,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
-@protocol PAGAdProtocol;
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
@@ -555,8 +575,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
 @end
 
-@class ISAdInfo;
-@class ISPlacementInfo;
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
 - (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
@@ -961,6 +979,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (void)performAdClicked;
 @end
 
+@protocol PAGAdProtocol;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGLNativeAdDelegate>
+- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
+- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
 
 /// MobMixerSDK 기본 관리 클래스
 SWIFT_CLASS("_TtC21MobWithADSDKFramework12MobWithADSDK")
@@ -977,6 +1003,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @interface MobWithADSDK (SWIFT_EXTENSION(MobWithADSDKFramework)) <UnityAdsInitializationDelegate>
 - (void)initializationComplete;
 - (void)initializationFailed:(UnityAdsInitializationError)error withMessage:(NSString * _Nonnull)message;
+@end
+
+@class ISAdInfo;
+@class ISPlacementInfo;
+
+@interface MobWithADSDK (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
+- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
+- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
 @end
 
 
@@ -1017,7 +1056,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
-@protocol PAGAdProtocol;
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
@@ -1156,8 +1194,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
 @end
 
-@class ISAdInfo;
-@class ISPlacementInfo;
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
 - (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;

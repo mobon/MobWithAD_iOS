@@ -12,12 +12,9 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 <br><br>
 
 ## 최신 버전 및 변경사항
-- 최신버전 : 1.2.16
+- 최신버전 : 1.2.17
 - 변경사항
-  - 추가된 SDK 미디에이션 관련 오류 해결을 위해 Dynamic Framework에서 Static Framework로 변경  
-   (향후 관련 이슈 해결후 Dynamic Framework로 변경 예정)
-  - 전면 / 리워드 배너 Delegate의 콜백 함수 수정
-  - 종속성 누락 요소 수정
+  - 띠배너에 fillMode 추가 
   - 기타 오류 수정
 
 
@@ -25,7 +22,11 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 ### 1) Cocoapods 사용하여 설치
 #### 프로젝트의 Podfile에 'MobWithAD' 를 추가합니다.
 ```swift
+// 기본
 pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
+
+// 특정 버전 지정시
+pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.17'
 ```
 
 ### 2) 수동 설치
@@ -191,7 +192,8 @@ mobWithAdView?.restart()    // 광고 자동 갱신 재시작
 
 ### 4. 광고뷰의 너비 및 높이 설정
 #### 1. 공통
-광고를 표시할 뷰의 사이즈는 아래와 같이 지정된 BannerType의 크기와 동일해야 합니다.
+광고를 표시할 뷰의 사이즈는 아래와 같이 지정된 BannerType의 크기와 동일해야 합니다.  
+(fillMode를 true로 적용하지 않은 경우)
 
 ``` swift
 mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: 320, height: 50),
@@ -221,7 +223,15 @@ mobWithAdView = MobWithAdView.init(CGRect(x: 0, y: 100, width: width, height: he
 
 광고뷰의 너비 및 높이 설정에 대해 더 자세한 사항은 [**AdFitSDK의 비즈보드 템플릿**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md) 의 [**광고뷰의 너비 및 높이 설정**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#-4-%EA%B4%91%EA%B3%A0%EB%B7%B0%EC%9D%98-%EB%84%88%EB%B9%84-%EB%B0%8F-%EB%86%92%EC%9D%B4-%EC%84%A4%EC%A0%95)과 해당 항목 아래 [**뷰 타입**](https://github.com/adfit/adfit-ios-sdk/blob/master/Guide/BizBoard%20Ad%20Template.md#2-%EB%B7%B0-%ED%83%80%EC%9E%85-uiview-2)을 참조하시면 됩니다.
 
-<br>
+
+
+#### 3. fillMode
+fillMode를 true로 설정하시면 지정한 사이즈를 최대한 활용하게 됩니다. 기본값은 false 입니다.  
+다만 실제 노출될 광고의 비율과 지정한 영역의 비율이 맞지 않는 경우 남는 공간에 대해 여백이 발생 할 수 있으니,  
+가급적 비율은 동일하게 맞출 것을 권장 드립니다.
+
+<br><br>
+
 
 ### 5. MobWithADViewDelegate
 

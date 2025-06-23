@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		gjjX/BcnjhnyFCfRDOSgqfTLc4Q=
+		4TcqjXU/oqkz/nxENbCV5BnDKs8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LRdb/AmUxPfEYMjl9dPVuvl5fuA=
+		z7XX/FCWFZCtyLKXTidyM8nTrCY=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -28,13 +28,17 @@
 		<data>
 		BLNjR6VVI/K82v3iQCE5o0YXgGI=
 		</data>
+		<key>MixerVideoViewController.nib</key>
+		<data>
+		O+e3Lzmn1WsXfvmy2Y47m2kDOsM=
+		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		xnKztHTmVtQJ0P+krEuOWdMMyZA=
+		XNZ/FWeVaU7ecmnDTCi6XVjM46A=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BUDBJb7+wGBKh7iOJSLlk482jh0=
+		1xfcF8BakcaAfdWguwjseTOsjUc=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BUDBJb7+wGBKh7iOJSLlk482jh0=
+		1xfcF8BakcaAfdWguwjseTOsjUc=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3joO22Uib3zhI7jhH7bXb8GVL/Y=
+		wChDJI7c3WL8pu6tUXj9ARAErhs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -267,6 +271,18 @@
 		<data>
 		oVA10DWLIAKCaAwxXo4Oow1mkhE=
 		</data>
+		<key>RewardBannerProductView.nib</key>
+		<data>
+		OCp7NkW5h27qRlPY4pBfG4VeGXg=
+		</data>
+		<key>RewardBannerView.nib</key>
+		<data>
+		uy+RuI5KXXJFYV5Skg/cAO5WaJM=
+		</data>
+		<key>RewardBannerViewController.nib</key>
+		<data>
+		tQliwTXskOq7GJK0cfGabc+kk5s=
+		</data>
 		<key>UnityAdsResources.bundle/Info.plist</key>
 		<data>
 		afO3LOlvngMCS+GrnL6DeCwNXK4=
@@ -282,6 +298,50 @@
 		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
 		<data>
 		6+hfCdXnixKm+657WUiXeprAN1c=
+		</data>
+		<key>mobwith_reward_ad_title1.png</key>
+		<data>
+		gSQZaG5EXq92p90zhnnr0HkhMbY=
+		</data>
+		<key>mobwith_reward_ad_title1_1.png</key>
+		<data>
+		3kj1/BFHzxaQG8xPKBsJD7Rkx30=
+		</data>
+		<key>mobwith_reward_ad_title2.png</key>
+		<data>
+		Jg3cBB23zbe12m2zS59bbV7jg6o=
+		</data>
+		<key>mobwith_reward_ad_title2_1.png</key>
+		<data>
+		4KXRW3913fKGMzweVdEBA676F3k=
+		</data>
+		<key>mobwith_reward_x.png</key>
+		<data>
+		5sS2lLXvcf1pq2CP3rIqtj1UcOo=
+		</data>
+		<key>reward_bubble.png</key>
+		<data>
+		cigJen5/5dG2o16Q0W+dfubYgdo=
+		</data>
+		<key>reward_close_bg.png</key>
+		<data>
+		ZYyWfcssnW/kpCBD5LRz7nebHd4=
+		</data>
+		<key>reward_pointv_icon.png</key>
+		<data>
+		ZL259QBErUOiKJrs3zPtJjY1KmM=
+		</data>
+		<key>reward_video_info.png</key>
+		<data>
+		42tVFm3d7XAG6+Gk5MYERsnP5XY=
+		</data>
+		<key>reward_video_title.png</key>
+		<data>
+		psRl+I9yL9borIuB8Hqru/Pzoz0=
+		</data>
+		<key>reward_video_title_1.png</key>
+		<data>
+		dWbo64wp7bu+qUFR7gKZ4ERiei0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -312,11 +372,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gjjX/BcnjhnyFCfRDOSgqfTLc4Q=
+			4TcqjXU/oqkz/nxENbCV5BnDKs8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qqdxI8EBWvGrY5qzqXqCQBqULKPviNPiUTxfgDjox+Y=
+			4Jzh7+Kji1//ASsfCvzK/LWs7uOcd5GhYVPklO7+xE0=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
@@ -341,26 +401,37 @@
 			ES/wHPURrhqoWqlouH6JyVI5Y7FKY1pgaWMpkbPGo0E=
 			</data>
 		</dict>
+		<key>MixerVideoViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O+e3Lzmn1WsXfvmy2Y47m2kDOsM=
+			</data>
+			<key>hash2</key>
+			<data>
+			p8Rg5JZvkt7I5Od0zL6h25JKz88VzvkcrAprzXbhpcg=
+			</data>
+		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xnKztHTmVtQJ0P+krEuOWdMMyZA=
+			XNZ/FWeVaU7ecmnDTCi6XVjM46A=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7gRkOzj/jYF51Kjp6go0HilkIfEEeEChFXGeFTbwxI=
+			Y4zS0/iI8QpAYjqAlp3HaF/a+vWb42QfkxDdGwEn8qU=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BUDBJb7+wGBKh7iOJSLlk482jh0=
+			1xfcF8BakcaAfdWguwjseTOsjUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			twOC8XpcGA19LYCFXHEukGCn8e9tmSe3ax+nezVT9VA=
+			AOSPsBvtYRVaNXnO/YY0hzt5DD8mhEycw1jGQ6g0CgA=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -378,22 +449,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BUDBJb7+wGBKh7iOJSLlk482jh0=
+			1xfcF8BakcaAfdWguwjseTOsjUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			twOC8XpcGA19LYCFXHEukGCn8e9tmSe3ax+nezVT9VA=
+			AOSPsBvtYRVaNXnO/YY0hzt5DD8mhEycw1jGQ6g0CgA=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3joO22Uib3zhI7jhH7bXb8GVL/Y=
+			wChDJI7c3WL8pu6tUXj9ARAErhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GHV74i9oOj6Va+T47QDuXGyfOsZT6FRwRkMO6avDG9Q=
+			cWb0oRAnnTmKcIBCduUZAgbIUOZyidiI1NzIkBK3hF8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -775,6 +846,39 @@
 			KEHdbta1cKJP92p6LVI8Ngt3b49mEwphrsPzl7W8WkE=
 			</data>
 		</dict>
+		<key>RewardBannerProductView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OCp7NkW5h27qRlPY4pBfG4VeGXg=
+			</data>
+			<key>hash2</key>
+			<data>
+			lSgiTtRWQSEwez+y3wpbcWHgUFPnf5XTwU7VuU4NpyU=
+			</data>
+		</dict>
+		<key>RewardBannerView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uy+RuI5KXXJFYV5Skg/cAO5WaJM=
+			</data>
+			<key>hash2</key>
+			<data>
+			dJNnF0zEAcmd1rdjdPoAy/fl1GaeBsV0XKO2yS0Zu2k=
+			</data>
+		</dict>
+		<key>RewardBannerViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQliwTXskOq7GJK0cfGabc+kk5s=
+			</data>
+			<key>hash2</key>
+			<data>
+			LniroRKukrMO8lRQTzcYKuTpZfRrymQwd+JEjHatsFs=
+			</data>
+		</dict>
 		<key>UnityAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -817,6 +921,127 @@
 			<key>hash2</key>
 			<data>
 			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
+			</data>
+		</dict>
+		<key>mobwith_reward_ad_title1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSQZaG5EXq92p90zhnnr0HkhMbY=
+			</data>
+			<key>hash2</key>
+			<data>
+			TSpfRuA88/rag76dHFgpIrx1aW4tijOopsAyPQzLBSo=
+			</data>
+		</dict>
+		<key>mobwith_reward_ad_title1_1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3kj1/BFHzxaQG8xPKBsJD7Rkx30=
+			</data>
+			<key>hash2</key>
+			<data>
+			IHIbvSfqL5GUZ8vYJpZ6PCG2ZYzEEujqqgrLXFoOuoE=
+			</data>
+		</dict>
+		<key>mobwith_reward_ad_title2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jg3cBB23zbe12m2zS59bbV7jg6o=
+			</data>
+			<key>hash2</key>
+			<data>
+			2z2y9f5NixK1ZPhdf6AEoW3J7/eGhpy1WIrpZeV0gpI=
+			</data>
+		</dict>
+		<key>mobwith_reward_ad_title2_1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4KXRW3913fKGMzweVdEBA676F3k=
+			</data>
+			<key>hash2</key>
+			<data>
+			ysxkv2U6Vd2qXnWW7j9emwDQqMJVUms4bpAZnxEg+mc=
+			</data>
+		</dict>
+		<key>mobwith_reward_x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5sS2lLXvcf1pq2CP3rIqtj1UcOo=
+			</data>
+			<key>hash2</key>
+			<data>
+			pUCWeb8M+0BSO86LgXuwtNifKcaq9LB1HitP/fIAdY0=
+			</data>
+		</dict>
+		<key>reward_bubble.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cigJen5/5dG2o16Q0W+dfubYgdo=
+			</data>
+			<key>hash2</key>
+			<data>
+			i9L0LoGQlLdiQDD3YbrbVm9Y3UBZInrCI9twBBSy4As=
+			</data>
+		</dict>
+		<key>reward_close_bg.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZYyWfcssnW/kpCBD5LRz7nebHd4=
+			</data>
+			<key>hash2</key>
+			<data>
+			gkxHvfp/ik24E/4yx50YeuNDjHnXw8cRi44oFQba//w=
+			</data>
+		</dict>
+		<key>reward_pointv_icon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZL259QBErUOiKJrs3zPtJjY1KmM=
+			</data>
+			<key>hash2</key>
+			<data>
+			fOCPwRx4i8aG4l9Sd9ab9elz55uoLSII/2IV+H11lfI=
+			</data>
+		</dict>
+		<key>reward_video_info.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42tVFm3d7XAG6+Gk5MYERsnP5XY=
+			</data>
+			<key>hash2</key>
+			<data>
+			dQD2oux9Pu1bpOUbnGODFF7opv3efz0TgTWnRPJAu5M=
+			</data>
+		</dict>
+		<key>reward_video_title.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			psRl+I9yL9borIuB8Hqru/Pzoz0=
+			</data>
+			<key>hash2</key>
+			<data>
+			nJeZbC8bLaVOJxPiWlVFzcdx4I5IM+vGR3/zGeJXSKE=
+			</data>
+		</dict>
+		<key>reward_video_title_1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dWbo64wp7bu+qUFR7gKZ4ERiei0=
+			</data>
+			<key>hash2</key>
+			<data>
+			QJzRaqZEtVv6Rn79ClfNQ4BQu4CS4Aq1IVHaGnts5No=
 			</data>
 		</dict>
 	</dict>
