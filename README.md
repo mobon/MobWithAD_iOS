@@ -29,6 +29,23 @@ pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
 pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.20'
 ```
 
+만약 ':git', ':tag' 등을 사용 할 수 없는 경우 아래를 참고하시기 바랍니다.  
+1.2.20 버전부터 지원하며, 잘못 설정하신 경우 1.2.8 버전이 설치될 수 있으니 설치된 버전 확인에 주의 바랍니다.
+```swift
+// PodFile 상단에 아래와 같이 source를 지정 합니다. 
+// 순서대로 우선순위가 할당된니 아래 지정된 순서를 유지해야 합니다.
+source 'https://github.com/mobon/mobonPods.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+// 기본
+pod 'MobWithAD'
+
+// 특정 버전 지정시
+pod 'MobWithAD', '1.2.20'
+```
+
+<br>
+
 ### 2) 수동 설치
 
   #### (1) 기본 프레임워크 추가
