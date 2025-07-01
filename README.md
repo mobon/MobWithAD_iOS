@@ -12,10 +12,9 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 <br><br>
 
 ## 최신 버전 및 변경사항
-- 최신버전 : 1.2.20
+- 최신버전 : 1.2.21
 - 변경사항
-  - 띠배너에 fillMode 추가 
-  - 기타 오류 수정
+  - 마이너 오류 수정
 
 
 ## 1. SDK 설치하기
@@ -26,7 +25,7 @@ MobWithAD SDK는 Swift로 개발되었습니다. Swift 기반의 프로젝트에
 pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
 
 // 특정 버전 지정시
-pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.20'
+pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git', :tag => '1.2.21'
 ```
 
 만약 ':git', ':tag' 등을 사용 할 수 없는 경우 아래를 참고하시기 바랍니다.  
@@ -41,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 pod 'MobWithAD'
 
 // 특정 버전 지정시
-pod 'MobWithAD', '1.2.20'
+pod 'MobWithAD', '1.2.21'
 
 // source 지정 없이 사용이 필요한 경우
 // 단, 최신 버전 SDK 업데이트 및 특정 버전의 경우 지원되지 않을 수 있습니다.

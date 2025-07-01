@@ -5,6 +5,7 @@
 //  Created by Enliple on 2023/02/15.
 //
 
+
 import UIKit
 
 import MobWithADSDKFramework
@@ -17,10 +18,12 @@ class NativeAdLoaderTestViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     let mediaCodes:[String] = [
-        "YOUR_ADUNIT_ID_1",
-        "YOUR_ADUNIT_ID_2"
+        "할당 받은 지면번호 1",
+        "할당 받은 지면번호 2",
+        "할당 받은 지면번호 3",
+        "할당 받은 지면번호 4",
+        "할당 받은 지면번호 5"
     ]
     
     lazy var nativeAdLoader:MobWithNativeAdLoader = MobWithNativeAdLoader(unitIds: mediaCodes, nibName: "NativeAdLoaderView", bundle: nil)

@@ -3,6 +3,6 @@ target 'Sample' do
 
   use_frameworks!
 
-  pod 'MobWithAD'
+  pod 'MobWithAD', :git => 'https://github.com/mobon/MobWithAD_iOS.git'
   
 end

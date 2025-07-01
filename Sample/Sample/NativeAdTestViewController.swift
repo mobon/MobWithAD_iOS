@@ -9,6 +9,8 @@
 import UIKit
 import MobWithADSDKFramework
 
+
+
 class NativeAdTestViewController: UIViewController {
     
     @IBOutlet weak var adContainerView: UIView!
@@ -27,7 +29,8 @@ class NativeAdTestViewController: UIViewController {
     
     var nativeAdView:MMNativeAdView?
     
-    let mediaCode:String = "YOUR_ADUNIT_ID"
+    let mediaCode:String = "{ 할당 받은 지면번호 }"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +46,7 @@ class NativeAdTestViewController: UIViewController {
                                       descriptionLabel: descLabel,
                                       gotoSiteButton: goButton,
                                       infoLogoImageView: infoLogoImageView)
+        nativeAdView?.rootViewController = self
         nativeAdView?.adDelegate = self
         
         self.view.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(touchedTextFieldOutSides(gesture: ))))
@@ -82,6 +86,7 @@ extension NativeAdTestViewController {
 extension NativeAdTestViewController: MobWithADViewDelegate {
     
     func mobWithAdViewDidReceivedAd() {
+        print(#function)
     }
 
     func mobWithAdViewDidFailToReceiveAd() {
@@ -89,7 +94,7 @@ extension NativeAdTestViewController: MobWithADViewDelegate {
     }
     
     func mobWithAdViewClickedAd() {
-        // 광고 배너 클릭시 발생
+        print(#function)
     }
     
 }

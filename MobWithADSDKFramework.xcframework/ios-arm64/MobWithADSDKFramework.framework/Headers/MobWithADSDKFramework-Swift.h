@@ -377,6 +377,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MobWithADSDK
 /// SDK 버전 정보를 반환한다
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+/// App Store Url을 설정한다.  일부 DSP에서 앱스토어 URL이 필요할 수 있습니다.   appId를 설정하면 자동으로 생성됩니다.
+@property (nonatomic, copy) NSString * _Nonnull appStoreUrl;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -435,6 +437,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidClick:(UADSBannerView * _Null_unspecified)bannerView;
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
+
 
 
 

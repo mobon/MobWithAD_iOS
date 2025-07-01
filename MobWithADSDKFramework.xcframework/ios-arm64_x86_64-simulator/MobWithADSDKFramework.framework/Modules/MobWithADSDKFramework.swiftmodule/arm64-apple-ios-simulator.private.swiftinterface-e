@@ -841,9 +841,16 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
 }
 @_inheritsConvenienceInitializers @objc public class MobWithADSDK : ObjectiveC.NSObject {
   @objc public static let standard: MobWithADSDKFramework.MobWithADSDK
-  public var appId: Swift.String
+  public var appId: Swift.String {
+    get
+    set
+  }
   @objc public static var sdkVersion: Swift.String {
     @objc get
+  }
+  @objc public var appStoreUrl: Swift.String {
+    @objc get
+    @objc set
   }
   public func initSDK(coupangSubId: Swift.String? = nil)
   public func enableLog(_ enable: Swift.Bool)
@@ -965,6 +972,7 @@ extension Swift.String {
   public func image(width: CoreFoundation.CGFloat = 40, height: CoreFoundation.CGFloat = 40) -> UIKit.UIImage?
   public func toFormattedCurrency() -> Swift.String
   public func isValidPCode() -> Swift.Bool
+  public func urlQueryEncoded() -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class MobWithRewardAd : ObjectiveC.NSObject {
   @objc public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?
