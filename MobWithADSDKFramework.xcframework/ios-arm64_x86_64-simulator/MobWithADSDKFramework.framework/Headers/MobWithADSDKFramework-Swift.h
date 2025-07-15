@@ -326,7 +326,7 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : NSObject
-@property (nonatomic, strong) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
 /// Native AD View
 /// Tag값의 설정이 필요한 View의 경우 Tag값을 설정하지 않았거나, 0인 경우 SDK 내부에서 임의의 Tag값을 설정한다. (미디에션기능을 지원하는 몇몇 SDK의 설정을 위함)
 /// \param bannerUnitId 발급받은 광고 지면 ID
@@ -418,7 +418,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
-@property (nonatomic, strong) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
@@ -481,7 +481,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 @interface MobWithInterstitailAd : NSObject
-@property (nonatomic, strong) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
@@ -551,7 +551,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @interface MobWithRewardAd : NSObject
-@property (nonatomic, strong) id <MobWithRewardAdDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithRewardAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
@@ -948,7 +948,7 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : NSObject
-@property (nonatomic, strong) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
 /// Native AD View
 /// Tag값의 설정이 필요한 View의 경우 Tag값을 설정하지 않았거나, 0인 경우 SDK 내부에서 임의의 Tag값을 설정한다. (미디에션기능을 지원하는 몇몇 SDK의 설정을 위함)
 /// \param bannerUnitId 발급받은 광고 지면 ID
@@ -1040,7 +1040,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @interface MobWithAdView : UIView
-@property (nonatomic, strong) id <MobWithADViewDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init:(CGRect)frame type:(enum MMBannerType)type bannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
@@ -1103,7 +1103,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 @interface MobWithInterstitailAd : NSObject
-@property (nonatomic, strong) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithIntersitialAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end
@@ -1173,7 +1173,7 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 @interface MobWithRewardAd : NSObject
-@property (nonatomic, strong) id <MobWithRewardAdDelegate> _Nullable adDelegate;
+@property (nonatomic, weak) id <MobWithRewardAdDelegate> _Nullable adDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
 @end

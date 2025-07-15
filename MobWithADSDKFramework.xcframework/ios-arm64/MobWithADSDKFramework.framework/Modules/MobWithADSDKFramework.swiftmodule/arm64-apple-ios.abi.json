@@ -94,17 +94,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MobWithIntersitialAdDelegate",
-                    "printedName": "any MobWithADSDKFramework.MobWithIntersitialAdDelegate",
-                    "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithIntersitialAdDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -114,9 +105,11 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl",
               "ObjC"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -32900,17 +32893,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MobWithADSDKFramework.MobWithADViewDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MobWithADViewDelegate",
-                    "printedName": "any MobWithADSDKFramework.MobWithADViewDelegate",
-                    "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithADViewDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MobWithADViewDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -32922,9 +32906,11 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl",
               "ObjC"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -34507,17 +34493,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MobWithADSDKFramework.MobWithADViewDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MobWithADViewDelegate",
-                    "printedName": "any MobWithADSDKFramework.MobWithADViewDelegate",
-                    "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithADViewDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MobWithADViewDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -34527,9 +34504,11 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl",
               "ObjC"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -35387,17 +35366,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MobWithADSDKFramework.MobWithRewardAdDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MobWithRewardAdDelegate",
-                    "printedName": "any MobWithADSDKFramework.MobWithRewardAdDelegate",
-                    "usr": "c:@M@MobWithADSDKFramework@objc(pl)MobWithRewardAdDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "(any MobWithADSDKFramework.MobWithRewardAdDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -35407,9 +35377,11 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl",
               "ObjC"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -39598,35 +39570,35 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1138,
+      "offset": 1143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1187,
+      "offset": 1192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1239,
+      "offset": 1244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1280,
+      "offset": 1285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1376,
       "length": 2,
       "value": "\"\""
     },
@@ -42146,28 +42118,28 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2605,
+      "offset": 2610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2654,
+      "offset": 2659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2706,
+      "offset": 2711,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4568,
+      "offset": 4573,
       "length": 1,
       "value": "0"
     },
@@ -42209,14 +42181,14 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 639,
+      "offset": 674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "StringLiteral",
-      "offset": 3234,
+      "offset": 3285,
       "length": 2,
       "value": "\"\""
     },
@@ -42321,21 +42293,21 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1338,
+      "offset": 1343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1387,
+      "offset": 1392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1439,
+      "offset": 1444,
       "length": 5,
       "value": "false"
     },
@@ -42517,42 +42489,42 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1442,
+      "offset": 1447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1491,
+      "offset": 1496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1543,
+      "offset": 1548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1584,
+      "offset": 1589,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 1680,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1711,
+      "offset": 1716,
       "length": 2,
       "value": "\"\""
     },

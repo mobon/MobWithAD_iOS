@@ -21,7 +21,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class MobWithInterstitailAd : ObjectiveC.NSObject {
-  @objc public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
+  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithIntersitialAdDelegate)?
   public var rootViewController: UIKit.UIViewController?
   public var unitId: Swift.String
   @objc override dynamic public init()
@@ -892,7 +892,7 @@ extension MobWithADSDKFramework.MobWithADSDK : IronSource.LevelPlayRewardedVideo
     set
   }
   @_Concurrency.MainActor @preconcurrency public var interval: Swift.Int
-  @objc @_Concurrency.MainActor @preconcurrency public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency public init(_ frame: CoreFoundation.CGRect, type: MobWithADSDKFramework.MMBannerType, bannerUnitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
@@ -939,7 +939,7 @@ extension MobWithADSDKFramework.MobWithAdView {
 @_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
   public var bannerUnitID: Swift.String
   public var rootViewController: UIKit.UIViewController?
-  @objc public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
+  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
   @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
   @objc public func loadAd()
   public func showNextAd()
@@ -975,7 +975,7 @@ extension Swift.String {
   public func urlQueryEncoded() -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class MobWithRewardAd : ObjectiveC.NSObject {
-  @objc public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?
+  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithRewardAdDelegate)?
   public var rootViewController: UIKit.UIViewController?
   public var unitId: Swift.String
   @objc override dynamic public init()
