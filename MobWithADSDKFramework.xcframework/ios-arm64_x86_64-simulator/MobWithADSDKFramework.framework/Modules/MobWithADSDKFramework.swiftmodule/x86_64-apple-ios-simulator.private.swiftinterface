@@ -51,11 +51,11 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : PAGAdSDK.PAGLInterstitia
   @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
   @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
 }
-extension MobWithADSDKFramework.MobWithInterstitailAd : IASDKCore.IAUnitDelegate, IASDKCore.IAMRAIDContentDelegate, IASDKCore.IAVideoContentDelegate {
-  @objc dynamic public func iaParentViewController(for unitController: IASDKCore.IAUnitController?) -> UIKit.UIViewController
-  @objc dynamic public func iaAdDidReceiveClick(_ unitController: IASDKCore.IAUnitController?)
-  @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IASDKCore.IAUnitController?)
-  @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IASDKCore.IAUnitController?)
+extension MobWithADSDKFramework.MobWithInterstitailAd : IAUnitDelegate, IAMRAIDContentDelegate, IAVideoContentDelegate {
+  @objc dynamic public func iaParentViewController(for unitController: IAUnitController?) -> UIKit.UIViewController
+  @objc dynamic public func iaAdDidReceiveClick(_ unitController: IAUnitController?)
+  @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IAUnitController?)
+  @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IAUnitController?)
 }
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
@@ -931,9 +931,9 @@ extension MobWithADSDKFramework.MobWithAdView : PAGAdSDK.PAGBannerAdDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
 }
-extension MobWithADSDKFramework.MobWithAdView : IASDKCore.IAUnitDelegate, IASDKCore.IAMRAIDContentDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaParentViewController(for unitController: IASDKCore.IAUnitController?) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaAdDidReceiveClick(_ unitController: IASDKCore.IAUnitController?)
+extension MobWithADSDKFramework.MobWithAdView : IAUnitDelegate, IAMRAIDContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaParentViewController(for unitController: IAUnitController?) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaAdDidReceiveClick(_ unitController: IAUnitController?)
 }
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
@@ -1020,12 +1020,12 @@ extension MobWithADSDKFramework.MobWithRewardAd : PAGAdSDK.PAGRewardedAdDelegate
   @objc dynamic public func rewardedAd(_ rewardedAd: PAGAdSDK.PAGRewardedAd, userDidEarnReward rewardModel: PAGAdSDK.PAGRewardModel)
   @objc dynamic public func rewardedAd(_ rewardedAd: PAGAdSDK.PAGRewardedAd, userEarnRewardFailWithError error: any Swift.Error)
 }
-extension MobWithADSDKFramework.MobWithRewardAd : IASDKCore.IAUnitDelegate, IASDKCore.IAMRAIDContentDelegate, IASDKCore.IAVideoContentDelegate {
-  @objc dynamic public func iaParentViewController(for unitController: IASDKCore.IAUnitController?) -> UIKit.UIViewController
-  @objc dynamic public func iaAdDidReceiveClick(_ unitController: IASDKCore.IAUnitController?)
-  @objc dynamic public func iaAdDidReward(_ unitController: IASDKCore.IAUnitController?)
-  @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IASDKCore.IAUnitController?)
-  @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IASDKCore.IAUnitController?)
+extension MobWithADSDKFramework.MobWithRewardAd : IAUnitDelegate, IAMRAIDContentDelegate, IAVideoContentDelegate {
+  @objc dynamic public func iaParentViewController(for unitController: IAUnitController?) -> UIKit.UIViewController
+  @objc dynamic public func iaAdDidReceiveClick(_ unitController: IAUnitController?)
+  @objc dynamic public func iaAdDidReward(_ unitController: IAUnitController?)
+  @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IAUnitController?)
+  @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IAUnitController?)
 }
 public protocol MobwithNativeAdViewRender {
   func getAdImageView() -> UIKit.UIImageView?
