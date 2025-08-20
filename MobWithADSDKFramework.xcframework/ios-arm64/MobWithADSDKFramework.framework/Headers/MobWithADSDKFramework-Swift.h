@@ -283,6 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AdFitSDK;
 @import CoreFoundation;
 @import Foundation;
+@import IASDKCore;
 @import IronSource;
 @import ObjectiveC;
 @import PAGAdSDK;
@@ -324,6 +325,9 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
 @class UILabel;
 @class UIButton;
 
+/// InMobi SDK 네이티브 뷰는 동작 및 기능 검증상 우리가 구현하고 있는 로직과 맞지 않는 부분이 많음
+/// 1. 광고 컨텐츠 표시 -> 정확히 어떻게 표시되는지 확인이 필요함, 너비를 지정해서 뷰를 가져와서 바로 붙이도록 되어 있음.  어디에 붙는지 정책적으로 어떻게 처리되는지 등에 대해 설명이 없음. (컨텐츠 표시에 깜깜이)
+/// 2. 광고 클릭 -> 광고 클릭후 랜딩 처리를 직접 해줘야 함.  1번은 검토를 통해 해결점을 찾을 수 있으나, 클릭 이벤트 처리는 다른 SDK의 경우 직접 처리 해준다는 점에서 차이가 큼
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 @interface MMNativeAdView : NSObject
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
@@ -428,6 +432,15 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class IAUnitController;
+@class UIViewController;
+
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <IAMRAIDContentDelegate, IAUnitDelegate>
+- (UIViewController * _Nonnull)IAParentViewControllerForUnitController:(IAUnitController * _Nullable)unitController SWIFT_WARN_UNUSED_RESULT;
+- (void)IAAdDidReceiveClick:(IAUnitController * _Nullable)unitController;
+@end
+
+
 
 @class UADSBannerView;
 @class UADSBannerError;
@@ -437,7 +450,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidClick:(UADSBannerView * _Null_unspecified)bannerView;
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
-
 
 
 
@@ -491,6 +503,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IAMRAIDContentDelegate, IAUnitDelegate, IAVideoContentDelegate>
+- (UIViewController * _Nonnull)IAParentViewControllerForUnitController:(IAUnitController * _Nullable)unitController SWIFT_WARN_UNUSED_RESULT;
+- (void)IAAdDidReceiveClick:(IAUnitController * _Nullable)unitController;
+- (void)IAUnitControllerDidDismissFullscreen:(IAUnitController * _Nullable)unitController;
+- (void)IAUnitControllerDidPresentFullscreen:(IAUnitController * _Nullable)unitController;
 @end
 
 @class LPMAdInfo;
@@ -565,6 +585,15 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userDidEarnReward:(PAGRewardModel * _Nonnull)rewardModel;
 - (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userEarnRewardFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IAMRAIDContentDelegate, IAUnitDelegate, IAVideoContentDelegate>
+- (UIViewController * _Nonnull)IAParentViewControllerForUnitController:(IAUnitController * _Nullable)unitController SWIFT_WARN_UNUSED_RESULT;
+- (void)IAAdDidReceiveClick:(IAUnitController * _Nullable)unitController;
+- (void)IAAdDidReward:(IAUnitController * _Nullable)unitController;
+- (void)IAUnitControllerDidDismissFullscreen:(IAUnitController * _Nullable)unitController;
+- (void)IAUnitControllerDidPresentFullscreen:(IAUnitController * _Nullable)unitController;
 @end
 
 

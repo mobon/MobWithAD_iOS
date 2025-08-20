@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.22'
+  s.version          = '1.2.23'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -30,5 +30,6 @@ Pod::Spec.new do |s|
   s.dependency 'UnityAds', '4.14.1'
   s.dependency 'Ads-Global', '7.1.1.1'
   s.dependency 'IronSourceSDK','8.7.0.0'
+  s.dependency 'Fyber_Marketplace_SDK', '8.3.8'
   
 end
