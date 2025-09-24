@@ -286,6 +286,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import IASDKCore;
 @import IronSource;
 @import ObjectiveC;
+@import OpenBiddingHelper;
 @import PAGAdSDK;
 @import UIKit;
 @import UnityAds;
@@ -319,18 +320,17 @@ typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
 };
 
 @protocol MobWithADViewDelegate;
+@class NSCoder;
 @class NSString;
-@class UIView;
 @class UIImageView;
 @class UILabel;
 @class UIButton;
 
-/// InMobi SDK 네이티브 뷰는 동작 및 기능 검증상 우리가 구현하고 있는 로직과 맞지 않는 부분이 많음
-/// 1. 광고 컨텐츠 표시 -> 정확히 어떻게 표시되는지 확인이 필요함, 너비를 지정해서 뷰를 가져와서 바로 붙이도록 되어 있음.  어디에 붙는지 정책적으로 어떻게 처리되는지 등에 대해 설명이 없음. (컨텐츠 표시에 깜깜이)
-/// 2. 광고 클릭 -> 광고 클릭후 랜딩 처리를 직접 해줘야 함.  1번은 검토를 통해 해결점을 찾을 수 있으나, 클릭 이벤트 처리는 다른 SDK의 경우 직접 처리 해준다는 점에서 차이가 큼
 SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
-@interface MMNativeAdView : NSObject
+@interface MMNativeAdView : UIView
 @property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 /// Native AD View
 /// Tag값의 설정이 필요한 View의 경우 Tag값을 설정하지 않았거나, 0인 경우 SDK 내부에서 임의의 Tag값을 설정한다. (미디에션기능을 지원하는 몇몇 SDK의 설정을 위함)
 /// \param bannerUnitId 발급받은 광고 지면 ID
@@ -353,8 +353,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 ///
 - (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId adContainerView:(UIView * _Nullable)adContainerView nativeAdRootView:(UIView * _Nullable)nativeAdRootView adImageView:(UIImageView * _Nullable)adImageView logoImageView:(UIImageView * _Nullable)logoImageView titleLabel:(UILabel * _Nullable)titleLabel descriptionLabel:(UILabel * _Nullable)descriptionLabel gotoSiteButton:(UIButton * _Nullable)gotoSiteButton infoLogoImageView:(UIImageView * _Nullable)infoLogoImageView OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAd;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -364,12 +362,41 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (void)performAdClicked;
 @end
 
+@class BidmadNativeAd;
+@class BidmadInfo;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <BidmadNativeAdDelegate>
+- (void)onLoadAd:(BidmadNativeAd * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onClickAd:(BidmadNativeAd * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadFailAd:(BidmadNativeAd * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+@end
+
 @protocol PAGAdProtocol;
 
 @interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGLNativeAdDelegate>
 - (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
+@class AdFitNativeAd;
+@class AdFitNativeAdLoader;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitNativeAdDelegate, AdFitNativeAdLoaderDelegate>
+- (void)nativeAdLoaderDidReceiveAd:(AdFitNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdLoaderDidFailToReceiveAd:(AdFitNativeAdLoader * _Nonnull)nativeAdLoader error:(NSError * _Nonnull)error;
+- (void)nativeAdDidClickAd:(AdFitNativeAd * _Nonnull)nativeAd;
+@end
+
+@class AdFitMediaView;
+
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitNativeAdRenderable>
+- (UILabel * _Nullable)adTitleLabel SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)adBodyLabel SWIFT_WARN_UNUSED_RESULT;
+- (UIButton * _Nullable)adCallToActionButton SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)adProfileNameLabel SWIFT_WARN_UNUSED_RESULT;
+- (UIImageView * _Nullable)adProfileIconView SWIFT_WARN_UNUSED_RESULT;
+- (AdFitMediaView * _Nullable)adMediaView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -417,7 +444,6 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 - (void)mobWithAdViewDidFailToReceiveAd;
 @end
 
-@class NSCoder;
 @class UIWindow;
 
 SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
@@ -441,6 +467,13 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
+@class OpenBiddingBanner;
+
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <BIDMADOpenBiddingBannerDelegate>
+- (void)onLoadAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadFailAd:(OpenBiddingBanner * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+@end
 
 @class UADSBannerView;
 @class UADSBannerError;
@@ -453,6 +486,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 
 
 
+
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
@@ -461,8 +495,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 
 
 
-@class AdFitNativeAd;
-@class AdFitNativeAdLoader;
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitNativeAdDelegate, AdFitNativeAdLoaderDelegate>
 - (void)nativeAdDidClickAd:(AdFitNativeAd * _Nonnull)nativeAd;
@@ -533,6 +565,18 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
 @end
 
+@class OpenBiddingInterstitial;
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <BIDMADOpenBiddingInterstitialDelegate>
+- (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onShowAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onClickAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onShowFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info error:(NSError * _Nonnull)error;
+- (void)onShowFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+@end
+
 @protocol MobWithNativeAdLoaderDelegate;
 @class NSBundle;
 @class NSIndexPath;
@@ -594,6 +638,17 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)IAAdDidReward:(IAUnitController * _Nullable)unitController;
 - (void)IAUnitControllerDidDismissFullscreen:(IAUnitController * _Nullable)unitController;
 - (void)IAUnitControllerDidPresentFullscreen:(IAUnitController * _Nullable)unitController;
+@end
+
+@class OpenBiddingRewardVideo;
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <BIDMADOpenBiddingRewardVideoDelegate>
+- (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onShowAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onClickAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+- (void)onShowFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info error:(NSError * _Nonnull)error;
 @end
 
 

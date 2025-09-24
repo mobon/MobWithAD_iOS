@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.23'
+  s.version          = '1.2.25'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -31,5 +31,15 @@ Pod::Spec.new do |s|
   s.dependency 'Ads-Global', '7.1.1.1'
   s.dependency 'IronSourceSDK','8.7.0.0'
   s.dependency 'Fyber_Marketplace_SDK', '8.3.8'
+  s.dependency 'BidmadSDK/core', '6.13.3'
+  s.dependency 'OpenBiddingHelper', '6.13.2'
+  s.dependency 'BidmadAdmixerAdapter', '2.0.2.12.2'
+  s.dependency 'BidmadAppLovinAdapter', '13.3.1.12.1'
+  s.dependency 'BidmadGoogleAdManagerAdapter', '12.6.0.12.1'
+  s.dependency 'BidmadGoogleAdMobAdapter', '12.6.0.12.1'
+  s.dependency 'BidmadORTBAdapter', '1.0.0.12.1'
+  s.dependency 'BidmadTaboolaAdapter', '3.8.33.12.1'
+  s.dependency 'BidmadTeadsAdapter', '5.2.0.12.1'
+  s.dependency 'BidmadVungleAdapter', '7.5.1.12.1'
   
 end

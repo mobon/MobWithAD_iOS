@@ -13,6 +13,7 @@ import IASDKCore
 import IronSource
 @_exported import MobWithADSDKFramework
 import OSLog
+import OpenBiddingHelper
 import PAGAdSDK
 import Swift
 import UIKit
@@ -56,6 +57,15 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : IAUnitDelegate, IAMRAIDC
   @objc dynamic public func iaAdDidReceiveClick(_ unitController: IAUnitController?)
   @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IAUnitController?)
   @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IAUnitController?)
+}
+extension MobWithADSDKFramework.MobWithInterstitailAd : OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
+  @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
+  @objc dynamic public func onShowAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
+  @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
 }
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
@@ -931,6 +941,11 @@ extension MobWithADSDKFramework.MobWithAdView : PAGAdSDK.PAGBannerAdDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
 }
+extension MobWithADSDKFramework.MobWithAdView : OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, info: BidmadSDK.BidmadInfo)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, info: BidmadSDK.BidmadInfo)
+}
 extension MobWithADSDKFramework.MobWithAdView : IAUnitDelegate, IAMRAIDContentDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaParentViewController(for unitController: IAUnitController?) -> UIKit.UIViewController
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaAdDidReceiveClick(_ unitController: IAUnitController?)
@@ -948,22 +963,41 @@ extension MobWithADSDKFramework.MobWithAdView {
   @objc optional func mobWithRewardAdCanReward(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
   @objc optional func mobWithRewardAdClosed(_ rewardAd: MobWithADSDKFramework.MobWithRewardAd?)
 }
-@_hasMissingDesignatedInitializers @objc public class MMNativeAdView : ObjectiveC.NSObject {
-  public var bannerUnitID: Swift.String
-  public var rootViewController: UIKit.UIViewController?
-  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
-  @objc public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
-  @objc public func loadAd()
-  public func showNextAd()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MMNativeAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var bannerUnitID: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var rootViewController: UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor @preconcurrency public init(bannerUnitId: Swift.String, adContainerView: UIKit.UIView?, nativeAdRootView: UIKit.UIView?, adImageView: UIKit.UIImageView?, logoImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, descriptionLabel: UIKit.UILabel?, gotoSiteButton: UIKit.UIButton?, infoLogoImageView: UIKit.UIImageView?)
+  @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
+  @_Concurrency.MainActor @preconcurrency public func showNextAd()
   @objc deinit
 }
 extension MobWithADSDKFramework.MMNativeAdView {
-  @objc dynamic public func performAdClicked()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func performAdClicked()
 }
 extension MobWithADSDKFramework.MMNativeAdView : PAGAdSDK.PAGLNativeAdDelegate {
-  @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
-  @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
-  @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidClick(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismiss(_ ad: any PAGAdSDK.PAGAdProtocol)
+}
+extension MobWithADSDKFramework.MMNativeAdView : OpenBiddingHelper.BidmadNativeAdDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoad(_ bidmadAd: OpenBiddingHelper.BidmadNativeAd, info: BidmadSDK.BidmadInfo)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onClick(_ bidmadAd: OpenBiddingHelper.BidmadNativeAd, info: BidmadSDK.BidmadInfo)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadFail(_ bidmadAd: OpenBiddingHelper.BidmadNativeAd, error: any Swift.Error)
+}
+extension MobWithADSDKFramework.MMNativeAdView : AdFitSDK.AdFitNativeAdLoaderDelegate, AdFitSDK.AdFitNativeAdDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdDidClickAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
+}
+extension MobWithADSDKFramework.MMNativeAdView : AdFitSDK.AdFitNativeAdRenderable {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adTitleLabel() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adBodyLabel() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adCallToActionButton() -> UIKit.UIButton?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adProfileNameLabel() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adProfileIconView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adMediaView() -> AdFitSDK.AdFitMediaView?
 }
 @objc public protocol MobWithIntersitialAdDelegate {
   @objc optional func mobWithIntersitialAdClicked(_ interstitialAd: MobWithADSDKFramework.MobWithInterstitailAd?)
@@ -1026,6 +1060,14 @@ extension MobWithADSDKFramework.MobWithRewardAd : IAUnitDelegate, IAMRAIDContent
   @objc dynamic public func iaAdDidReward(_ unitController: IAUnitController?)
   @objc dynamic public func iaUnitControllerDidDismissFullscreen(_ unitController: IAUnitController?)
   @objc dynamic public func iaUnitControllerDidPresentFullscreen(_ unitController: IAUnitController?)
+}
+extension MobWithADSDKFramework.MobWithRewardAd : OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
+  @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, error: any Swift.Error)
+  @objc dynamic public func onShowAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
+  @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
 }
 public protocol MobwithNativeAdViewRender {
   func getAdImageView() -> UIKit.UIImageView?

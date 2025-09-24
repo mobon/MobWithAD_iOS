@@ -90,6 +90,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithInterstitailAd",
         "printedName": "MobWithInterstitailAd",
@@ -1090,6 +1097,265 @@
             "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC36iaUnitControllerDidPresentFullscreenyySo06IAUnitH0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "objc_name": "IAUnitControllerDidPresentFullscreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadAd",
+            "printedName": "onLoadAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onLoadAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC06onLoadE0_4infoySo23OpenBiddingInterstitialC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadFailAd",
+            "printedName": "onLoadFailAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onLoadFailAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC010onLoadFailE0_5errorySo23OpenBiddingInterstitialC_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadFailAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onShowAd",
+            "printedName": "onShowAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onShowAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC06onShowE0_4infoySo23OpenBiddingInterstitialC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onShowAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClickAd",
+            "printedName": "onClickAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onClickAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC07onClickE0_4infoySo23OpenBiddingInterstitialC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onClickAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCloseAd",
+            "printedName": "onCloseAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onCloseAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC07onCloseE0_4infoySo23OpenBiddingInterstitialC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onCloseAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onShowFailAd",
+            "printedName": "onShowFailAd(_:info:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onShowFailAd:info:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC010onShowFailE0_4info5errorySo23OpenBiddingInterstitialC_9BidmadSDK0N4InfoCs5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onShowFailAd:info:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onShowFailAd",
+            "printedName": "onShowFailAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingInterstitial",
+                "printedName": "OpenBiddingHelper.OpenBiddingInterstitial",
+                "usr": "c:objc(cs)OpenBiddingInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)onShowFailAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC010onShowFailE0_5errorySo23OpenBiddingInterstitialC_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onShowFailAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -31347,6 +31613,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithADSDK",
         "printedName": "MobWithADSDK",
@@ -32378,6 +32651,13 @@
         "kind": "Import",
         "name": "IASDKCore",
         "printedName": "IASDKCore",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
@@ -33934,6 +34214,120 @@
           },
           {
             "kind": "Function",
+            "name": "onLoadAd",
+            "printedName": "onLoadAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingBanner",
+                "printedName": "OpenBiddingHelper.OpenBiddingBanner",
+                "usr": "c:objc(cs)OpenBiddingBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)onLoadAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06onLoadD0_4infoySo17OpenBiddingBannerC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadFailAd",
+            "printedName": "onLoadFailAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingBanner",
+                "printedName": "OpenBiddingHelper.OpenBiddingBanner",
+                "usr": "c:objc(cs)OpenBiddingBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)onLoadFailAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC010onLoadFailD0_5errorySo17OpenBiddingBannerC_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadFailAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClickAd",
+            "printedName": "onClickAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingBanner",
+                "printedName": "OpenBiddingHelper.OpenBiddingBanner",
+                "usr": "c:objc(cs)OpenBiddingBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)onClickAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC07onClickD0_4infoySo17OpenBiddingBannerC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onClickAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "iaParentViewController",
             "printedName": "iaParentViewController(for:)",
             "children": [
@@ -34595,6 +34989,20 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "AdFitSDK",
+        "printedName": "AdFitSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MMNativeAdView",
         "printedName": "MMNativeAdView",
@@ -34617,6 +35025,8 @@
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -34711,6 +35121,8 @@
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -34812,6 +35224,8 @@
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
@@ -34904,6 +35318,40 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MMNativeAdView",
+                "printedName": "MobWithADSDKFramework.MMNativeAdView",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)initWithFrame:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "MobWithADSDKFramework",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
@@ -35041,6 +35489,8 @@
             "moduleName": "MobWithADSDKFramework",
             "objc_name": "initWithBannerUnitId:adContainerView:nativeAdRootView:adImageView:logoImageView:titleLabel:descriptionLabel:gotoSiteButton:infoLogoImageView:",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -35063,6 +35513,8 @@
             "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC04loadE0yyF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -35084,35 +35536,11 @@
             "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC08showNextE0yyF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MMNativeAdView",
-                "printedName": "MobWithADSDKFramework.MMNativeAdView",
-                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)init",
-            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewCACycfc",
-            "moduleName": "MobWithADSDKFramework",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -35131,6 +35559,8 @@
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -35163,6 +35593,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -35193,6 +35625,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -35223,6 +35657,434 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoad",
+            "printedName": "onLoad(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadNativeAd",
+                "printedName": "OpenBiddingHelper.BidmadNativeAd",
+                "usr": "c:objc(cs)BidmadNativeAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)onLoadAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC6onLoad_4infoySo012BidmadNativeE0C_0J3SDK0J4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClick",
+            "printedName": "onClick(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadNativeAd",
+                "printedName": "OpenBiddingHelper.BidmadNativeAd",
+                "usr": "c:objc(cs)BidmadNativeAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)onClickAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC7onClick_4infoySo012BidmadNativeE0C_0J3SDK0J4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onClickAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadFail",
+            "printedName": "onLoadFail(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadNativeAd",
+                "printedName": "OpenBiddingHelper.BidmadNativeAd",
+                "usr": "c:objc(cs)BidmadNativeAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)onLoadFailAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC10onLoadFail_5errorySo012BidmadNativeE0C_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadFailAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdLoaderDidReceiveAd",
+            "printedName": "nativeAdLoaderDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitNativeAd",
+                "printedName": "AdFitSDK.AdFitNativeAd",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)nativeAdLoaderDidReceiveAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC06nativee16LoaderDidReceiveE0yy0E6FitSDK0ek6NativeE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "nativeAdLoaderDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdLoaderDidFailToReceiveAd",
+            "printedName": "nativeAdLoaderDidFailToReceiveAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitNativeAdLoader",
+                "printedName": "AdFitSDK.AdFitNativeAdLoader",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitNativeAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)nativeAdLoaderDidFailToReceiveAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC06nativee22LoaderDidFailToReceiveE0_5errory0E6FitSDK0en6NativeeH0C_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "nativeAdLoaderDidFailToReceiveAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdDidClickAd",
+            "printedName": "nativeAdDidClickAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitNativeAd",
+                "printedName": "AdFitSDK.AdFitNativeAd",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)nativeAdDidClickAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC06nativee8DidClickE0yy0E6FitSDK0ej6NativeE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "nativeAdDidClickAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adTitleLabel",
+            "printedName": "adTitleLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adTitleLabel",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC12adTitleLabelSo7UILabelCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adTitleLabel",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adBodyLabel",
+            "printedName": "adBodyLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adBodyLabel",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC11adBodyLabelSo7UILabelCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adBodyLabel",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adCallToActionButton",
+            "printedName": "adCallToActionButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIButton?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIButton",
+                    "printedName": "UIKit.UIButton",
+                    "usr": "c:objc(cs)UIButton"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adCallToActionButton",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC20adCallToActionButtonSo8UIButtonCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adCallToActionButton",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adProfileNameLabel",
+            "printedName": "adProfileNameLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adProfileNameLabel",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC18adProfileNameLabelSo7UILabelCSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adProfileNameLabel",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adProfileIconView",
+            "printedName": "adProfileIconView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adProfileIconView",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC013adProfileIconF0So07UIImageF0CSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adProfileIconView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adMediaView",
+            "printedName": "adMediaView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdFitSDK.AdFitMediaView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFitMediaView",
+                    "printedName": "AdFitSDK.AdFitMediaView",
+                    "usr": "c:@M@AdFitSDK@objc(cs)AdFitMediaView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adMediaView",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC07adMediaF00E6FitSDK0eihF0CSgyF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adMediaView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -35234,13 +36096,18 @@
         "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC",
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "ObjC",
           "RawDocComment"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassUsr": "c:objc(cs)UIView",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -35306,6 +36173,55 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VFLayoutSizeValueType",
+            "printedName": "VFLayoutSizeValueType",
+            "usr": "s:8AdFitSDK21VFLayoutSizeValueTypeP",
+            "mangledName": "$s8AdFitSDK21VFLayoutSizeValueTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdFitNativeAdLoaderDelegate",
+            "printedName": "AdFitNativeAdLoaderDelegate",
+            "usr": "c:@M@AdFitSDK@objc(pl)AdFitNativeAdLoaderDelegate",
+            "mangledName": "$s8AdFitSDK0ab6NativeA14LoaderDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdFitNativeAdDelegate",
+            "printedName": "AdFitNativeAdDelegate",
+            "usr": "c:@M@AdFitSDK@objc(pl)AdFitNativeAdDelegate",
+            "mangledName": "$s8AdFitSDK0ab6NativeA8DelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdFitNativeAdRenderable",
+            "printedName": "AdFitNativeAdRenderable",
+            "usr": "c:@M@AdFitSDK@objc(pl)AdFitNativeAdRenderable",
+            "mangledName": "$s8AdFitSDK0ab6NativeA10RenderableP"
           }
         ]
       },
@@ -35667,6 +36583,13 @@
         "kind": "Import",
         "name": "IASDKCore",
         "printedName": "IASDKCore",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
@@ -36933,6 +37856,228 @@
             "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC36iaUnitControllerDidPresentFullscreenyySo06IAUnitH0CSgF",
             "moduleName": "MobWithADSDKFramework",
             "objc_name": "IAUnitControllerDidPresentFullscreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadAd",
+            "printedName": "onLoadAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onLoadAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC06onLoadE0_4infoySo011OpenBiddingD5VideoC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadFailAd",
+            "printedName": "onLoadFailAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onLoadFailAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC010onLoadFailE0_5errorySo011OpenBiddingD5VideoC_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onLoadFailAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onShowAd",
+            "printedName": "onShowAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onShowAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC06onShowE0_4infoySo011OpenBiddingD5VideoC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onShowAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClickAd",
+            "printedName": "onClickAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onClickAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC07onClickE0_4infoySo011OpenBiddingD5VideoC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onClickAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCloseAd",
+            "printedName": "onCloseAd(_:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onCloseAd:info:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC07onCloseE0_4infoySo011OpenBiddingD5VideoC_9BidmadSDK0L4InfoCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onCloseAd:info:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onShowFailAd",
+            "printedName": "onShowFailAd(_:info:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenBiddingRewardVideo",
+                "printedName": "OpenBiddingHelper.OpenBiddingRewardVideo",
+                "usr": "c:objc(cs)OpenBiddingRewardVideo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidmadInfo",
+                "printedName": "BidmadSDK.BidmadInfo",
+                "usr": "c:@M@BidmadSDK@objc(cs)BidmadInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)onShowFailAd:info:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC010onShowFailE0_4info5errorySo011OpenBiddingD5VideoC_9BidmadSDK0N4InfoCs5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "onShowFailAd:info:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -40030,91 +41175,91 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 482,
+      "offset": 508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 549,
+      "offset": 575,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 699,
+      "offset": 725,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 819,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 646,
+      "offset": 672,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1058,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 1086,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1179,
+      "offset": 1205,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1228,
+      "offset": 1254,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1280,
+      "offset": 1306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1321,
+      "offset": 1347,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1412,
+      "offset": 1438,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1486,
       "length": 2,
       "value": "\"\""
     },
@@ -40261,77 +41406,77 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 5267,
+      "offset": 5213,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 5726,
+      "offset": 5672,
       "length": 12,
       "value": "\"\/v1\/pb\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5839,
+      "offset": 5785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 6650,
+      "offset": 6596,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 7076,
+      "offset": 7022,
       "length": 20,
       "value": "\"\/v1\/sdk\/configInfo\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7197,
+      "offset": 7143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 7586,
+      "offset": 7532,
       "length": 16,
       "value": "\"\/inBannerVideo\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7703,
+      "offset": 7649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 8362,
+      "offset": 8308,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 8478,
+      "offset": 8424,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "Dictionary",
-      "offset": 8524,
+      "offset": 8470,
       "length": 3,
       "value": "[]"
     },
@@ -42452,56 +43597,63 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 386,
+      "offset": 412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 423,
+      "offset": 449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 556,
+      "offset": 582,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 631,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 611,
+      "offset": 686,
       "length": 11,
       "value": "\"AF8748075\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1350,
       "length": 42,
       "value": "\"https:\/\/apps.apple.com\/kr\/app\/id\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1316,
+      "offset": 1391,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1226,
+      "offset": 1301,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2014,
+      "offset": 2090,
       "length": 2,
       "value": "\"\""
     },
@@ -42529,140 +43681,140 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 374,
+      "offset": 399,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 423,
       "length": 14,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 777,
+      "offset": 802,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 810,
+      "offset": 835,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 941,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 955,
+      "offset": 980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 1130,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1172,
+      "offset": 1197,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1326,
+      "offset": 1351,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1432,
+      "offset": 1457,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1273,
+      "offset": 1298,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1874,
+      "offset": 1899,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1918,
+      "offset": 1943,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2449,
+      "offset": 2474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2493,
+      "offset": 2518,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2521,
+      "offset": 2546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2645,
+      "offset": 2670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2694,
+      "offset": 2719,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2746,
+      "offset": 2771,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5086,
+      "offset": 5256,
       "length": 1,
       "value": "0"
     },
@@ -42760,79 +43912,86 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 1012,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1164,
+      "offset": 1203,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1231,
+      "offset": 1270,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1385,
+      "offset": 1424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1491,
+      "offset": 1530,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1332,
+      "offset": 1371,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1839,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1867,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2040,
+      "offset": 2079,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2089,
+      "offset": 2128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2141,
+      "offset": 2180,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
+      "kind": "Array",
+      "offset": 2625,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Custom\/TLPaddingLabel.swift",
@@ -42956,98 +44115,98 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 395,
+      "offset": 420,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 487,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 612,
+      "offset": 637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 706,
+      "offset": 731,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 559,
+      "offset": 584,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1303,
+      "offset": 1328,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1342,
+      "offset": 1367,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1395,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1484,
+      "offset": 1509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1533,
+      "offset": 1558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1585,
+      "offset": 1610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1626,
+      "offset": 1651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1717,
+      "offset": 1742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1753,
+      "offset": 1778,
       "length": 2,
       "value": "\"\""
     },
