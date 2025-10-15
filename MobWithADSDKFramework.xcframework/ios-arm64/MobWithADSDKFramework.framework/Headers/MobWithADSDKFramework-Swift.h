@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import IASDKCore;
+@import InMobiSDK;
 @import IronSource;
 @import ObjectiveC;
 @import OpenBiddingHelper;
@@ -467,6 +468,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
+
 @class OpenBiddingBanner;
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <BIDMADOpenBiddingBannerDelegate>
@@ -474,6 +476,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)onLoadFailAd:(OpenBiddingBanner * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 @end
+
 
 @class UADSBannerView;
 @class UADSBannerError;
@@ -485,8 +488,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
-
-
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
@@ -494,6 +495,17 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 @end
 
 
+
+@class IMBanner;
+@class IMAdMetaInfo;
+@class IMRequestStatus;
+
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <IMBannerDelegate>
+- (void)banner:(IMBanner * _Nonnull)banner didReceiveWithMetaInfo:(IMAdMetaInfo * _Nonnull)info;
+- (void)bannerDidFinishLoading:(IMBanner * _Nonnull)banner;
+- (void)banner:(IMBanner * _Nonnull)banner didFailToLoadWithError:(IMRequestStatus * _Nonnull)error;
+- (void)banner:(IMBanner * _Nonnull)banner didInteractWithParams:(NSDictionary<NSString *, id> * _Nullable)params;
+@end
 
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitNativeAdDelegate, AdFitNativeAdLoaderDelegate>
@@ -575,6 +587,21 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 - (void)onShowFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info error:(NSError * _Nonnull)error;
 - (void)onShowFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+@end
+
+@class IMInterstitial;
+
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IMInterstitialDelegate>
+- (void)interstitialDidReceiveAd:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidFinishLoading:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didFailToLoadWithError:(IMRequestStatus * _Nonnull)error;
+- (void)interstitialWillPresent:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidPresent:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didFailToPresentWithError:(IMRequestStatus * _Nonnull)error;
+- (void)interstitialWillDismiss:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidDismiss:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didInteractWithParams:(NSDictionary<NSString *, id> * _Nullable)params;
+- (void)userWillLeaveApplicationFromInterstitial:(IMInterstitial * _Nonnull)interstitial;
 @end
 
 @protocol MobWithNativeAdLoaderDelegate;
@@ -671,6 +698,21 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
 - (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
 - (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+@end
+
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IMInterstitialDelegate>
+- (void)interstitialDidReceiveAd:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidFinishLoading:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didFailToLoadWithError:(IMRequestStatus * _Nonnull)error;
+- (void)interstitialWillPresent:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidPresent:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didFailToPresentWithError:(IMRequestStatus * _Nonnull)error;
+- (void)interstitialWillDismiss:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitialDidDismiss:(IMInterstitial * _Nonnull)interstitial;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial didInteractWithParams:(NSDictionary<NSString *, id> * _Nullable)params;
+- (void)interstitial:(IMInterstitial * _Nonnull)interstitial rewardActionCompletedWithRewards:(NSDictionary<NSString *, id> * _Nonnull)rewards;
+- (void)userWillLeaveApplicationFromInterstitial:(IMInterstitial * _Nonnull)interstitial;
 @end
 
 

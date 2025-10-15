@@ -10,6 +10,7 @@ import CoreTelephony
 import CouOffsiteAds
 import Foundation
 import IASDKCore
+import InMobiSDK
 import IronSource
 @_exported import MobWithADSDKFramework
 import OSLog
@@ -66,6 +67,18 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : OpenBiddingHelper.BIDMAD
   @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo)
   @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
   @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
+}
+extension MobWithADSDKFramework.MobWithInterstitailAd : InMobiSDK.IMInterstitialDelegate {
+  @objc dynamic public func interstitialDidReceiveAd(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidFinishLoading(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didFailToLoadWithError error: InMobiSDK.IMRequestStatus)
+  @objc dynamic public func interstitialWillPresent(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidPresent(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didFailToPresentWithError error: InMobiSDK.IMRequestStatus)
+  @objc dynamic public func interstitialWillDismiss(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidDismiss(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didInteractWithParams params: [Swift.String : Any]?)
+  @objc dynamic public func userWillLeaveApplicationFromInterstitial(_ interstitial: InMobiSDK.IMInterstitial)
 }
 @objc public class MobWithNativeAdLoader : ObjectiveC.NSObject {
   @objc public var nativeAdLoaderDelegate: (any MobWithADSDKFramework.MobWithNativeAdLoaderDelegate)?
@@ -875,6 +888,7 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
   public func setPangleAppId(appId: Swift.String)
   public func setDTExchangeAppID(appId: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func setInMobiAccountId(accountId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -949,6 +963,12 @@ extension MobWithADSDKFramework.MobWithAdView : OpenBiddingHelper.BIDMADOpenBidd
 extension MobWithADSDKFramework.MobWithAdView : IASDKCore.IAUnitDelegate, IASDKCore.IAMRAIDContentDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaParentViewController(for unitController: IASDKCore.IAUnitController?) -> UIKit.UIViewController
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func iaAdDidReceiveClick(_ unitController: IASDKCore.IAUnitController?)
+}
+extension MobWithADSDKFramework.MobWithAdView : InMobiSDK.IMBannerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func banner(_ banner: InMobiSDK.IMBanner, didReceiveWithMetaInfo info: InMobiSDK.IMAdMetaInfo)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerDidFinishLoading(_ banner: InMobiSDK.IMBanner)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func banner(_ banner: InMobiSDK.IMBanner, didFailToLoadWithError error: InMobiSDK.IMRequestStatus)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func banner(_ banner: InMobiSDK.IMBanner, didInteractWithParams params: [Swift.String : Any]?)
 }
 extension MobWithADSDKFramework.MobWithAdView {
   @_Concurrency.MainActor @preconcurrency public func restart()
@@ -1068,6 +1088,19 @@ extension MobWithADSDKFramework.MobWithRewardAd : OpenBiddingHelper.BIDMADOpenBi
   @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
   @objc dynamic public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo)
   @objc dynamic public func onShowFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, info: BidmadSDK.BidmadInfo, error: any Swift.Error)
+}
+extension MobWithADSDKFramework.MobWithRewardAd : InMobiSDK.IMInterstitialDelegate {
+  @objc dynamic public func interstitialDidReceiveAd(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidFinishLoading(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didFailToLoadWithError error: InMobiSDK.IMRequestStatus)
+  @objc dynamic public func interstitialWillPresent(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidPresent(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didFailToPresentWithError error: InMobiSDK.IMRequestStatus)
+  @objc dynamic public func interstitialWillDismiss(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitialDidDismiss(_ interstitial: InMobiSDK.IMInterstitial)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didInteractWithParams params: [Swift.String : Any]?)
+  @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, rewardActionCompletedWithRewards rewards: [Swift.String : Any])
+  @objc dynamic public func userWillLeaveApplicationFromInterstitial(_ interstitial: InMobiSDK.IMInterstitial)
 }
 public protocol MobwithNativeAdViewRender {
   func getAdImageView() -> UIKit.UIImageView?

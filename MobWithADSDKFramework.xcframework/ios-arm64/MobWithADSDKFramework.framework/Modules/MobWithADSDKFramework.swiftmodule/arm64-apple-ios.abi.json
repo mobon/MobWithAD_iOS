@@ -97,6 +97,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithInterstitailAd",
         "printedName": "MobWithInterstitailAd",
@@ -429,8 +436,7 @@
               "Dynamic",
               "ObjC",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -1363,6 +1369,345 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidReceiveAd",
+            "printedName": "interstitialDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialDidReceiveAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC022interstitialDidReceiveE0yy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidFinishLoading",
+            "printedName": "interstitialDidFinishLoading(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialDidFinishLoading:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC28interstitialDidFinishLoadingyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidFinishLoading:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didFailToLoadWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMRequestStatus",
+                "printedName": "InMobiSDK.IMRequestStatus",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMRequestStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitial:didFailToLoadWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC12interstitial_013didFailToLoadB5Errory9InMobiSDK14IMInterstitialC_AF15IMRequestStatusCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didFailToLoadWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialWillPresent",
+            "printedName": "interstitialWillPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialWillPresent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC23interstitialWillPresentyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialWillPresent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidPresent",
+            "printedName": "interstitialDidPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialDidPresent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC22interstitialDidPresentyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidPresent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didFailToPresentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMRequestStatus",
+                "printedName": "InMobiSDK.IMRequestStatus",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMRequestStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitial:didFailToPresentWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC12interstitial_016didFailToPresentB5Errory9InMobiSDK14IMInterstitialC_AF15IMRequestStatusCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didFailToPresentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialWillDismiss",
+            "printedName": "interstitialWillDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialWillDismiss:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC23interstitialWillDismissyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialWillDismiss:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidDismiss",
+            "printedName": "interstitialDidDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitialDidDismiss:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC22interstitialDidDismissyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidDismiss:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didInteractWithParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)interstitial:didInteractWithParams:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC12interstitial_011didInteractB6Paramsy9InMobiSDK14IMInterstitialC_SDySSypGSgtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didInteractWithParams:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userWillLeaveApplicationFromInterstitial",
+            "printedName": "userWillLeaveApplicationFromInterstitial(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)userWillLeaveApplicationFromInterstitial:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC40userWillLeaveApplicationFromInterstitialyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "userWillLeaveApplicationFromInterstitial:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1442,6 +1787,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMInterstitialDelegate",
+            "printedName": "IMInterstitialDelegate",
+            "usr": "c:@M@InMobiSDK@objc(pl)IMInterstitialDelegate",
+            "mangledName": "$s9InMobiSDK22IMInterstitialDelegateP"
           }
         ]
       },
@@ -2040,6 +2392,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
       },
       {
         "kind": "TypeDecl",
@@ -31620,6 +31979,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithADSDK",
         "printedName": "MobWithADSDK",
@@ -32094,6 +32460,32 @@
             "declKind": "Func",
             "usr": "s:21MobWithADSDKFramework0aB5ADSDKC18setDTExchangeAppID5appId10completionySS_ySbcSgtF",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC18setDTExchangeAppID5appId10completionySS_ySbcSgtF",
+            "moduleName": "MobWithADSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInMobiAccountId",
+            "printedName": "setInMobiAccountId(accountId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC18setInMobiAccountId07accountI0ySS_tF",
+            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC18setInMobiAccountId07accountI0ySS_tF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "AccessControl"
@@ -32658,6 +33050,13 @@
         "kind": "Import",
         "name": "OpenBiddingHelper",
         "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
@@ -34409,6 +34808,174 @@
           },
           {
             "kind": "Function",
+            "name": "banner",
+            "printedName": "banner(_:didReceiveWithMetaInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMBanner",
+                "printedName": "InMobiSDK.IMBanner",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAdMetaInfo",
+                "printedName": "InMobiSDK.IMAdMetaInfo",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMAdMetaInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)banner:didReceiveWithMetaInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC6banner_010didReceiveB8MetaInfoy9InMobiSDK8IMBannerC_AF04IMAdiJ0CtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "banner:didReceiveWithMetaInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerDidFinishLoading",
+            "printedName": "bannerDidFinishLoading(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMBanner",
+                "printedName": "InMobiSDK.IMBanner",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMBanner"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerDidFinishLoading:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC22bannerDidFinishLoadingyy9InMobiSDK8IMBannerCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerDidFinishLoading:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "banner",
+            "printedName": "banner(_:didFailToLoadWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMBanner",
+                "printedName": "InMobiSDK.IMBanner",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMRequestStatus",
+                "printedName": "InMobiSDK.IMRequestStatus",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMRequestStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)banner:didFailToLoadWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC6banner_013didFailToLoadB5Errory9InMobiSDK8IMBannerC_AF15IMRequestStatusCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "banner:didFailToLoadWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "banner",
+            "printedName": "banner(_:didInteractWithParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMBanner",
+                "printedName": "InMobiSDK.IMBanner",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)banner:didInteractWithParams:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC6banner_011didInteractB6Paramsy9InMobiSDK8IMBannerC_SDySSypGSgtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "banner:didInteractWithParams:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "restart",
             "printedName": "restart()",
             "children": [
@@ -34585,6 +35152,13 @@
             "printedName": "CouAdBannerViewDelegate",
             "usr": "s:13CouOffsiteAds0A20AdBannerViewDelegateP",
             "mangledName": "$s13CouOffsiteAds0A20AdBannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMBannerDelegate",
+            "printedName": "IMBannerDelegate",
+            "usr": "c:@M@InMobiSDK@objc(pl)IMBannerDelegate",
+            "mangledName": "$s9InMobiSDK16IMBannerDelegateP"
           }
         ]
       },
@@ -36594,6 +37168,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithRewardAd",
         "printedName": "MobWithRewardAd",
@@ -36926,8 +37507,7 @@
               "Dynamic",
               "ObjC",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -38085,6 +38665,394 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidReceiveAd",
+            "printedName": "interstitialDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialDidReceiveAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC022interstitialDidReceiveE0yy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidFinishLoading",
+            "printedName": "interstitialDidFinishLoading(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialDidFinishLoading:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC28interstitialDidFinishLoadingyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidFinishLoading:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didFailToLoadWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMRequestStatus",
+                "printedName": "InMobiSDK.IMRequestStatus",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMRequestStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitial:didFailToLoadWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC12interstitial_013didFailToLoadB5Errory9InMobiSDK14IMInterstitialC_AF15IMRequestStatusCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didFailToLoadWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialWillPresent",
+            "printedName": "interstitialWillPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialWillPresent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC23interstitialWillPresentyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialWillPresent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidPresent",
+            "printedName": "interstitialDidPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialDidPresent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC22interstitialDidPresentyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidPresent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didFailToPresentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMRequestStatus",
+                "printedName": "InMobiSDK.IMRequestStatus",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMRequestStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitial:didFailToPresentWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC12interstitial_016didFailToPresentB5Errory9InMobiSDK14IMInterstitialC_AF15IMRequestStatusCtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didFailToPresentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialWillDismiss",
+            "printedName": "interstitialWillDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialWillDismiss:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC23interstitialWillDismissyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialWillDismiss:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitialDidDismiss",
+            "printedName": "interstitialDidDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitialDidDismiss:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC22interstitialDidDismissyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitialDidDismiss:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:didInteractWithParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitial:didInteractWithParams:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC12interstitial_011didInteractB6Paramsy9InMobiSDK14IMInterstitialC_SDySSypGSgtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:didInteractWithParams:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interstitial",
+            "printedName": "interstitial(_:rewardActionCompletedWithRewards:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)interstitial:rewardActionCompletedWithRewards:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC12interstitial_021rewardActionCompletedB7Rewardsy9InMobiSDK14IMInterstitialC_SDySSypGtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "interstitial:rewardActionCompletedWithRewards:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userWillLeaveApplicationFromInterstitial",
+            "printedName": "userWillLeaveApplicationFromInterstitial(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMInterstitial",
+                "printedName": "InMobiSDK.IMInterstitial",
+                "usr": "c:@M@InMobiSDK@objc(cs)IMInterstitial"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)userWillLeaveApplicationFromInterstitial:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC40userWillLeaveApplicationFromInterstitialyy9InMobiSDK14IMInterstitialCF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "userWillLeaveApplicationFromInterstitial:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -38093,7 +39061,6 @@
         "moduleName": "MobWithADSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -38164,6 +39131,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMInterstitialDelegate",
+            "printedName": "IMInterstitialDelegate",
+            "usr": "c:@M@InMobiSDK@objc(pl)IMInterstitialDelegate",
+            "mangledName": "$s9InMobiSDK22IMInterstitialDelegateP"
           }
         ]
       },
@@ -40448,6 +41422,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "StringRepresentable",
             "printedName": "StringRepresentable",
             "usr": "s:8AdFitSDK19StringRepresentableP",
@@ -41175,91 +42156,91 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 508,
+      "offset": 506,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 575,
+      "offset": 573,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
+      "offset": 723,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 819,
+      "offset": 817,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 670,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1056,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1084,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1205,
+      "offset": 1203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1254,
+      "offset": 1252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1306,
+      "offset": 1304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1347,
+      "offset": 1345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1436,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1484,
       "length": 2,
       "value": "\"\""
     },
@@ -41301,182 +42282,182 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 712,
       "length": 15,
       "value": "\"\/servlet\/auid\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 765,
+      "offset": 828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1201,
       "length": 18,
       "value": "\"\/sortlist\/v3\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 1257,
+      "offset": 1320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 1733,
+      "offset": 1796,
       "length": 10,
       "value": "\"\/imp\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 1844,
+      "offset": 1907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 1982,
+      "offset": 2045,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 2063,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 2351,
+      "offset": 2414,
       "length": 16,
       "value": "\"\/v2\/dsp\/advert\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 2468,
+      "offset": 2531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3429,
       "length": 18,
       "value": "\"\/v1\/req-zone\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 3223,
+      "offset": 3548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 3961,
+      "offset": 4286,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 4337,
+      "offset": 4662,
       "length": 17,
       "value": "\"\/v1\/req-dsp\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4455,
+      "offset": 4780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 5213,
+      "offset": 5538,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 5672,
+      "offset": 5997,
       "length": 12,
       "value": "\"\/v1\/pb\/sdk\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5785,
+      "offset": 6110,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 6596,
+      "offset": 6921,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 7022,
+      "offset": 7347,
       "length": 20,
       "value": "\"\/v1\/sdk\/configInfo\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7143,
+      "offset": 7468,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 7532,
+      "offset": 7857,
       "length": 16,
       "value": "\"\/inBannerVideo\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7649,
+      "offset": 7974,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "StringLiteral",
-      "offset": 8308,
+      "offset": 8633,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 8424,
+      "offset": 8749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/MobmixApi.swift",
       "kind": "Dictionary",
-      "offset": 8470,
+      "offset": 8795,
       "length": 3,
       "value": "[]"
     },
@@ -43597,63 +44578,70 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 412,
+      "offset": 411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 449,
+      "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 582,
+      "offset": 581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 631,
+      "offset": 630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 686,
+      "offset": 685,
       "length": 11,
       "value": "\"AF8748075\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1035,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1347,
       "length": 42,
       "value": "\"https:\/\/apps.apple.com\/kr\/app\/id\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1388,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1301,
+      "offset": 1298,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2090,
+      "offset": 2087,
       "length": 2,
       "value": "\"\""
     },
@@ -43814,7 +44802,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5256,
+      "offset": 5254,
       "length": 1,
       "value": "0"
     },
@@ -44115,35 +45103,35 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 420,
+      "offset": 418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 485,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 637,
+      "offset": 635,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 731,
+      "offset": 729,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
+      "offset": 582,
       "length": 2,
       "value": "-1"
     },
