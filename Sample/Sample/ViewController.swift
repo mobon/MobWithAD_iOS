@@ -15,6 +15,8 @@ import AppTrackingTransparency
 
 class ViewController: UIViewController {
     
+    private let coupangSubID:String = "testios1"
+    
     var mobWithAdView:MobWithAdView?
     
     var interstitialAd: MobWithInterstitailAd?
@@ -47,10 +49,17 @@ class ViewController: UIViewController {
         
         idfaLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tappedIdfaLabel(gesture:))))
         
-        MobWithADSDK.standard.initSDK(coupangSubId: "{전달 받은 쿠팡 서브ID}")
-        MobWithADSDK.standard.setUnityGameId(gameId: "{전달 받은 Unity Game ID}")
-        MobWithADSDK.standard.setLevelPlaySDKAppKey("{전달 받은 LevelPlay App Key}")
-        MobWithADSDK.standard.setPangleAppId(appId: "{전달 받은 Pangle App ID}")
+        MobWithADSDK.standard.enableLog(true)
+        MobWithADSDK.standard.initSDK(coupangSubId: coupangSubID)
+        MobWithADSDK.standard.setUnityGameId(gameId: "5737823") //5720742
+        MobWithADSDK.standard.setLevelPlaySDKAppKey("22180584d") //200aec285, 20196aec5. 22180584d
+        MobWithADSDK.standard.setPangleAppId(appId: "8705357")    //8705357, 8659257
+        MobWithADSDK.standard.setDTExchangeAppID(appId: "220419")
+        MobWithADSDK.standard.setInMobiAccountId(accountId: "88ede8a9e7294a59b605b109444c2a9f")
+        
+        MobWithADSDK.standard.enableLog(true)
+        
+        
         
         segmentAdType.selectedSegmentIndex = 0
 
@@ -81,6 +90,25 @@ class ViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if #available(iOS 14, *) {
+            if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
+                ATTrackingManager.requestTrackingAuthorization { status in
+                    self.setIdfa()
+                }
+            }
+            else {
+                self.setIdfa()
+            }
+        }
+        else {
+            self.setIdfa()
+        }
+        
+    }
+    
     func loadAd() {
         DispatchQueue.global().async {
             self.mobWithAdView?.loadAd()
@@ -96,6 +124,8 @@ class ViewController: UIViewController {
     
     
     func createAdViewAndLoad() {
+        
+//        BizBoardTemplate.defaultEdgeInset = UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         
         let customUnitID: String = textFieldUnitID.text ?? ""
         let positionY:CGFloat = 130.0
@@ -154,12 +184,20 @@ class ViewController: UIViewController {
             mobWithAdView?.rootViewController = self
             mobWithAdView?.backgroundColor = UIColor.init(white: 1.0, alpha: 0.5)
             
-            self.view.addSubview(mobWithAdView!)
+            // 불상사 방지...
+            guard let mobWithAdView = mobWithAdView else {
+                return
+            }
+            
+            self.view.addSubview(mobWithAdView)
         }
         
+//        mobWithAdView?.interval = 10
+//
+//        mobWithAdView?.stop()
+//        mobWithAdView?.restart()
         
         mobWithAdView?.fillMode = (segmentFullMode.selectedSegmentIndex == 0)
-        
         loadAd()
     }
     
@@ -185,6 +223,7 @@ extension ViewController {
     }
     
     @IBAction func clickedNextButton(_ sender: Any) {
+//        loadAd()
         mobWithAdView?.showNextAd()
     }
     
