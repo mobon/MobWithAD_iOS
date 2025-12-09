@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.30'
+  s.version          = '1.2.31'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     :submodules => true
   }
 
-  s.platform = :ios, "13.0"
+  s.platform = :ios, "15.6"
   s.requires_arc = false
   
   

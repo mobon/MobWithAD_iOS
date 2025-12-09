@@ -314,15 +314,38 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
+@protocol MobWithADViewDelegate;
+@class NSString;
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework10MMAdLoader")
+@interface MMAdLoader : NSObject
+@property (nonatomic, weak) id <MobWithADViewDelegate> _Nullable adDelegate;
+/// AD Loader
+/// \param bannerUnitId 발급받은 광고 지면 ID
+///
+- (nonnull instancetype)initWithBannerUnitId:(NSString * _Nonnull)bannerUnitId OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAd;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MMAdLoader (SWIFT_EXTENSION(MobWithADSDKFramework))
+/// 광고 InfoMark 클릭 이벤트 처리
+- (void)openAdInfoUrl;
+/// 광고 클릭 이벤트 처리
+- (void)openAdUrl;
+/// 광고 노출시 호출.
+- (void)sendImpression;
+@end
+
 typedef SWIFT_ENUM(NSInteger, MMBannerType, open) {
   MMBannerTypeBANNER_320x50 = 0,
   MMBannerTypeBANNER_320x100 = 1,
   MMBannerTypeBANNER_300x250 = 2,
 };
 
-@protocol MobWithADViewDelegate;
 @class NSCoder;
-@class NSString;
 @class UIImageView;
 @class UILabel;
 @class UIButton;
@@ -398,6 +421,12 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (UILabel * _Nullable)adProfileNameLabel SWIFT_WARN_UNUSED_RESULT;
 - (UIImageView * _Nullable)adProfileIconView SWIFT_WARN_UNUSED_RESULT;
 - (AdFitMediaView * _Nullable)adMediaView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC21MobWithADSDKFramework9MMPopUpAd")
+@interface MMPopUpAd : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -477,7 +506,6 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 @end
 
-
 @class UADSBannerView;
 @class UADSBannerError;
 
@@ -486,6 +514,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)bannerViewDidClick:(UADSBannerView * _Null_unspecified)bannerView;
 - (void)bannerViewDidError:(UADSBannerView * _Null_unspecified)bannerView error:(UADSBannerError * _Null_unspecified)error;
 @end
+
 
 
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <PAGBannerAdDelegate>
@@ -637,6 +666,24 @@ SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework29MobWithNativeAdLoaderDelegate_")
 - (void)mobWithNativeAdViewDidFailToReceiveAdAt:(NSIndexPath * _Nullable)index;
 @end
 
+
+
+SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework22MobWithPopupAdDelegate_")
+@protocol MobWithPopupAdDelegate
+@optional
+/// 광고를 클릭한 경우 전달됨
+- (void)mobWithPopUpAdClicked:(MMPopUpAd * _Nullable)popAd;
+/// 광고를 수신한 경우 전달됨
+- (void)mobWithPopUpAdDidReceived:(MMPopUpAd * _Nullable)popAd;
+/// 광고 수신 실패시 전달
+- (void)mobWithPopUpAdDidFailToReceive:(MMPopUpAd * _Nullable)popAd;
+/// 광고창을 닫은 경우 호출된다
+- (void)mobWithRewardAdClosed:(MMPopUpAd * _Nullable)popAd;
+/// 광고가 화면에 표시된 경우 전달됨.
+- (void)mobWithPopUpAdHideToday:(MMPopUpAd * _Nullable)popAd;
+/// 오늘 그만보기 버튼을 누른 경우
+- (void)mobWithPopUpAdDidOpenFailed:(MMPopUpAd * _Nullable)popAd;
+@end
 
 @protocol MobWithRewardAdDelegate;
 

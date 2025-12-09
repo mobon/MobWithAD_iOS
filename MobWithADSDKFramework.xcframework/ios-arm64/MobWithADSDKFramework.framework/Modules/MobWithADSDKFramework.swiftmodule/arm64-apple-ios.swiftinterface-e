@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MobWithADSDKFramework
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MobWithADSDKFramework
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AdFitSDK
@@ -102,6 +102,41 @@ public enum ApiError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+@objc public class MMAdLoader : ObjectiveC.NSObject {
+  public var bannerUnitID: Swift.String
+  @objc weak public var adDelegate: (any MobWithADSDKFramework.MobWithADViewDelegate)?
+  public var headline: Swift.String {
+    get
+  }
+  public var imageUrl: Swift.String {
+    get
+  }
+  public var body: Swift.String {
+    get
+  }
+  public var icon: Swift.String {
+    get
+  }
+  public var callToAction: Swift.String {
+    get
+  }
+  public var price: Swift.String {
+    get
+  }
+  public var advertiser: Swift.String {
+    get
+  }
+  @objc public init(bannerUnitId: Swift.String)
+  @objc public func loadAd()
+  public func showNextAd()
+  @objc deinit
+}
+extension MobWithADSDKFramework.MMAdLoader {
+  @objc dynamic public func openAdInfoUrl()
+  @objc dynamic public func openAdUrl()
+  @objc dynamic public func sendImpression()
+  public func getCurrentAdData()
 }
 public struct VastCreativeExtension : Swift.Codable {
   public let mimeType: Swift.String?
@@ -374,6 +409,14 @@ extension MobWithADSDKFramework.VastIcon {
 }
 extension MobWithADSDKFramework.VastIcon : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastIcon, b: MobWithADSDKFramework.VastIcon) -> Swift.Bool
+}
+@objc public protocol MobWithPopupAdDelegate {
+  @objc optional func mobWithPopUpAdClicked(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
+  @objc optional func mobWithPopUpAdDidReceived(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
+  @objc optional func mobWithPopUpAdDidFailToReceive(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
+  @objc optional func mobWithRewardAdClosed(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
+  @objc optional func mobWithPopUpAdHideToday(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
+  @objc optional func mobWithPopUpAdDidOpenFailed(_ popAd: MobWithADSDKFramework.MMPopUpAd?)
 }
 public struct VastAdCategory : Swift.Codable {
   public let authority: Foundation.URL?
@@ -859,6 +902,11 @@ public struct VastMediaFiles : Swift.Codable {
 extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
   public static func == (a: MobWithADSDKFramework.VastMediaFiles, b: MobWithADSDKFramework.VastMediaFiles) -> Swift.Bool
 }
+@_hasMissingDesignatedInitializers public class MobMixDspDataModel : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc public protocol MobWithADViewDelegate {
   @objc optional func mobWithAdViewClickedAd()
   @objc optional func mobWithAdViewDidReceivedAd()
@@ -1102,6 +1150,11 @@ extension MobWithADSDKFramework.MobWithRewardAd : InMobiSDK.IMInterstitialDelega
   @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, rewardActionCompletedWithRewards rewards: [Swift.String : Any])
   @objc dynamic public func userWillLeaveApplicationFromInterstitial(_ interstitial: InMobiSDK.IMInterstitial)
 }
+@_hasMissingDesignatedInitializers public class MobMixAdDataModel : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public protocol MobwithNativeAdViewRender {
   func getAdImageView() -> UIKit.UIImageView?
   func getAdLogoImageView() -> UIKit.UIImageView?
@@ -1141,6 +1194,10 @@ public enum MOImageColorsQuality : CoreFoundation.CGFloat {
 extension UIKit.UIImage {
   public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high, _ completion: @escaping (MobWithADSDKFramework.MOImageColors?) -> Swift.Void)
   public func getColors(quality: MobWithADSDKFramework.MOImageColorsQuality = .high) -> MobWithADSDKFramework.MOImageColors?
+}
+@_inheritsConvenienceInitializers @objc public class MMPopUpAd : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension MobWithADSDKFramework.ApiError : Swift.Equatable {}
 extension MobWithADSDKFramework.ApiError : Swift.Hashable {}
