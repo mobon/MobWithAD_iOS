@@ -2589,6 +2589,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7322,6 +7329,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -24702,6 +24716,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26587,6 +26608,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -36269,6 +36297,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AdFitNativeAdLoaderDelegate",
             "printedName": "AdFitNativeAdLoaderDelegate",
             "usr": "c:@M@AdFitSDK@objc(pl)AdFitNativeAdLoaderDelegate",
@@ -37910,6 +37945,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -40299,6 +40341,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobMixAdDataModel",
         "printedName": "MobMixAdDataModel",
@@ -41658,6 +41707,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -42305,6 +42364,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -43238,6 +43304,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -43454,6 +43527,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -44160,6 +44240,48 @@
       "offset": 936,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 386,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 12,
+      "value": "\"itunesitem\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 11,
+      "value": "\"sourceapp\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 524,
+      "length": 5,
+      "value": "\"cid\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixSKADNModel.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 12,
+      "value": "\"fidelities\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Extensions\/CALayer+DHLee.swift",
@@ -45373,6 +45495,34 @@
       "value": "901"
     },
     {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixFidelitieModel.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 10,
+      "value": "\"fidelity\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixFidelitieModel.swift",
+      "kind": "StringLiteral",
+      "offset": 372,
+      "length": 7,
+      "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixFidelitieModel.swift",
+      "kind": "StringLiteral",
+      "offset": 405,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/SKADN\/MobMixFidelitieModel.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 11,
+      "value": "\"signature\""
+    },
+    {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/VastClient\/constants\/VastMacros.swift",
       "kind": "StringLiteral",
       "offset": 215,
@@ -46369,7 +46519,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Scripts\/MMScriptWebView.swift",
       "kind": "StringLiteral",
-      "offset": 3285,
+      "offset": 3262,
       "length": 2,
       "value": "\"\""
     },
@@ -46761,226 +46911,233 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1170,
+      "offset": 1217,
       "length": 7,
       "value": "\"pCode\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1197,
+      "offset": 1244,
       "length": 5,
       "value": "\"pNm\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1223,
+      "offset": 1270,
       "length": 6,
       "value": "\"pImg\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1297,
       "length": 6,
       "value": "\"pUrl\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1285,
+      "offset": 1332,
       "length": 14,
       "value": "\"aLogoDefault\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1324,
+      "offset": 1371,
       "length": 10,
       "value": "\"aLogoSub\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1354,
+      "offset": 1401,
       "length": 5,
       "value": "\"aNm\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1382,
+      "offset": 1429,
       "length": 8,
       "value": "\"aTitle\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1411,
+      "offset": 1458,
       "length": 6,
       "value": "\"aUrl\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1485,
       "length": 6,
       "value": "\"desc\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1468,
+      "offset": 1515,
       "length": 9,
       "value": "\"descWeb\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1500,
+      "offset": 1547,
       "length": 8,
       "value": "\"aDesc1\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1531,
+      "offset": 1578,
       "length": 8,
       "value": "\"aDesc2\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1562,
+      "offset": 1609,
       "length": 8,
       "value": "\"aDesc3\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 1641,
       "length": 9,
       "value": "\"pImgBkg\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1627,
+      "offset": 1674,
       "length": 9,
       "value": "\"remarks\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1706,
       "length": 8,
       "value": "\"dcRate\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1692,
+      "offset": 1739,
       "length": 10,
       "value": "\"pDcPrice\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1725,
+      "offset": 1772,
       "length": 8,
       "value": "\"pPrice\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1758,
+      "offset": 1805,
       "length": 10,
       "value": "\"custom01\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1840,
       "length": 10,
       "value": "\"custom02\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1875,
       "length": 10,
       "value": "\"custom03\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1910,
       "length": 10,
       "value": "\"custom04\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 1945,
       "length": 10,
       "value": "\"custom05\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1933,
+      "offset": 1980,
       "length": 10,
       "value": "\"custom06\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1968,
+      "offset": 2015,
       "length": 10,
       "value": "\"custom07\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2003,
+      "offset": 2050,
       "length": 10,
       "value": "\"custom08\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2085,
       "length": 10,
       "value": "\"custom09\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2120,
       "length": 10,
       "value": "\"custom10\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2153,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2142,
+      "offset": 2189,
       "length": 13,
       "value": "\"impTrackers\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2185,
+      "offset": 2232,
       "length": 15,
       "value": "\"clickTrackers\""
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/NetworkRequests\/Model\/DSP\/MobMixAdDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2269,
+      "length": 7,
+      "value": "\"skadn\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Protocol\/MobMixAdGetter.swift",
