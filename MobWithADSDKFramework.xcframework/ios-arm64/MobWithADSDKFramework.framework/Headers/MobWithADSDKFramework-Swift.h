@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AdFitSDK;
 @import CoreFoundation;
 @import Foundation;
+@import GoogleMobileAds;
 @import IASDKCore;
 @import InMobiSDK;
 @import IronSource;
@@ -404,6 +405,15 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework14MMNativeAdView")
 - (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
 @end
 
+@class GADAdLoader;
+@class GADNativeAd;
+@interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <GADNativeAdDelegate, GADNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)adLoaderDidFinishLoading:(GADAdLoader * _Nonnull)adLoader;
+- (void)nativeAdDidRecordClick:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
 @class AdFitMediaView;
 @interface MMNativeAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitNativeAdRenderable>
 - (UILabel * _Nullable)adTitleLabel SWIFT_WARN_UNUSED_RESULT;
@@ -518,6 +528,16 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)nativeAdLoaderDidFailToReceiveAd:(AdFitNativeAdLoader * _Nonnull)nativeAdLoader error:(NSError * _Nonnull)error;
 @end
 
+@class GADBannerView;
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <GADBannerViewDelegate>
+- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewWillDismissScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+@end
+
 @class MobWithInterstitailAd;
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework28MobWithIntersitialAdDelegate_")
 @protocol MobWithIntersitialAdDelegate
@@ -547,6 +567,14 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
 - (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
+@end
+
+@protocol GADFullScreenPresentingAd;
+@interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <GADFullScreenContentDelegate>
+- (void)adDidRecordClick:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
+- (void)adWillPresentFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
 @end
 
 @interface MobWithInterstitailAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IAMRAIDContentDelegate, IAUnitDelegate, IAVideoContentDelegate>
@@ -680,6 +708,15 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)onClickAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 - (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 - (void)onShowFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info error:(NSError * _Nonnull)error;
+@end
+
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <GADFullScreenContentDelegate>
+- (void)adDidRecordImpression:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidRecordClick:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillPresentFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
 @end
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <UnityAdsLoadDelegate, UnityAdsShowDelegate>

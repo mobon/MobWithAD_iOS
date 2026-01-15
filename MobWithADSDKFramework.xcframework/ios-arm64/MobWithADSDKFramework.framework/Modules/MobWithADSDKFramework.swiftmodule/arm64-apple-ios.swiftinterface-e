@@ -9,6 +9,7 @@ import AppTrackingTransparency
 import CoreTelephony
 import CouOffsiteAds
 import Foundation
+import GoogleMobileAds
 import IASDKCore
 import InMobiSDK
 import IronSource
@@ -33,6 +34,12 @@ import _SwiftConcurrencyShims
   public func isLoaded() -> Swift.Bool
   public func show()
   @objc deinit
+}
+extension MobWithADSDKFramework.MobWithInterstitailAd : GoogleMobileAds.FullScreenContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
 }
 extension MobWithADSDKFramework.MobWithInterstitailAd : UnityAdsLoadDelegate, UnityAdsShowDelegate {
   @objc dynamic public func unityAdsAdLoaded(_ placementId: Swift.String)
@@ -1088,6 +1095,14 @@ extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDele
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdLoaderDidReceiveAds(_ nativeAds: [AdFitSDK.AdFitNativeAd])
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdLoaderDidFailToReceiveAd(_ nativeAdLoader: AdFitSDK.AdFitNativeAdLoader, error: any Swift.Error)
 }
+extension MobWithADSDKFramework.MobWithAdView : GoogleMobileAds.BannerViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
+}
 extension MobWithADSDKFramework.MobWithAdView : CouOffsiteAds.CouAdBannerViewDelegate {
   @_Concurrency.MainActor @preconcurrency public func bannerDidClick(_ bannerView: CouOffsiteAds.CouAdBannerView)
   @_Concurrency.MainActor @preconcurrency public func bannerViewFailToReceiveAdWithError(_ bannerView: CouOffsiteAds.CouAdBannerView, error: any Swift.Error)
@@ -1207,6 +1222,12 @@ extension MobWithADSDKFramework.MMNativeAdView : AdFitSDK.AdFitNativeAdRenderabl
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adMediaView() -> AdFitSDK.AdFitMediaView?
   #endif
+}
+extension MobWithADSDKFramework.MMNativeAdView : GoogleMobileAds.NativeAdLoaderDelegate, GoogleMobileAds.NativeAdDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adLoaderDidFinishLoading(_ adLoader: GoogleMobileAds.AdLoader)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.NativeAd)
 }
 @objc public protocol MobWithIntersitialAdDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1330,6 +1351,14 @@ extension MobWithADSDKFramework.MobWithRewardAd : InMobiSDK.IMInterstitialDelega
   #endif
   @objc dynamic public func interstitial(_ interstitial: InMobiSDK.IMInterstitial, rewardActionCompletedWithRewards rewards: [Swift.String : Any])
   @objc dynamic public func userWillLeaveApplicationFromInterstitial(_ interstitial: InMobiSDK.IMInterstitial)
+}
+extension MobWithADSDKFramework.MobWithRewardAd : GoogleMobileAds.FullScreenContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class MobMixAdDataModel : Swift.Codable {
   @objc deinit

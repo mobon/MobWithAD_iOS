@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		xPiknBSQjMEba1Va6382ThlxPas=
+		uHhxARMC8l5wareyc4+TenNUhmg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vhGqxSxy8SC+ZS3aS3qdyYdbm4k=
+		RW7oG84pxBWOUEHmNxiI/+uteEU=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -54,27 +54,43 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		dZ2fgl5PRVvHaOTclvshq85NPlc=
+		2Y8vTIUFjbWK4ilyT6aAAA9grgU=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		CIr/0NtHdE22R1SE2DypKXYTLiY=
+		/J18UBh+oIv5D/iO2gJwWoy+vW8=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Ugi2QFi3vDKLIIfdhTIiyu4BmcY=
+		UsyRnnvLMElhTW7MljK70RP/uGE=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		CIr/0NtHdE22R1SE2DypKXYTLiY=
+		/J18UBh+oIv5D/iO2gJwWoy+vW8=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kky0AThWHX77wDFGEVIiIIKJzAg=
+		gdehry22vN55QJGkjleNRB+iVm0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		+QCyasr0HySsnK8R1RBGbk3cObM=
+		</data>
+		<key>MolocoSDK.bundle/Info.plist</key>
+		<data>
+		g2EiUgBA82JjF1peGYG9S26fPL8=
+		</data>
+		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		hJKEwRb/BrBZuzCUCo8Mvi5mFAk=
+		</data>
+		<key>MolocoSDK.bundle/Resources.bundle/endcard.html</key>
+		<data>
+		GdIEFHBikc7SVB9eykIZOhWTkr4=
+		</data>
+		<key>MolocoSDK.bundle/mraid.js.ignore</key>
+		<data>
+		QbcmfpscYXVHrQDN7tmKwxTKmss=
 		</data>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<data>
@@ -386,7 +402,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ifRZaVUyt3pzHeofkVLZwr9BiV58gR7FjYRgSK8mFyA=
+			o5GFXiDTrj5wgYdCWgmP1I+nBA5SmIjAcdHoOpQG5PI=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
@@ -407,35 +423,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0h/GCoua540kJTv1bJT5KnMQPkIiTNc6EqWTqDeHlFU=
+			XSL1hY7bpHDnzaBtSwmotv1no/xSTrkeZMhYkwzqNTg=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eFnYfAN5ah4MbJTwKcDbBwWsBLgJHHYn4hc0SLEnoVk=
+			M1LvIaI4gurkwbalD2boU+2BuzPz5gSg837ZPdGEcKQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EXSNzOLvO2PR2rAMHmVt2PU/DhWYNoQ4DfF7u2TNd98=
+			QkX7ZbSYFHQH7M878bIF4cHmKfFlUe5sGkqWFeYJP6U=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eFnYfAN5ah4MbJTwKcDbBwWsBLgJHHYn4hc0SLEnoVk=
+			M1LvIaI4gurkwbalD2boU+2BuzPz5gSg837ZPdGEcKQ=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dSTbhZXDsyfaWPPD3vKAc+uvl+cnBZdrxzWdRKccDO0=
+			MqdbUHHuGg27WeCcXtU+MbkhrkvYvwiCRMPHGagWa5Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -443,6 +459,34 @@
 			<key>hash2</key>
 			<data>
 			A5RxvEvLIgQYJZa+JTz7RSE5kywkBi+YpQKIBeJvh0s=
+			</data>
+		</dict>
+		<key>MolocoSDK.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			is3rHUKy+jcMWW8macJJ851VB07W6GOU3OJ3z6IzicY=
+			</data>
+		</dict>
+		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ubOnCkg6p4/yut54YsOhIahV81IwyMSGaYVosuDmSjc=
+			</data>
+		</dict>
+		<key>MolocoSDK.bundle/Resources.bundle/endcard.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eolTtxN4GEA4VyA+YonMS7FPWA075nkQk5Fi3KG8BNo=
+			</data>
+		</dict>
+		<key>MolocoSDK.bundle/mraid.js.ignore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0ymH9S0677V8jqsxQQzygdJKIOtCZOIZSkcaYxd/uQ4=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/Assets.car</key>

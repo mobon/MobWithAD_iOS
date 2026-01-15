@@ -104,6 +104,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithInterstitailAd",
         "printedName": "MobWithInterstitailAd",
@@ -501,6 +508,140 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordClick",
+            "printedName": "adDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)adDidRecordClick:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC16adDidRecordClickyySo023GADFullScreenPresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC2ad_033didFailToPresentFullScreenContentB5ErrorySo07GADFulll10PresentingE0_p_s0N0_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC30adWillPresentFullScreenContentyySo07GADFullj10PresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidDismissFullScreenContent",
+            "printedName": "adDidDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)adDidDismissFullScreenContent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC29adDidDismissFullScreenContentyySo07GADFullj10PresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adDidDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -33149,6 +33290,16 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MobWithADSDK",
         "printedName": "MobWithADSDK",
@@ -34220,6 +34371,13 @@
         "kind": "Import",
         "name": "InMobiSDK",
         "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
@@ -35412,6 +35570,204 @@
             "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06natived22LoaderDidFailToReceiveD0_5errory0D6FitSDK0dm6NativedG0C_s5Error_ptF",
             "moduleName": "MobWithADSDKFramework",
             "objc_name": "nativeAdLoaderDidFailToReceiveAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidReceiveAd",
+            "printedName": "bannerViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerViewDidReceiveAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannere10DidReceiveD0yySo09GADBannerE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerViewDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerView:didFailToReceiveAdWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannerE0_016didFailToReceivedB5ErrorySo09GADBannerE0C_s0K0_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerView:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidRecordClick",
+            "printedName": "bannerViewDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerViewDidRecordClick:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannerE14DidRecordClickyySo09GADBannerE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerViewDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillPresentScreen",
+            "printedName": "bannerViewWillPresentScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerViewWillPresentScreen:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannerE17WillPresentScreenyySo09GADBannerE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerViewWillPresentScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillDismissScreen",
+            "printedName": "bannerViewWillDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerViewWillDismissScreen:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannerE17WillDismissScreenyySo09GADBannerE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerViewWillDismissScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidDismissScreen",
+            "printedName": "bannerViewDidDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)bannerViewDidDismissScreen:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC06bannerE16DidDismissScreenyySo09GADBannerE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "bannerViewDidDismissScreen:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -36747,6 +37103,13 @@
         "moduleName": "MobWithADSDKFramework"
       },
       {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MMNativeAdView",
         "printedName": "MMNativeAdView",
@@ -37833,6 +38196,146 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adLoader:didReceiveNativeAd:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC8adLoader_10didReceiveySo05GADAdH0C_So09GADNativeE0CtF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adLoader:didReceiveNativeAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adLoader:didFailToReceiveAdWithError:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC8adLoader_016didFailToReceiveeB5ErrorySo05GADAdH0C_s0M0_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adLoader:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoaderDidFinishLoading",
+            "printedName": "adLoaderDidFinishLoading(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)adLoaderDidFinishLoading:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC24adLoaderDidFinishLoadingyySo05GADAdH0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adLoaderDidFinishLoading:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdDidRecordClick",
+            "printedName": "nativeAdDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MMNativeAdView(im)nativeAdDidRecordClick:",
+            "mangledName": "$s21MobWithADSDKFramework14MMNativeAdViewC06nativeE14DidRecordClickyySo09GADNativeE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "nativeAdDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -38348,6 +38851,13 @@
         "kind": "Import",
         "name": "InMobiSDK",
         "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "MobWithADSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "MobWithADSDKFramework"
       },
@@ -40227,6 +40737,204 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordImpression",
+            "printedName": "adDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)adDidRecordImpression:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC21adDidRecordImpressionyySo023GADFullScreenPresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adDidRecordImpression:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordClick",
+            "printedName": "adDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)adDidRecordClick:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC16adDidRecordClickyySo023GADFullScreenPresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC30adWillPresentFullScreenContentyySo07GADFullj10PresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillDismissFullScreenContent",
+            "printedName": "adWillDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)adWillDismissFullScreenContent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC30adWillDismissFullScreenContentyySo07GADFullj10PresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adWillDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidDismissFullScreenContent",
+            "printedName": "adDidDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)adDidDismissFullScreenContent:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC29adDidDismissFullScreenContentyySo07GADFullj10PresentingE0_pF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adDidDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC2ad_033didFailToPresentFullScreenContentB5ErrorySo07GADFulll10PresentingE0_p_s0N0_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -43600,91 +44308,91 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 549,
+      "offset": 547,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 616,
+      "offset": 614,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 766,
+      "offset": 764,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 860,
+      "offset": 858,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 713,
+      "offset": 711,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1097,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
+      "offset": 1125,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1246,
+      "offset": 1244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1295,
+      "offset": 1293,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1347,
+      "offset": 1345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1388,
+      "offset": 1386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1479,
+      "offset": 1477,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithInterstitailAd.swift",
       "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 1525,
       "length": 2,
       "value": "\"\""
     },
@@ -44608,70 +45316,70 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1354,
+      "offset": 1344,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1402,
+      "offset": 1392,
       "length": 5,
       "value": "236.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1408,
+      "offset": 1398,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1422,
+      "offset": 1412,
       "length": 5,
       "value": "236.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1428,
+      "offset": 1418,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1441,
+      "offset": 1431,
       "length": 5,
       "value": "236.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1447,
+      "offset": 1437,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1461,
+      "offset": 1451,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1492,
+      "offset": 1482,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/SubViews\/RewardBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1523,
+      "offset": 1513,
       "length": 4,
       "value": "true"
     },
@@ -46239,77 +46947,77 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 432,
+      "offset": 430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 469,
+      "offset": 467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 602,
+      "offset": 600,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 651,
+      "offset": 649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 706,
+      "offset": 704,
       "length": 11,
       "value": "\"AF8748075\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1056,
+      "offset": 1054,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1154,
+      "offset": 1152,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1459,
       "length": 42,
       "value": "\"https:\/\/apps.apple.com\/kr\/app\/id\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 1500,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1412,
+      "offset": 1410,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2201,
+      "offset": 2199,
       "length": 2,
       "value": "\"\""
     },
@@ -46337,140 +47045,140 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 419,
+      "offset": 417,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 443,
+      "offset": 441,
       "length": 14,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1010,
+      "offset": 1008,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1043,
+      "offset": 1041,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1149,
+      "offset": 1147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1188,
+      "offset": 1186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1338,
+      "offset": 1336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1405,
+      "offset": 1403,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1559,
+      "offset": 1557,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1665,
+      "offset": 1663,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1506,
+      "offset": 1504,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2107,
+      "offset": 2105,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2151,
+      "offset": 2149,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2682,
+      "offset": 2680,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 2724,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2754,
+      "offset": 2752,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2878,
+      "offset": 2876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2927,
+      "offset": 2925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2979,
+      "offset": 2977,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5687,
+      "offset": 5679,
       "length": 1,
       "value": "0"
     },
@@ -46589,84 +47297,84 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1015,
+      "offset": 1013,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1206,
+      "offset": 1204,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1273,
+      "offset": 1271,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1427,
+      "offset": 1425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1533,
+      "offset": 1531,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1374,
+      "offset": 1372,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1842,
+      "offset": 1840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1868,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2082,
+      "offset": 2080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2131,
+      "offset": 2129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2183,
+      "offset": 2181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MMNativeAdView.swift",
       "kind": "Array",
-      "offset": 2625,
+      "offset": 2621,
       "length": 2,
       "value": "[]"
     },
@@ -46792,98 +47500,98 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 530,
+      "offset": 528,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 680,
+      "offset": 678,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 774,
+      "offset": 772,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 627,
+      "offset": 625,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1373,
+      "offset": 1371,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1412,
+      "offset": 1410,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1440,
+      "offset": 1438,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1554,
+      "offset": 1552,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1603,
+      "offset": 1601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1655,
+      "offset": 1653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1696,
+      "offset": 1694,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1787,
+      "offset": 1785,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
+      "offset": 1821,
       "length": 2,
       "value": "\"\""
     },
