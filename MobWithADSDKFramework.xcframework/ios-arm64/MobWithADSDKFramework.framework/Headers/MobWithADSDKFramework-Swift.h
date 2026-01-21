@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AdFitSDK;
+@import CaulySDK;
 @import CoreFoundation;
 @import Foundation;
 @import GoogleMobileAds;
@@ -495,6 +496,13 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)onLoadAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
 - (void)onLoadFailAd:(OpenBiddingBanner * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
 - (void)onClickAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;
+@end
+
+@class CaulyAdView;
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <CaulyAdViewDelegate>
+- (void)didReceiveAd:(CaulyAdView * _Null_unspecified)adView isChargeableAd:(BOOL)isChargeableAd;
+- (void)didFailToReceiveAd:(CaulyAdView * _Null_unspecified)adView errorCode:(int32_t)errorCode errorMsg:(NSString * _Null_unspecified)errorMsg;
+- (void)willShowLandingView:(CaulyAdView * _Null_unspecified)adView;
 @end
 
 @class UADSBannerView;

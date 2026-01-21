@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.34'
+  s.version          = '1.2.35'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   
   
-  s.vendored_frameworks = 'MobWithADSDKFramework.xcframework', 'CouOffsiteAds.xcframework'
+  s.vendored_frameworks = 'MobWithADSDKFramework.xcframework', 'CouOffsiteAds.xcframework', 'CaulySDK.xcframework'
   s.resource = 'MobWithADSDKBundle.bundle'
   
   s.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}

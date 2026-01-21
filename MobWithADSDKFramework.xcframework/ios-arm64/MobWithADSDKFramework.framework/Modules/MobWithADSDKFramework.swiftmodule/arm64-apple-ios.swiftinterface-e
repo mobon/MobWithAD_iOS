@@ -6,6 +6,7 @@ import AVFoundation
 import AdFitSDK
 import AdSupport
 import AppTrackingTransparency
+import CaulySDK
 import CoreTelephony
 import CouOffsiteAds
 import Foundation
@@ -1073,6 +1074,7 @@ extension MobWithADSDKFramework.MobWithADSDK : LevelPlayRewardedVideoManualDeleg
   @_Concurrency.MainActor @preconcurrency public var bannerType: MobWithADSDKFramework.MMBannerType
   @_Concurrency.MainActor @preconcurrency public var bannerUnitID: Swift.String
   @_Concurrency.MainActor @preconcurrency public var fillMode: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var fitToHeight: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var rootViewController: UIKit.UIViewController? {
     get
     set
@@ -1129,6 +1131,17 @@ extension MobWithADSDKFramework.MobWithAdView : OpenBiddingHelper.BIDMADOpenBidd
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, info: BidmadSDK.BidmadInfo)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onClickAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, info: BidmadSDK.BidmadInfo)
+}
+extension MobWithADSDKFramework.MobWithAdView : CaulySDK.CaulyAdViewDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didReceiveAd(_ adView: CaulySDK.CaulyAdView!, isChargeableAd: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFail(toReceiveAd adView: CaulySDK.CaulyAdView!, errorCode: Swift.Int32, errorMsg: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func willShowLanding(_ adView: CaulySDK.CaulyAdView!)
+  #endif
 }
 extension MobWithADSDKFramework.MobWithAdView : IASDKCore.IAUnitDelegate, IASDKCore.IAMRAIDContentDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
