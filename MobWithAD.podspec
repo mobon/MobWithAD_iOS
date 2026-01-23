@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
   s.dependency 'AdFitSDK', '3.14.5'
   s.dependency 'UnityAds', '4.14.1'
-  s.dependency 'Ads-Global', '7.2.0.6'
+  s.dependency 'Ads-Global', '7.1.1.1'
   s.dependency 'IronSourceSDK','9.2.0.0'
   s.dependency 'Fyber_Marketplace_SDK', '8.3.8'
   s.dependency 'BidmadSDK/core', '6.13.3'
