@@ -54,6 +54,7 @@ extension MobWithADSDKFramework.MobWithInterstitailAd : LPMInterstitialAdDelegat
   @objc dynamic public func didLoadAd(with adInfo: LPMAdInfo)
   @objc dynamic public func didFailToLoadAd(withAdUnitId adUnitId: Swift.String, error: any Swift.Error)
   @objc dynamic public func didDisplayAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didFailToDisplayAd(with adInfo: LPMAdInfo, error: any Swift.Error)
   @objc dynamic public func didClickAd(with adInfo: LPMAdInfo)
   @objc dynamic public func didCloseAd(with adInfo: LPMAdInfo)
 }
@@ -1035,29 +1036,6 @@ extension MobWithADSDKFramework.MobWithADSDK : UnityAdsInitializationDelegate {
   @objc dynamic public func initializationComplete()
   @objc dynamic public func initializationFailed(_ error: UnityAdsInitializationError, withMessage message: Swift.String)
 }
-extension MobWithADSDKFramework.MobWithADSDK : LevelPlayRewardedVideoManualDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didLoad(with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didFailToLoadWithError(_ error: (any Swift.Error)!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didReceiveReward(forPlacement placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didFailToShowWithError(_ error: (any Swift.Error)!, andAdInfo adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didOpen(with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didClick(_ placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didClose(with adInfo: ISAdInfo!)
-  #endif
-}
 @objc public enum MMBannerType : ObjectiveC.NSInteger {
   case BANNER_320x50
   case BANNER_320x100
@@ -1295,28 +1273,15 @@ extension MobWithADSDKFramework.MobWithRewardAd : UnityAdsLoadDelegate, UnityAds
   @objc dynamic public func unityAdsShowStart(_ placementId: Swift.String)
   @objc dynamic public func unityAdsShowClick(_ placementId: Swift.String)
 }
-extension MobWithADSDKFramework.MobWithRewardAd : LevelPlayRewardedVideoManualDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didLoad(with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didFailToLoadWithError(_ error: (any Swift.Error)!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didReceiveReward(forPlacement placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didFailToShowWithError(_ error: (any Swift.Error)!, andAdInfo adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didOpen(with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didClick(_ placementInfo: ISPlacementInfo!, with adInfo: ISAdInfo!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func didClose(with adInfo: ISAdInfo!)
-  #endif
+extension MobWithADSDKFramework.MobWithRewardAd : LPMRewardedAdDelegate {
+  @objc dynamic public func didLoadAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didFailToLoadAd(withAdUnitId adUnitId: Swift.String, error: any Swift.Error)
+  @objc dynamic public func didDisplayAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didFailToDisplayAd(with adInfo: LPMAdInfo, error: any Swift.Error)
+  @objc dynamic public func didClickAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didCloseAd(with adInfo: LPMAdInfo)
+  @objc dynamic public func didRewardAd(with adInfo: LPMAdInfo, reward: LPMReward)
+  @objc dynamic public func didChangeAdInfo(_ adInfo: LPMAdInfo)
 }
 extension MobWithADSDKFramework.MobWithRewardAd : PAGAdSDK.PAGRewardedAdDelegate {
   @objc dynamic public func adDidShow(_ ad: any PAGAdSDK.PAGAdProtocol)

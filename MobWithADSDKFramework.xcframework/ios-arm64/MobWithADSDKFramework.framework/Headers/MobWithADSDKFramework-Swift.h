@@ -448,18 +448,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)initializationFailed:(UnityAdsInitializationError)error withMessage:(NSString * _Nonnull)message;
 @end
 
-@class ISAdInfo;
-@class ISPlacementInfo;
-@interface MobWithADSDK (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
-- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
-- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-@end
-
 SWIFT_PROTOCOL("_TtP21MobWithADSDKFramework21MobWithADViewDelegate_")
 @protocol MobWithADViewDelegate
 @optional
@@ -597,6 +585,7 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework21MobWithInterstitailAd")
 - (void)didLoadAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 - (void)didFailToLoadAdWithAdUnitId:(NSString * _Nonnull)adUnitId error:(NSError * _Nonnull)error;
 - (void)didDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didFailToDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo error:(NSError * _Nonnull)error;
 - (void)didClickAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 - (void)didCloseAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 @end
@@ -736,14 +725,16 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework15MobWithRewardAd")
 - (void)unityAdsShowClick:(NSString * _Nonnull)placementId;
 @end
 
-@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LevelPlayRewardedVideoManualDelegate>
-- (void)didLoadWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didFailToLoadWithError:(NSError * _Null_unspecified)error;
-- (void)didReceiveRewardForPlacement:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didFailToShowWithError:(NSError * _Null_unspecified)error andAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didOpenWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didClick:(ISPlacementInfo * _Null_unspecified)placementInfo withAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
-- (void)didCloseWithAdInfo:(ISAdInfo * _Null_unspecified)adInfo;
+@class LPMReward;
+@interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <LPMRewardedAdDelegate>
+- (void)didLoadAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didFailToLoadAdWithAdUnitId:(NSString * _Nonnull)adUnitId error:(NSError * _Nonnull)error;
+- (void)didDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didFailToDisplayAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo error:(NSError * _Nonnull)error;
+- (void)didClickAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didCloseAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo;
+- (void)didRewardAdWithAdInfo:(LPMAdInfo * _Nonnull)adInfo reward:(LPMReward * _Nonnull)reward;
+- (void)didChangeAdInfo:(LPMAdInfo * _Nonnull)adInfo;
 @end
 
 @interface MobWithRewardAd (SWIFT_EXTENSION(MobWithADSDKFramework)) <IMInterstitialDelegate>

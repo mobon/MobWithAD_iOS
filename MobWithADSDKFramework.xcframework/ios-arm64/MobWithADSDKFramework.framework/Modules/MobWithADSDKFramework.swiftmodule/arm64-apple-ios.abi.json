@@ -952,6 +952,42 @@
           },
           {
             "kind": "Function",
+            "name": "didFailToDisplayAd",
+            "printedName": "didFailToDisplayAd(with:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithInterstitailAd(im)didFailToDisplayAdWithAdInfo:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB14InterstitailAdC016didFailToDisplayE04with5errorySo9LPMAdInfoC_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "didFailToDisplayAdWithAdInfo:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "didClickAd",
             "printedName": "didClickAd(with:)",
             "children": [
@@ -33898,314 +33934,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didLoad",
-            "printedName": "didLoad(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didLoadWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC7didLoad4withySo8ISAdInfoCSg_tF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didLoadWithAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFailToLoadWithError",
-            "printedName": "didFailToLoadWithError(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didFailToLoadWithError:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC013didFailToLoadB5Erroryys0I0_pSgF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToLoadWithError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didReceiveReward",
-            "printedName": "didReceiveReward(forPlacement:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISPlacementInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISPlacementInfo",
-                    "printedName": "IronSource.ISPlacementInfo",
-                    "usr": "c:objc(cs)ISPlacementInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didReceiveRewardForPlacement:withAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC16didReceiveReward12forPlacement4withySo15ISPlacementInfoCSg_So04ISAdL0CSgtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didReceiveRewardForPlacement:withAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFailToShowWithError",
-            "printedName": "didFailToShowWithError(_:andAdInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didFailToShowWithError:andAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC013didFailToShowB5Error_9andAdInfoys0I0_pSg_So04ISAdL0CSgtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToShowWithError:andAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didOpen",
-            "printedName": "didOpen(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didOpenWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC7didOpen4withySo8ISAdInfoCSg_tF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didOpenWithAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClick",
-            "printedName": "didClick(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISPlacementInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISPlacementInfo",
-                    "printedName": "IronSource.ISPlacementInfo",
-                    "usr": "c:objc(cs)ISPlacementInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didClick:withAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC8didClick_4withySo15ISPlacementInfoCSg_So04ISAdI0CSgtF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didClick:withAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClose",
-            "printedName": "didClose(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)didCloseWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC8didClose4withySo8ISAdInfoCSg_tF",
-            "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didCloseWithAdInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -39722,8 +39450,8 @@
           },
           {
             "kind": "Function",
-            "name": "didLoad",
-            "printedName": "didLoad(with:)",
+            "name": "didLoadAd",
+            "printedName": "didLoadAd(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39732,24 +39460,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didLoadWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC7didLoad4withySo8ISAdInfoCSg_tF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didLoadAdWithAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC07didLoadE04withySo9LPMAdInfoC_tF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didLoadWithAdInfo:",
+            "objc_name": "didLoadAdWithAdInfo:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39760,8 +39480,8 @@
           },
           {
             "kind": "Function",
-            "name": "didFailToLoadWithError",
-            "printedName": "didFailToLoadWithError(_:)",
+            "name": "didFailToLoadAd",
+            "printedName": "didFailToLoadAd(withAdUnitId:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39770,24 +39490,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didFailToLoadWithError:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC013didFailToLoadB5Erroryys0J0_pSgF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didFailToLoadAdWithAdUnitId:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC013didFailToLoadE004withE6UnitId5errorySS_s5Error_ptF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToLoadWithError:",
+            "objc_name": "didFailToLoadAdWithAdUnitId:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39798,8 +39516,8 @@
           },
           {
             "kind": "Function",
-            "name": "didReceiveReward",
-            "printedName": "didReceiveReward(forPlacement:with:)",
+            "name": "didDisplayAd",
+            "printedName": "didDisplayAd(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39808,38 +39526,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISPlacementInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISPlacementInfo",
-                    "printedName": "IronSource.ISPlacementInfo",
-                    "usr": "c:objc(cs)ISPlacementInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didReceiveRewardForPlacement:withAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC010didReceiveD012forPlacement4withySo15ISPlacementInfoCSg_So04ISAdL0CSgtF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didDisplayAdWithAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC010didDisplayE04withySo9LPMAdInfoC_tF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didReceiveRewardForPlacement:withAdInfo:",
+            "objc_name": "didDisplayAdWithAdInfo:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39850,8 +39546,8 @@
           },
           {
             "kind": "Function",
-            "name": "didFailToShowWithError",
-            "printedName": "didFailToShowWithError(_:andAdInfo:)",
+            "name": "didFailToDisplayAd",
+            "printedName": "didFailToDisplayAd(with:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39860,38 +39556,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didFailToShowWithError:andAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC013didFailToShowB5Error_03andE4Infoys0J0_pSg_So04ISAdL0CSgtF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didFailToDisplayAdWithAdInfo:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC016didFailToDisplayE04with5errorySo9LPMAdInfoC_s5Error_ptF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didFailToShowWithError:andAdInfo:",
+            "objc_name": "didFailToDisplayAdWithAdInfo:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39902,8 +39582,8 @@
           },
           {
             "kind": "Function",
-            "name": "didOpen",
-            "printedName": "didOpen(with:)",
+            "name": "didClickAd",
+            "printedName": "didClickAd(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39912,24 +39592,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didOpenWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC7didOpen4withySo8ISAdInfoCSg_tF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didClickAdWithAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC08didClickE04withySo9LPMAdInfoC_tF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didOpenWithAdInfo:",
+            "objc_name": "didClickAdWithAdInfo:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39940,8 +39612,8 @@
           },
           {
             "kind": "Function",
-            "name": "didClick",
-            "printedName": "didClick(_:with:)",
+            "name": "didCloseAd",
+            "printedName": "didCloseAd(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39950,38 +39622,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISPlacementInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISPlacementInfo",
-                    "printedName": "IronSource.ISPlacementInfo",
-                    "usr": "c:objc(cs)ISPlacementInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didClick:withAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC8didClick_4withySo15ISPlacementInfoCSg_So04ISAdJ0CSgtF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didCloseAdWithAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC08didCloseE04withySo9LPMAdInfoC_tF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didClick:withAdInfo:",
+            "objc_name": "didCloseAdWithAdInfo:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -39992,8 +39642,8 @@
           },
           {
             "kind": "Function",
-            "name": "didClose",
-            "printedName": "didClose(with:)",
+            "name": "didRewardAd",
+            "printedName": "didRewardAd(with:reward:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -40002,24 +39652,52 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "IronSource.ISAdInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ISAdInfo",
-                    "printedName": "IronSource.ISAdInfo",
-                    "usr": "c:objc(cs)ISAdInfo"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LPMReward",
+                "printedName": "IronSource.LPMReward",
+                "usr": "c:objc(cs)LPMReward"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didCloseWithAdInfo:",
-            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC8didClose4withySo8ISAdInfoCSg_tF",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didRewardAdWithAdInfo:reward:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC03diddE04with6rewardySo9LPMAdInfoC_So9LPMRewardCtF",
             "moduleName": "MobWithADSDKFramework",
-            "objc_name": "didCloseWithAdInfo:",
+            "objc_name": "didRewardAdWithAdInfo:reward:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didChangeAdInfo",
+            "printedName": "didChangeAdInfo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LPMAdInfo",
+                "printedName": "IronSource.LPMAdInfo",
+                "usr": "c:objc(cs)LPMAdInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithRewardAd(im)didChangeAdInfo:",
+            "mangledName": "$s21MobWithADSDKFramework0aB8RewardAdC09didChangeE4InfoyySo05LPMAdH0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "didChangeAdInfo:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -47860,36 +47538,43 @@
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 785,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 920,
+      "offset": 959,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1032,
+      "offset": 1071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1035,
+      "offset": 1074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1038,
+      "offset": 1077,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
+      "offset": 1081,
       "length": 2,
       "value": "32"
     },
@@ -48431,6 +48116,13 @@
       "offset": 1378,
       "length": 2,
       "value": "32"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1469,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/Native\/MobwithNativeAdView.swift",

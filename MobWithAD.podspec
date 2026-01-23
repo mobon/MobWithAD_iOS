@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.35'
+  s.version          = '1.2.36'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   
   s.dependency 'AdFitSDK', '3.14.5'
   s.dependency 'UnityAds', '4.14.1'
-  s.dependency 'Ads-Global', '7.1.1.1'
-  s.dependency 'IronSourceSDK','8.7.0.0'
+  s.dependency 'Ads-Global', '7.2.0.6'
+  s.dependency 'IronSourceSDK','9.2.0.0'
   s.dependency 'Fyber_Marketplace_SDK', '8.3.8'
   s.dependency 'BidmadSDK/core', '6.13.3'
   s.dependency 'OpenBiddingHelper', '6.13.2'
@@ -42,11 +42,6 @@ Pod::Spec.new do |s|
   s.dependency 'BidmadTeadsAdapter', '5.2.0.12.1'
   s.dependency 'BidmadVungleAdapter', '7.5.1.12.1'
   s.dependency 'InMobiSDK', '10.8.6'
-  s.dependency 'Google-Mobile-Ads-SDK', '12.6.0'
-  s.dependency 'GoogleMobileAdsMediationFyber'
-  s.dependency 'GoogleMobileAdsMediationInMobi'
-  s.dependency 'GoogleMobileAdsMediationIronSource'
-  s.dependency 'GoogleMobileAdsMediationMoloco'
-  s.dependency 'GoogleMobileAdsMediationPangle'
+  s.dependency 'Google-Mobile-Ads-SDK', '12.6.0
   
 end

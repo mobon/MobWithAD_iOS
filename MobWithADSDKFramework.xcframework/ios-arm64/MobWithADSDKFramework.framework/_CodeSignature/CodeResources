@@ -6,7 +6,7 @@
 	<dict>
 		<key>AdsGlobalSDK.bundle/Info.plist</key>
 		<data>
-		GRs7P86LxgOAQGxMoVFnulZOoP4=
+		ERlk4/ozTniRDpqv4/tw/Ju6VsU=
 		</data>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -38,15 +38,23 @@
 		</data>
 		<key>Headers/MobWithADSDKFramework-Swift.h</key>
 		<data>
-		uql2AJKtofJZjz9UK7YtFKNL8EY=
+		s5qvvHMrzuCq5/sTBd7lfpTUB2E=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zV7fsSzI7o4rKjA1N+HbOTYZsGA=
+		fBdy3RG9XQ8csYmlp9y3jwkxm6A=
+		</data>
+		<key>IronSourceAdQualityPrivacyInfo.bundle/Info.plist</key>
+		<data>
+		mAQQ9swvhRukmteoZD3wN8t3+MI=
+		</data>
+		<key>IronSourceAdQualityPrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		l2ZduCvSJbNtPnHg+4cAbLgDbyQ=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
-		aeYFJpJOekUPAkmP8zzJ+sEEPvU=
+		7HTNCl1WVaw7UXckS16+Nu5pqr4=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -54,11 +62,11 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		m7LMbpR6eZCY/7gq/J/C5Uyz/zU=
+		XSvvPU7fUVWQVgosOytmc6U/VJc=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FgVJhaaSD7n1p9cEGF1w1vfbsjM=
+		a+5nRknNtmV5Z7BUzDcswpySgWg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -66,31 +74,15 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FgVJhaaSD7n1p9cEGF1w1vfbsjM=
+		a+5nRknNtmV5Z7BUzDcswpySgWg=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		py6qNRJPCwPZ4pcTiVzB+NgpdZM=
+		ORWIP4TGFv+4oQ46dI2PZUTb44M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		+QCyasr0HySsnK8R1RBGbk3cObM=
-		</data>
-		<key>MolocoSDK.bundle/Info.plist</key>
-		<data>
-		g2EiUgBA82JjF1peGYG9S26fPL8=
-		</data>
-		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		hJKEwRb/BrBZuzCUCo8Mvi5mFAk=
-		</data>
-		<key>MolocoSDK.bundle/Resources.bundle/endcard.html</key>
-		<data>
-		GdIEFHBikc7SVB9eykIZOhWTkr4=
-		</data>
-		<key>MolocoSDK.bundle/mraid.js.ignore</key>
-		<data>
-		QbcmfpscYXVHrQDN7tmKwxTKmss=
 		</data>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<data>
@@ -98,7 +90,7 @@
 		</data>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<data>
-		RsimeB8PKePuMK0EX/iKxM7JdAo=
+		j0c3NRrSYY2J4bZwxyyJbNza0nM=
 		</data>
 		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -274,7 +266,7 @@
 		</dict>
 		<key>PAGAdSDK.bundle/version.txt</key>
 		<data>
-		AwZqpF5bmpgG25r1UTysLNB0O5U=
+		G7QCJaSNM4dQaoHZr2O9+Y5PBAM=
 		</data>
 		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
 		<dict>
@@ -325,7 +317,7 @@
 		</data>
 		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
 		<data>
-		aUqPGqBY1pIFLGwGEps/1DgUCWo=
+		3CFv+luszoGf5IH2Q6D3oRqjx6w=
 		</data>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -346,7 +338,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+nxXk5dFdQyPvWeLpA9w38wNHevmTFg7OxPkOAjK+sM=
+			wB1qR7kn7UNecbux1KCQwttV1YryBzIpwxjfgOl61HM=
 			</data>
 		</dict>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -402,14 +394,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6mD1CYHPQ0XvZYFBegeyV7qzvVF7QHgrQI0R+MrxOYk=
+			tBjxA83mrxCFdkEt48VJ3qpI0yJuVhmIaxRnc35JUK0=
+			</data>
+		</dict>
+		<key>IronSourceAdQualityPrivacyInfo.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QYdb2993/pLniU99k28VLtU4eyUOh/4/0R50sB6bv3w=
+			</data>
+		</dict>
+		<key>IronSourceAdQualityPrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r2z7AqVxBGjN8OndNxmPkrvnp5Bc0eybVPrs5UKShZ8=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uA3lrgC+J7hFT6Z0ixd40kvmcGDfwR+KZ8iaZIL1z9g=
+			mo0U8N2fmIreoVzbh9yUuz/VaQlr+sXJqRE/T/quxJQ=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
@@ -423,14 +429,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kKokDit4EtczWsFQVYAFNXzeR9BqsbBQG/0CQi+WuCU=
+			hjOOOQerAt4waVQR6vDSd4rtTLaiEW19rBELiPc0y5Q=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRnKpfZtEQNey6RXWmgUrCUQHhe0+pyE62K//eu/Z58=
+			EVDJTTxJKdou5u6dhtvAgayyC/n2N26z32HTD+eIuds=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -444,14 +450,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRnKpfZtEQNey6RXWmgUrCUQHhe0+pyE62K//eu/Z58=
+			EVDJTTxJKdou5u6dhtvAgayyC/n2N26z32HTD+eIuds=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KDzNsLhBl1PCRGUYK7LGpjyU9zEmxfWJpBLm0Ll0yhE=
+			IsmHV2Zf1ozfWVtYtqX3gWiNtDsWobpHUeIqqp1UmO8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -459,34 +465,6 @@
 			<key>hash2</key>
 			<data>
 			A5RxvEvLIgQYJZa+JTz7RSE5kywkBi+YpQKIBeJvh0s=
-			</data>
-		</dict>
-		<key>MolocoSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			is3rHUKy+jcMWW8macJJ851VB07W6GOU3OJ3z6IzicY=
-			</data>
-		</dict>
-		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ubOnCkg6p4/yut54YsOhIahV81IwyMSGaYVosuDmSjc=
-			</data>
-		</dict>
-		<key>MolocoSDK.bundle/Resources.bundle/endcard.html</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eolTtxN4GEA4VyA+YonMS7FPWA075nkQk5Fi3KG8BNo=
-			</data>
-		</dict>
-		<key>MolocoSDK.bundle/mraid.js.ignore</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0ymH9S0677V8jqsxQQzygdJKIOtCZOIZSkcaYxd/uQ4=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/Assets.car</key>
@@ -500,7 +478,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uZs9G9B6bRAT5SbPwLZpkVNC+MvOZ3zsdiYbrNpCgs=
+			YDT6K1+XLdxcKRj1iINWkCYztwP8CILpua1slbKMxtA=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -700,7 +678,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T9mS1ch2QshDjpXkIUbkToBFwoX168xx06Z5Ud5cebI=
+			Vl+RlhARqqeteYdOnSjDTSBasLGm4a+S5n//Vj4L1hA=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
@@ -769,7 +747,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aC0KuPJc+YYTTOq2AIFdWrzWzi9TGznIX7HWurtY0QM=
+			rmeOMdHM5VqM9pPvz1A8XO0O1ersAKJ6PdrUvwnZcuc=
 			</data>
 		</dict>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
