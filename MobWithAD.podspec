@@ -42,6 +42,6 @@ Pod::Spec.new do |s|
   s.dependency 'BidmadTeadsAdapter', '5.2.0.12.1'
   s.dependency 'BidmadVungleAdapter', '7.5.1.12.1'
   s.dependency 'InMobiSDK', '10.8.6'
-  s.dependency 'Google-Mobile-Ads-SDK', '12.6.0
+  s.dependency 'Google-Mobile-Ads-SDK', '12.6.0'
   
 end
