@@ -1007,9 +1007,9 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
 }
 @_inheritsConvenienceInitializers @objc public class MobWithADSDK : ObjectiveC.NSObject {
   @objc public static let standard: MobWithADSDKFramework.MobWithADSDK
-  public var appId: Swift.String {
-    get
-    set
+  @objc public var appId: Swift.String {
+    @objc get
+    @objc set
   }
   @objc public static var sdkVersion: Swift.String {
     @objc get
@@ -1019,16 +1019,16 @@ extension MobWithADSDKFramework.VastMediaFiles : Swift.Equatable {
     @objc set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  public func initSDK(coupangSubId: Swift.String? = nil)
+  @objc public func initSDK(coupangSubId: Swift.String? = nil)
   #endif
-  public func enableLog(_ enable: Swift.Bool)
-  public func setUnityGameId(gameId: Swift.String)
-  public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
-  public func setPangleAppId(appId: Swift.String)
+  @objc public func enableLog(_ enable: Swift.Bool)
+  @objc public func setUnityGameId(gameId: Swift.String)
+  @objc public func setLevelPlaySDKAppKey(_ appKey: Swift.String)
+  @objc public func setPangleAppId(appId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func setDTExchangeAppID(appId: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func setDTExchangeAppID(appId: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   #endif
-  public func setInMobiAccountId(accountId: Swift.String)
+  @objc public func setInMobiAccountId(accountId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }

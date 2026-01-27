@@ -33413,13 +33413,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC5appIdSSvp",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(py)appId",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC5appIdSSvp",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -33437,10 +33438,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework0aB5ADSDKC5appIdSSvg",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)appId",
                 "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC5appIdSSvg",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -33461,10 +33465,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21MobWithADSDKFramework0aB5ADSDKC5appIdSSvs",
+                "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setAppId:",
                 "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC5appIdSSvs",
                 "moduleName": "MobWithADSDKFramework",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -33657,11 +33664,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC7initSDK12coupangSubIdySSSg_tF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)initSDKWithCoupangSubId:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC7initSDK12coupangSubIdySSSg_tF",
             "moduleName": "MobWithADSDKFramework",
+            "objc_name": "initSDKWithCoupangSubId:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -33684,11 +33693,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC9enableLogyySbF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)enableLog:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC9enableLogyySbF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33710,11 +33720,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC14setUnityGameId04gameH0ySS_tF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setUnityGameIdWithGameId:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC14setUnityGameId04gameH0ySS_tF",
             "moduleName": "MobWithADSDKFramework",
+            "objc_name": "setUnityGameIdWithGameId:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33736,11 +33748,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC21setLevelPlaySDKAppKeyyySSF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setLevelPlaySDKAppKey:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC21setLevelPlaySDKAppKeyyySSF",
             "moduleName": "MobWithADSDKFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33762,11 +33775,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC14setPangleAppId03appH0ySS_tF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setPangleAppIdWithAppId:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC14setPangleAppId03appH0ySS_tF",
             "moduleName": "MobWithADSDKFramework",
+            "objc_name": "setPangleAppIdWithAppId:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33815,11 +33830,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC18setDTExchangeAppID5appId10completionySS_ySbcSgtF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setDTExchangeAppIDWithAppId:completion:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC18setDTExchangeAppID5appId10completionySS_ySbcSgtF",
             "moduleName": "MobWithADSDKFramework",
+            "objc_name": "setDTExchangeAppIDWithAppId:completion:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33841,11 +33858,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21MobWithADSDKFramework0aB5ADSDKC18setInMobiAccountId07accountI0ySS_tF",
+            "usr": "c:@M@MobWithADSDKFramework@objc(cs)MobWithADSDK(im)setInMobiAccountIdWithAccountId:",
             "mangledName": "$s21MobWithADSDKFramework0aB5ADSDKC18setInMobiAccountId07accountI0ySS_tF",
             "moduleName": "MobWithADSDKFramework",
+            "objc_name": "setInMobiAccountIdWithAccountId:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -46923,28 +46942,28 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
+      "offset": 1463,
       "length": 42,
       "value": "\"https:\/\/apps.apple.com\/kr\/app\/id\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1504,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1414,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/MobWithADSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 2203,
       "length": 2,
       "value": "\"\""
     },
@@ -47469,112 +47488,112 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1371,
-      "length": 4,
-      "value": "true"
+      "offset": 1625,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1665,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1552,
+      "offset": 1807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1601,
+      "offset": 1856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1653,
+      "offset": 1908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1694,
+      "offset": 1949,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1785,
+      "offset": 2040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithRewardAd.swift",
       "kind": "StringLiteral",
-      "offset": 1821,
+      "offset": 2076,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 742,
-      "length": 4,
-      "value": "true"
+      "offset": 983,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 785,
+      "offset": 1027,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 959,
+      "offset": 1201,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1071,
+      "offset": 1313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1074,
+      "offset": 1316,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1077,
+      "offset": 1319,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/RewardBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1081,
+      "offset": 1323,
       "length": 2,
       "value": "32"
     },
@@ -48057,70 +48076,70 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 778,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1124,
+      "offset": 1024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1159,
+      "offset": 1371,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1209,
+      "offset": 1406,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1256,
+      "offset": 1503,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1368,
+      "offset": 1615,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1371,
+      "offset": 1618,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1374,
+      "offset": 1621,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1378,
+      "offset": 1625,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/RewardVideos\/MixerVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1469,
+      "offset": 1716,
       "length": 5,
       "value": "false"
     },

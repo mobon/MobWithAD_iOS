@@ -435,11 +435,24 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework12MobWithADSDK")
 @interface MobWithADSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MobWithADSDK * _Nonnull standard;)
 + (MobWithADSDK * _Nonnull)standard SWIFT_WARN_UNUSED_RESULT;
+/// App Store에 등록된 앱의 ID.  Cauly 미디에이션 사용시 필요한 값이며, 출시전 앱인 경우 0으로 지정할 수 있으나, 출시 후에는 반드시 앱 ID를 지정해야 한다.
+@property (nonatomic, copy) NSString * _Nonnull appId;
 /// SDK 버전 정보를 반환한다
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 /// App Store Url을 설정한다.  일부 DSP에서 앱스토어 URL이 필요할 수 있습니다.   appId를 설정하면 자동으로 생성됩니다.
 @property (nonatomic, copy) NSString * _Nonnull appStoreUrl;
+/// SDK 정보를 초기화 한다.
+/// Coupang 광고를 사용하는 경우 반드시 아래 두 파라메터 값을 설정해줘야 한다.
+/// \param coupangSubId 쿠팡 SDK 사용을 위해 전달받은 Sub ID
+///
+- (void)initSDKWithCoupangSubId:(NSString * _Nullable)coupangSubId SWIFT_METHOD_FAMILY(none);
+- (void)enableLog:(BOOL)enable;
+- (void)setUnityGameIdWithGameId:(NSString * _Nonnull)gameId;
+- (void)setLevelPlaySDKAppKey:(NSString * _Nonnull)appKey;
+- (void)setPangleAppIdWithAppId:(NSString * _Nonnull)appId;
+- (void)setDTExchangeAppIDWithAppId:(NSString * _Nonnull)appId completion:(void (^ _Nullable)(BOOL))completion;
+- (void)setInMobiAccountIdWithAccountId:(NSString * _Nonnull)accountId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
