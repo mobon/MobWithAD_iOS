@@ -3,25 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>NSPrivacyCollectedDataTypes</key>
-	<array/>
-	<key>NSPrivacyAccessedAPITypes</key>
 	<array>
 		<dict>
-			<key>NSPrivacyAccessedAPIType</key>
-			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
-			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<key>NSPrivacyCollectedDataType</key>
+			<string></string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
 			<array>
-				<string>C617.1</string>
+				<string></string>
 			</array>
 		</dict>
-		<dict>
-			<key>NSPrivacyAccessedAPIType</key>
-			<string>NSPrivacyAccessedAPICategoryDiskSpace</string>
-			<key>NSPrivacyAccessedAPITypeReasons</key>
-			<array>
-				<string>E174.1</string>
-			</array>
-		</dict>
+	</array>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
 		<dict>
 			<key>NSPrivacyAccessedAPIType</key>
 			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
