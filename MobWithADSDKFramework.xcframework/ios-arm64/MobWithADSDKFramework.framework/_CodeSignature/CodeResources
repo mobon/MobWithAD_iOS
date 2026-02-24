@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fUjzhpxbm5XFXfRIEc12DX+nWqU=
+		yWyzRYckSN5IYpnZHnFUnWBABlw=
 		</data>
 		<key>IronSourceAdQualityPrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		O2x40jlVbCOQx/v3nmRVaCTc92U=
+		dL1YLRMx1bfp/+0RGhcfj4LA0f0=
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HxYnEIkVCKKhtXIIUVYnWiiOHgA=
+		8SVGMOitOE1g5fvl6o8GXSv+RyU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -286,7 +286,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6YHRbS0ZVFgdzg2ziLd7g0If8AI//lexOVaQuptNT/Y=
+			De98mAA1Hl7IJzbzl3xwzmcynhNn6rTGCbkun1jnxHM=
 			</data>
 		</dict>
 		<key>Modules/MobWithADSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -314,7 +314,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QfSgS/UD4+JdAYskWTjd2NCkuUK7+ZcwQhtPoL4XqtM=
+			OWxSA3z9+rYi5roQJCbjjNEMDkbMAUBzLqZIUjFLoAQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
