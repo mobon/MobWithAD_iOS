@@ -492,6 +492,13 @@ SWIFT_CLASS("_TtC21MobWithADSDKFramework13MobWithAdView")
 - (void)IAAdDidReceiveClick:(IAUnitController * _Nullable)unitController;
 @end
 
+@class AdFitBannerAdView;
+@interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <AdFitBannerAdViewDelegate>
+- (void)adViewDidReceiveAd:(AdFitBannerAdView * _Nonnull)bannerAdView;
+- (void)adViewDidFailToReceiveAd:(AdFitBannerAdView * _Nonnull)bannerAdView error:(NSError * _Nonnull)error;
+- (void)adViewDidClickAd:(AdFitBannerAdView * _Nonnull)bannerAdView;
+@end
+
 @class OpenBiddingBanner;
 @interface MobWithAdView (SWIFT_EXTENSION(MobWithADSDKFramework)) <BIDMADOpenBiddingBannerDelegate>
 - (void)onLoadAd:(OpenBiddingBanner * _Nonnull)bidmadAd info:(BidmadInfo * _Nonnull)info;

@@ -35289,6 +35289,108 @@
           },
           {
             "kind": "Function",
+            "name": "adViewDidReceiveAd",
+            "printedName": "adViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitBannerAdView",
+                "printedName": "AdFitSDK.AdFitBannerAdView",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitBannerAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)adViewDidReceiveAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC02ade10DidReceiveD0yy0D6FitSDK0di6BannerdE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adViewDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adViewDidFailToReceiveAd",
+            "printedName": "adViewDidFailToReceiveAd(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitBannerAdView",
+                "printedName": "AdFitSDK.AdFitBannerAdView",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)adViewDidFailToReceiveAd:error:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC02ade16DidFailToReceiveD0_5errory0D6FitSDK0dl6BannerdE0C_s5Error_ptF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adViewDidFailToReceiveAd:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adViewDidClickAd",
+            "printedName": "adViewDidClickAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFitBannerAdView",
+                "printedName": "AdFitSDK.AdFitBannerAdView",
+                "usr": "c:@M@AdFitSDK@objc(cs)AdFitBannerAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MobWithADSDKFramework@objc(cs)MobWithAdView(im)adViewDidClickAd:",
+            "mangledName": "$s21MobWithADSDKFramework0aB6AdViewC02ade8DidClickD0yy0D6FitSDK0di6BannerdE0CF",
+            "moduleName": "MobWithADSDKFramework",
+            "objc_name": "adViewDidClickAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "nativeAdDidClickAd",
             "printedName": "nativeAdDidClickAd(_:)",
             "children": [
@@ -36653,6 +36755,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdFitBannerAdViewDelegate",
+            "printedName": "AdFitBannerAdViewDelegate",
+            "usr": "c:@M@AdFitSDK@objc(pl)AdFitBannerAdViewDelegate",
+            "mangledName": "$s8AdFitSDK0ab6BannerA12ViewDelegateP"
           },
           {
             "kind": "Conformance",
@@ -47131,7 +47240,7 @@
     {
       "filePath": "\/Users\/enliplemacbook\/Desktop\/MobMixer\/iOS\/MobMixerFramework\/MobMixerFramework\/Views\/MobWithAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5720,
+      "offset": 5766,
       "length": 1,
       "value": "0"
     },

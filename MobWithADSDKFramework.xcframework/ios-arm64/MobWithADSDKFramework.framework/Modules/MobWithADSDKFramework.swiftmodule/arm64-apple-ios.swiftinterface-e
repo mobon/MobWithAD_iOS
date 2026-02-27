@@ -1069,6 +1069,11 @@ extension MobWithADSDKFramework.MobWithADSDK : UnityAdsInitializationDelegate {
   @objc @_Concurrency.MainActor @preconcurrency public func clearAdLoader()
   @objc deinit
 }
+extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitBannerAdViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adViewDidReceiveAd(_ bannerAdView: AdFitSDK.AdFitBannerAdView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adViewDidFailToReceiveAd(_ bannerAdView: AdFitSDK.AdFitBannerAdView, error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adViewDidClickAd(_ bannerAdView: AdFitSDK.AdFitBannerAdView)
+}
 extension MobWithADSDKFramework.MobWithAdView : AdFitSDK.AdFitNativeAdLoaderDelegate, AdFitSDK.AdFitNativeAdDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdDidClickAd(_ nativeAd: AdFitSDK.AdFitNativeAd)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdLoaderDidReceiveAd(_ nativeAd: AdFitSDK.AdFitNativeAd)

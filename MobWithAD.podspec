@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobWithAD'
-  s.version          = '1.2.40'
+  s.version          = '1.2.41'
   s.summary          = 'Mobwith AD의 iOS버전 SDK 입니다.'
   s.description      =  <<-DESC
                         'Mobwith AD의 iOS버전 SDK 입니다.'
